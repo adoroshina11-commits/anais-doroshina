@@ -1150,20 +1150,31 @@ footer{
         font-size:12px;
     }
 
-    .woman-crop{
-        left:0;
-        top:0;
+   /* =========================================================
+   ARCHIVAL FASHION CONTACT SHEET — LEFT SIDE
+========================================================= */
 
-        width:45%;
-        height:100%;
-    }
+.contact-sheet-wrap{
+    position:absolute;
+    z-index:25;
+    left:2.5%;
+    top:6%;
+    width:23%;
+    height:88%;
+    overflow:visible;
+    pointer-events:none;
+}
 
-    .hero-woman{
-        width:225%;
-
-        left:-103%;
-        top:4%;
-    }
+.hero-contact-sheet{
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+    transform:rotate(-4deg);
+    filter:drop-shadow(0 5px 7px rgba(40,30,20,.08));
+    pointer-events:none;
+}
 
     .hero-book{
         right:-18%;
@@ -1393,17 +1404,15 @@ footer{
 <section class="hero">
 
 
-    <!-- WOMAN — CROPPED PORTRAIT -->
-
-    <div class="woman-crop">
-
-        <img
-            src="cabinet-woman.png"
-            class="hero-woman"
-            alt=""
-        >
-
-    </div>
+   <!-- ARCHIVAL FASHION CONTACT SHEET -->
+<div class="contact-sheet-wrap">
+    <img
+        src="archive-contact-sheet.png"
+        class="hero-contact-sheet"
+        alt="Black and white archival fashion contact sheet"
+    >
+</div>
+   
 
 
     <!-- BOOK -->
