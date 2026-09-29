@@ -57,7 +57,6 @@ a{
 
 /* =========================================================
    NAVIGATION
-   MATCHES ESSAYS.HTML
 ========================================================= */
 
 nav{
@@ -156,9 +155,46 @@ nav{
 }
 
 
+/* =========================================================
+   ARCHIVAL FASHION CONTACT SHEET — DESKTOP
+========================================================= */
+
+.contact-sheet-wrap{
+    position:absolute;
+
+    z-index:25;
+
+    left:-1%;
+    top:3%;
+
+    width:24%;
+    height:94%;
+
+    overflow:visible;
+
+    pointer-events:none;
+}
+
+.hero-contact-sheet{
+    display:block;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+    object-position:center;
+
+    transform:rotate(-4deg);
+
+    filter:
+        drop-shadow(
+            0 5px 7px rgba(40,30,20,.08)
+        );
+
+    pointer-events:none;
+}
 
 
-   
 /* =========================================================
    TITLE
 ========================================================= */
@@ -300,108 +336,84 @@ nav{
 .star-1{
     left:46%;
     top:7%;
-
     font-size:43px;
-
     transform:rotate(7deg);
 }
 
 .star-2{
     left:42%;
     top:25%;
-
     font-size:22px;
-
     transform:rotate(-11deg);
 }
 
 .star-3{
     left:5%;
     top:48%;
-
     font-size:22px;
-
     transform:rotate(12deg);
 }
 
 .star-4{
     right:18%;
     top:12%;
-
     font-size:29px;
-
     transform:rotate(15deg);
 }
 
 .star-5{
     right:5%;
     top:15%;
-
     font-size:20px;
-
     transform:rotate(-8deg);
 }
 
 .star-6{
     left:4%;
     top:66%;
-
     font-size:27px;
-
     transform:rotate(9deg);
 }
 
 .star-7{
     left:39%;
     bottom:14%;
-
     font-size:19px;
-
     transform:rotate(-10deg);
 }
 
 .star-8{
     left:44%;
     bottom:5%;
-
     font-size:21px;
-
     transform:rotate(8deg);
 }
 
 .star-9{
     right:33%;
     bottom:8%;
-
     font-size:27px;
-
     transform:rotate(-8deg);
 }
 
 .star-10{
     right:30%;
     top:34%;
-
     font-size:20px;
-
     transform:rotate(8deg);
 }
 
 .star-11{
     left:55%;
     top:19%;
-
     font-size:16px;
-
     transform:rotate(10deg);
 }
 
 .star-12{
     right:23%;
     top:48%;
-
     font-size:17px;
-
     transform:rotate(-5deg);
 }
 
@@ -411,108 +423,84 @@ nav{
 .star-13{
     left:36%;
     top:11%;
-
     font-size:13px;
-
     transform:rotate(-8deg);
 }
 
 .star-14{
     left:51%;
     top:15%;
-
     font-size:12px;
-
     transform:rotate(12deg);
 }
 
 .star-15{
     left:58%;
     top:29%;
-
     font-size:15px;
-
     transform:rotate(-7deg);
 }
 
 .star-16{
     left:52%;
     top:69%;
-
     font-size:13px;
-
     transform:rotate(16deg);
 }
 
 .star-17{
     left:61%;
     bottom:7%;
-
     font-size:16px;
-
     transform:rotate(-12deg);
 }
 
 .star-18{
     right:27%;
     top:23%;
-
     font-size:11px;
-
     transform:rotate(8deg);
 }
 
 .star-19{
     right:8%;
     top:42%;
-
     font-size:15px;
-
     transform:rotate(-10deg);
 }
 
 .star-20{
     right:28%;
     bottom:23%;
-
     font-size:12px;
-
     transform:rotate(14deg);
 }
 
 .star-21{
     left:47%;
     top:39%;
-
     font-size:11px;
-
     transform:rotate(-12deg);
 }
 
 .star-22{
     left:57%;
     bottom:19%;
-
     font-size:10px;
-
     transform:rotate(8deg);
 }
 
 .star-23{
     right:12%;
     top:61%;
-
     font-size:13px;
-
     transform:rotate(-6deg);
 }
 
 .star-24{
     left:33%;
     bottom:5%;
-
     font-size:12px;
-
     transform:rotate(13deg);
 }
 
@@ -529,7 +517,6 @@ nav{
     font-family:'Cormorant Garamond',serif;
 
     font-size:9px;
-
     font-style:italic;
 
     color:#a2988f;
@@ -571,8 +558,6 @@ nav{
 
 /* =========================================================
    HERO / TABI DIVIDER
-
-   CHANGE top:95px IF YOU WANT TO MOVE ONLY THE LINE
 ========================================================= */
 
 .tabi::before{
@@ -641,7 +626,6 @@ nav{
     font-size:57px;
 
     font-weight:300;
-
     font-style:italic;
 
     line-height:.95;
@@ -760,7 +744,6 @@ nav{
     font-family:'Cormorant Garamond',serif;
 
     font-size:12px;
-
     font-style:italic;
 
     line-height:1.5;
@@ -861,7 +844,6 @@ nav{
     flex-direction:column;
 
     align-items:center;
-
     justify-content:center;
 
     text-align:center;
@@ -905,7 +887,6 @@ nav{
     font-size:clamp(43px,4.5vw,65px);
 
     font-weight:300;
-
     font-style:italic;
 
     line-height:.95;
@@ -1001,7 +982,6 @@ nav{
     font-size:clamp(55px,7vw,95px);
 
     font-weight:300;
-
     font-style:italic;
 
     line-height:.9;
@@ -1104,16 +1084,13 @@ footer{
 
     .hero{
         height:640px;
-
         min-height:0;
-
         margin-top:56px;
     }
 
     .hero-title-wrap{
         left:61%;
         top:57%;
-
         width:76%;
     }
 
@@ -1123,35 +1100,29 @@ footer{
 
     .hero-subtitle{
         margin-top:25px;
-
         font-size:12px;
     }
 
-   /* =========================================================
-   ARCHIVAL FASHION CONTACT SHEET — LEFT SIDE
-========================================================= */
 
-.contact-sheet-wrap{
-    position:absolute;
-    z-index:25;
-    left:-1%;
-    top:6%;
-    width:12%;
-    height:88%;
-    overflow:visible;
-    pointer-events:none;
-}
+    /* CONTACT SHEET — MOBILE */
 
-.hero-contact-sheet{
-    display:block;
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    object-position:center;
-    transform:rotate(-4deg);
-    filter:drop-shadow(0 5px 7px rgba(40,30,20,.08));
-    pointer-events:none;
-}
+    .contact-sheet-wrap{
+        left:-7%;
+        top:7%;
+
+        width:31%;
+        height:80%;
+    }
+
+    .hero-contact-sheet{
+        width:100%;
+        height:100%;
+
+        object-fit:contain;
+
+        transform:rotate(-4deg);
+    }
+
 
     .hero-book{
         right:-18%;
@@ -1198,42 +1169,36 @@ footer{
     .star-1{
         left:48%;
         top:9%;
-
         font-size:34px;
     }
 
     .star-4{
         right:21%;
         top:19%;
-
         font-size:24px;
     }
 
     .star-6{
         left:4%;
         top:61%;
-
         font-size:21px;
     }
 
     .star-9{
         right:28%;
         bottom:14%;
-
         font-size:23px;
     }
 
     .star-16{
         left:49%;
         top:71%;
-
         font-size:12px;
     }
 
     .star-20{
         right:12%;
         bottom:27%;
-
         font-size:11px;
     }
 
@@ -1381,15 +1346,17 @@ footer{
 <section class="hero">
 
 
-   <!-- ARCHIVAL FASHION CONTACT SHEET -->
-<div class="contact-sheet-wrap">
-    <img
-        src="archive-contact-sheet.png"
-        class="hero-contact-sheet"
-        alt="Black and white archival fashion contact sheet"
-    >
-</div>
-   
+    <!-- ARCHIVAL FASHION CONTACT SHEET -->
+
+    <div class="contact-sheet-wrap">
+
+        <img
+            src="archive-contact-sheet.png"
+            class="hero-contact-sheet"
+            alt="Black and white archival fashion contact sheet"
+        >
+
+    </div>
 
 
     <!-- BOOK -->
