@@ -1126,6 +1126,287 @@ nav{
 
 
 /* =========================================================
+   003 — MUGLER / LA CHIMÈRE
+========================================================= */
+
+.mugler{
+    position:relative;
+
+    height:960px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    text-align:center;
+
+    border-bottom:1px solid var(--rule);
+}
+
+
+/* MUGLER HEADING */
+
+.mugler-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:72px;
+    left:50%;
+
+    width:72%;
+
+    transform:translateX(-50%);
+}
+
+.mugler-number{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.35em;
+
+    color:#998b7c;
+}
+
+.mugler-house{
+    margin-top:16px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:13px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+}
+
+.mugler-title{
+    margin-top:5px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:61px;
+
+    font-weight:300;
+    font-style:italic;
+
+    line-height:.95;
+
+    letter-spacing:-.045em;
+}
+
+.mugler-year{
+    margin-top:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.3em;
+
+    color:#6f675f;
+}
+
+
+/* MAIN MUGLER IMAGE */
+
+.mugler-main{
+    position:absolute;
+
+    z-index:20;
+
+    left:50%;
+    top:270px;
+
+    width:315px;
+    height:410px;
+
+    transform:translateX(-50%);
+
+    object-fit:cover;
+
+    filter:
+        drop-shadow(
+            0 15px 18px rgba(40,30,20,.10)
+        );
+}
+
+
+/* GHOSTED ARCHIVAL CROP */
+
+.mugler-ghost{
+    position:absolute;
+
+    z-index:3;
+
+    left:-2%;
+    top:300px;
+
+    width:24%;
+    height:430px;
+
+    overflow:hidden;
+
+    opacity:.14;
+
+    transform:rotate(-3deg);
+}
+
+.mugler-ghost img{
+    width:145%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    filter:
+        grayscale(1)
+        contrast(.9);
+}
+
+
+/* ARCHIVE LABEL */
+
+.mugler-label{
+    position:absolute;
+
+    z-index:22;
+
+    left:17%;
+    top:360px;
+
+    padding:12px 16px;
+
+    border:1px solid rgba(80,70,60,.25);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    line-height:1.7;
+
+    letter-spacing:.32em;
+
+    color:#81766d;
+
+    transform:rotate(-6deg);
+}
+
+
+/* VERTICAL COUTURE TEXT */
+
+.mugler-vertical{
+    position:absolute;
+
+    z-index:15;
+
+    right:8%;
+    top:330px;
+
+    writing-mode:vertical-rl;
+
+    transform:rotate(180deg);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.38em;
+
+    color:#9e9287;
+}
+
+
+/* HANDWRITTEN NOTE */
+
+.mugler-script{
+    position:absolute;
+
+    z-index:25;
+
+    right:10%;
+    top:515px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:38px;
+
+    line-height:.72;
+
+    text-align:left;
+
+    color:#702d31;
+
+    transform:rotate(-8deg);
+}
+
+
+/* DESCRIPTION */
+
+.mugler-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:730px;
+
+    width:min(620px,70%);
+
+    transform:translateX(-50%);
+
+    font-family:'EB Garamond',serif;
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.mugler-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+
+/* TAGS */
+
+.mugler-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:870px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+
+    color:#a0978d;
+}
+
+
+/* =========================================================
    OTHER ARCHIVE OBJECTS
 ========================================================= */
 
@@ -1654,6 +1935,81 @@ footer{
     }
 
 
+    /* MUGLER */
+
+    .mugler{
+        height:870px;
+    }
+
+    .mugler-heading{
+        top:60px;
+
+        width:90%;
+    }
+
+    .mugler-title{
+        font-size:49px;
+    }
+
+    .mugler-house{
+        font-size:10px;
+
+        letter-spacing:.3em;
+    }
+
+    .mugler-main{
+        top:245px;
+
+        width:245px;
+        height:340px;
+    }
+
+    .mugler-ghost{
+        left:-14%;
+        top:315px;
+
+        width:43%;
+        height:330px;
+    }
+
+    .mugler-label{
+        left:4%;
+        top:350px;
+
+        font-size:6px;
+    }
+
+    .mugler-vertical{
+        right:4%;
+        top:320px;
+
+        font-size:6px;
+    }
+
+    .mugler-script{
+        right:4%;
+        top:510px;
+
+        font-size:27px;
+    }
+
+    .mugler-copy{
+        top:635px;
+
+        width:80%;
+
+        font-size:14px;
+    }
+
+    .mugler-tags{
+        top:790px;
+
+        font-size:6px;
+
+        letter-spacing:.23em;
+    }
+
+
     /* OTHER OBJECTS */
 
     .archive-object{
@@ -1918,16 +2274,12 @@ footer{
     </div>
 
 
-    <!-- CHRISTIAN DIOR LABEL -->
-
     <img
         src="cd-logo.jpg"
         class="saddle-logo"
         alt="Christian Dior Paris archival label"
     >
 
-
-    <!-- ORIGINAL MAIN SADDLE BAG -->
 
     <img
         src="archive-saddle.jpg"
@@ -1936,8 +2288,6 @@ footer{
     >
 
 
-    <!-- SMALL BAG SKETCH -->
-
     <img
         src="cd-bag.jpg"
         class="saddle-sketch"
@@ -1945,16 +2295,12 @@ footer{
     >
 
 
-    <!-- D HARDWARE -->
-
     <img
         src="d-hardwear.jpg"
         class="saddle-hardware"
         alt="Dior D hardware sketch"
     >
 
-
-    <!-- GALLIANO -->
 
     <div class="saddle-galliano-note">
 
@@ -1967,8 +2313,6 @@ footer{
     </div>
 
 
-    <!-- DESCRIPTION -->
-
     <p class="saddle-copy">
 
         Few accessories demonstrate the power of silhouette as clearly
@@ -1978,8 +2322,6 @@ footer{
     </p>
 
 
-    <!-- TAGS -->
-
     <div class="saddle-tags">
 
         SILHOUETTE &nbsp;&nbsp;·&nbsp;&nbsp;
@@ -1988,8 +2330,6 @@ footer{
 
     </div>
 
-
-    <!-- RED NOTE -->
 
     <div class="saddle-red-note">
 
@@ -2003,34 +2343,74 @@ footer{
 
 
 <!-- =========================================================
-     003 — MUGLER
+     003 — MUGLER / LA CHIMÈRE
 ========================================================= -->
 
-<section class="archive-object">
+<section class="mugler">
 
-    <div class="object-number">
-        003
+
+    <div class="mugler-heading">
+
+        <div class="mugler-number">
+            003
+        </div>
+
+        <div class="mugler-house">
+            Thierry Mugler
+        </div>
+
+        <h2 class="mugler-title">
+            La Chimère
+        </h2>
+
+        <div class="mugler-year">
+            Haute Couture · FW97–98
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Thierry Mugler
+
+    <div class="mugler-ghost">
+
+        <img
+            src="archive-mugler.jpg"
+            alt=""
+        >
+
     </div>
 
-    <h2 class="object-title">
-        La Chimère
-    </h2>
-
-    <div class="object-year">
-        Haute Couture · FW97–98
-    </div>
 
     <img
         src="archive-mugler.jpg"
-        class="object-image"
-        alt="Thierry Mugler Chimère gown"
+        class="mugler-main"
+        alt="Thierry Mugler La Chimère gown"
     >
 
-    <p class="object-copy">
+
+    <div class="mugler-label">
+
+        PARIS<br>
+        1997
+
+    </div>
+
+
+    <div class="mugler-vertical">
+
+        HAUTE COUTURE &nbsp;·&nbsp; FW97–98
+
+    </div>
+
+
+    <div class="mugler-script">
+
+        when clothing<br>
+        becomes sculpture.
+
+    </div>
+
+
+    <p class="mugler-copy">
 
         What fascinates me about the Chimère gown is that its fantasy
         cannot be separated from the extraordinary work required to
@@ -2039,9 +2419,15 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Craftsmanship · Fantasy · Transformation
+
+    <div class="mugler-tags">
+
+        CRAFTSMANSHIP &nbsp;&nbsp;·&nbsp;&nbsp;
+        FANTASY &nbsp;&nbsp;·&nbsp;&nbsp;
+        TRANSFORMATION
+
     </div>
+
 
 </section>
 
@@ -2367,4 +2753,5 @@ footer{
 
 
 </body>
+
 </html>
