@@ -204,6 +204,7 @@ nav{
 }
 
 @keyframes floatStar{
+
   0%,100%{
     transform:translateY(0) rotate(0deg);
   }
@@ -211,6 +212,7 @@ nav{
   50%{
     transform:translateY(-7px) rotate(12deg);
   }
+
 }
 
 
@@ -329,6 +331,188 @@ nav{
 .cta:hover{
   letter-spacing:0.29em;
   opacity:0.6;
+}
+
+
+/* =========================================================
+   PERSONAL ARCHIVE
+========================================================= */
+
+.about-memory{
+  position:relative;
+
+  padding:7vw 8vw 8vw;
+
+  display:grid;
+  grid-template-columns:minmax(0,1.45fr) minmax(230px,0.55fr);
+
+  gap:5vw;
+
+  align-items:end;
+
+  overflow:hidden;
+
+  background:var(--cream);
+
+  border-bottom:0.5px solid var(--rule);
+}
+
+
+/* tiny decorative star */
+
+.about-memory::before{
+  content:'✦';
+
+  position:absolute;
+
+  top:5vw;
+  right:6vw;
+
+  font-size:17px;
+
+  color:var(--accent);
+
+  opacity:.7;
+
+  transform:rotate(12deg);
+}
+
+
+/* photo */
+
+.memory-figure{
+  position:relative;
+
+  width:100%;
+
+  margin:0;
+}
+
+.memory-photo{
+  display:block;
+
+  width:100%;
+
+  aspect-ratio:4 / 3;
+
+  object-fit:cover;
+  object-position:center;
+
+  filter:
+    saturate(.92)
+    contrast(.98);
+
+  box-shadow:
+    0 12px 30px rgba(40,30,20,.06);
+}
+
+
+/* image caption */
+
+.memory-caption{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:2rem;
+
+  margin-top:11px;
+
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:9px;
+
+  letter-spacing:.2em;
+
+  text-transform:uppercase;
+
+  color:#948a82;
+}
+
+.memory-caption span:last-child{
+  color:var(--accent);
+}
+
+
+/* editorial note */
+
+.memory-copy{
+  position:relative;
+
+  padding-bottom:2.5rem;
+}
+
+.memory-kicker{
+  margin-bottom:1.2rem;
+
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:9px;
+
+  letter-spacing:.32em;
+
+  text-transform:uppercase;
+
+  color:var(--accent);
+}
+
+.memory-quote{
+  max-width:330px;
+
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:clamp(34px,3.6vw,55px);
+
+  font-weight:300;
+  font-style:italic;
+
+  line-height:.98;
+
+  letter-spacing:-.035em;
+
+  color:var(--ink);
+}
+
+
+/* handwritten detail */
+
+.memory-script{
+  margin-top:1.4rem;
+
+  font-family:'Corinthia',cursive;
+
+  font-size:37px;
+
+  line-height:1;
+
+  color:var(--accent);
+
+  transform:rotate(-6deg);
+
+  transform-origin:left center;
+}
+
+
+/* tiny archive line */
+
+.memory-meta{
+  margin-top:2rem;
+
+  padding-top:1rem;
+
+  max-width:170px;
+
+  border-top:0.5px solid var(--rule);
+
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:9px;
+
+  letter-spacing:.22em;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
 }
 
 
@@ -804,6 +988,58 @@ footer{
   }
 
 
+  /* PERSONAL ARCHIVE */
+
+  .about-memory{
+    padding:12vw 8vw;
+
+    grid-template-columns:1fr;
+
+    gap:3rem;
+  }
+
+  .about-memory::before{
+    top:8vw;
+    right:8vw;
+  }
+
+  .memory-photo{
+    aspect-ratio:auto;
+  }
+
+  .memory-caption{
+    display:block;
+
+    line-height:1.7;
+  }
+
+  .memory-caption span{
+    display:block;
+  }
+
+  .memory-caption span:last-child{
+    margin-top:3px;
+  }
+
+  .memory-copy{
+    padding-bottom:0;
+  }
+
+  .memory-quote{
+    max-width:360px;
+
+    font-size:44px;
+  }
+
+  .memory-script{
+    font-size:34px;
+  }
+
+  .memory-meta{
+    margin-top:1.6rem;
+  }
+
+
   .passions{
     padding:2rem 0;
   }
@@ -975,6 +1211,61 @@ footer{
     <a href="#contact" class="cta">
       Get in Touch →
     </a>
+
+  </div>
+
+
+</section>
+
+
+
+<!-- =======================================================
+     PERSONAL ARCHIVE
+======================================================= -->
+
+<section class="about-memory">
+
+
+  <figure class="memory-figure">
+
+    <img
+      src="baby.png"
+      class="memory-photo"
+      alt="Childhood photograph of Anaïs playing with a pair of heels"
+    >
+
+    <figcaption class="memory-caption">
+
+      <span>
+        Personal Archive
+      </span>
+
+      <span>
+        Childhood
+      </span>
+
+    </figcaption>
+
+  </figure>
+
+
+  <div class="memory-copy">
+
+    <div class="memory-kicker">
+      Personal Archive
+    </div>
+
+    <div class="memory-quote">
+      Some interests start earlier than expected.
+    </div>
+
+    <div class="memory-script">
+      apparently.
+    </div>
+
+    <div class="memory-meta">
+      An early fascination with shoes.
+    </div>
 
   </div>
 
