@@ -50,46 +50,68 @@ a{
     color:inherit;
 }
 
-/* NAV */
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
 nav{
     position:fixed;
     top:0;
     left:0;
     right:0;
+
     z-index:1000;
+
     height:56px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     padding:0 5vw;
+
     background:rgba(250,248,244,0.96);
+
     backdrop-filter:blur(5px);
     -webkit-backdrop-filter:blur(5px);
+
     border-bottom:0.5px solid var(--rule);
 }
 
 .nav-logo{
     font-family:'Cormorant Garamond',serif;
+
     font-size:12px;
+
     letter-spacing:0.22em;
+
     text-transform:uppercase;
+
     color:var(--ink);
+
     text-decoration:none;
 }
 
 .nav-links{
     display:flex;
+
     gap:28px;
 }
 
 .nav-links a{
     font-family:'Cormorant Garamond',serif;
+
     font-size:11px;
+
     letter-spacing:0.18em;
+
     text-transform:uppercase;
+
     color:var(--muted);
+
     text-decoration:none;
+
     transition:color 0.2s ease;
 }
 
@@ -98,26 +120,41 @@ nav{
     color:var(--ink);
 }
 
-/* HERO */
+
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero{
     position:relative;
+
     width:100%;
+
     height:680px;
     min-height:680px;
+
     margin-top:56px;
+
     overflow:visible;
+
     background:var(--cream);
+
     z-index:10;
 }
 
 .hero::before{
     content:"";
+
     position:absolute;
+
     inset:0;
+
     z-index:0;
+
     pointer-events:none;
+
     opacity:.10;
+
     background-image:
         repeating-linear-gradient(
             0deg,
@@ -128,93 +165,171 @@ nav{
         );
 }
 
+
+/* =========================================================
+   CONTACT SHEET
+========================================================= */
+
 .contact-sheet-wrap{
     position:absolute;
+
     z-index:25;
+
     left:-1%;
     top:3%;
+
     width:24%;
     height:94%;
+
     overflow:visible;
+
     pointer-events:none;
 }
 
 .hero-contact-sheet{
     display:block;
+
     width:100%;
     height:100%;
+
     object-fit:contain;
     object-position:center;
+
     transform:rotate(-4deg);
-    filter:drop-shadow(0 5px 7px rgba(40,30,20,.08));
+
+    filter:
+        drop-shadow(
+            0 5px 7px rgba(40,30,20,.08)
+        );
+
     pointer-events:none;
 }
 
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
 .hero-title-wrap{
     position:absolute;
+
     z-index:50;
+
     left:45%;
     top:52%;
+
     width:42%;
+
     transform:translate(-50%,-50%);
+
     text-align:center;
 }
 
 .hero-title{
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(92px,9vw,142px);
+
     font-weight:300;
     font-style:italic;
+
     line-height:.84;
+
     letter-spacing:-.07em;
+
     color:#100e0c;
+
     white-space:nowrap;
 }
 
 .hero-subtitle{
     margin-top:34px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(13px,1.05vw,17px);
+
     line-height:1.4;
+
     font-style:italic;
+
     letter-spacing:.015em;
+
     color:#71675e;
 }
 
+
+/* =========================================================
+   BOOK
+========================================================= */
+
 .hero-book{
     position:absolute;
+
     z-index:36;
+
     right:-3%;
     bottom:-80px;
+
     width:40%;
     height:auto;
+
     max-width:none;
+
     object-fit:contain;
+
     transform:rotate(-3deg);
-    filter:drop-shadow(0 8px 8px rgba(40,30,20,.08));
+
+    filter:
+        drop-shadow(
+            0 8px 8px rgba(40,30,20,.08)
+        );
+
     pointer-events:none;
 }
+
+
+/* =========================================================
+   WAX SEAL
+========================================================= */
 
 .hero-seal{
     position:absolute;
+
     z-index:46;
+
     right:20%;
     bottom:-90px;
+
     width:12%;
     height:auto;
+
     max-width:none;
+
     object-fit:contain;
+
     transform:rotate(-5deg);
-    filter:drop-shadow(0 6px 7px rgba(70,20,15,.16));
+
+    filter:
+        drop-shadow(
+            0 6px 7px rgba(70,20,15,.16)
+        );
+
     pointer-events:none;
 }
 
-/* STARS */
+
+/* =========================================================
+   STARS
+========================================================= */
 
 .star{
     position:absolute;
+
     z-index:60;
+
     line-height:1;
+
     pointer-events:none;
 }
 
@@ -226,226 +341,454 @@ nav{
     color:#ca3340;
 }
 
-.star-1{left:46%;top:7%;font-size:43px;transform:rotate(7deg);}
-.star-2{left:42%;top:25%;font-size:22px;transform:rotate(-11deg);}
-.star-3{left:5%;top:48%;font-size:22px;transform:rotate(12deg);}
-.star-4{right:18%;top:12%;font-size:29px;transform:rotate(15deg);}
-.star-5{right:5%;top:15%;font-size:20px;transform:rotate(-8deg);}
-.star-6{left:4%;top:66%;font-size:27px;transform:rotate(9deg);}
-.star-7{left:39%;bottom:14%;font-size:19px;transform:rotate(-10deg);}
-.star-8{left:44%;bottom:5%;font-size:21px;transform:rotate(8deg);}
-.star-9{right:33%;bottom:8%;font-size:27px;transform:rotate(-8deg);}
-.star-10{right:30%;top:34%;font-size:20px;transform:rotate(8deg);}
-.star-11{left:55%;top:19%;font-size:16px;transform:rotate(10deg);}
-.star-12{right:23%;top:48%;font-size:17px;transform:rotate(-5deg);}
-.star-13{left:36%;top:11%;font-size:13px;transform:rotate(-8deg);}
-.star-14{left:51%;top:15%;font-size:12px;transform:rotate(12deg);}
-.star-15{left:58%;top:29%;font-size:15px;transform:rotate(-7deg);}
-.star-16{left:52%;top:69%;font-size:13px;transform:rotate(16deg);}
-.star-17{left:61%;bottom:7%;font-size:16px;transform:rotate(-12deg);}
-.star-18{right:27%;top:23%;font-size:11px;transform:rotate(8deg);}
-.star-19{right:8%;top:42%;font-size:15px;transform:rotate(-10deg);}
-.star-20{right:28%;bottom:23%;font-size:12px;transform:rotate(14deg);}
-.star-21{left:47%;top:39%;font-size:11px;transform:rotate(-12deg);}
-.star-22{left:57%;bottom:19%;font-size:10px;transform:rotate(8deg);}
-.star-23{right:12%;top:61%;font-size:13px;transform:rotate(-6deg);}
-.star-24{left:33%;bottom:5%;font-size:12px;transform:rotate(13deg);}
+.star-1{
+    left:46%;
+    top:7%;
+    font-size:43px;
+    transform:rotate(7deg);
+}
 
-/* HERO NOTE */
+.star-2{
+    left:42%;
+    top:25%;
+    font-size:22px;
+    transform:rotate(-11deg);
+}
+
+.star-3{
+    left:5%;
+    top:48%;
+    font-size:22px;
+    transform:rotate(12deg);
+}
+
+.star-4{
+    right:18%;
+    top:12%;
+    font-size:29px;
+    transform:rotate(15deg);
+}
+
+.star-5{
+    right:5%;
+    top:15%;
+    font-size:20px;
+    transform:rotate(-8deg);
+}
+
+.star-6{
+    left:4%;
+    top:66%;
+    font-size:27px;
+    transform:rotate(9deg);
+}
+
+.star-7{
+    left:39%;
+    bottom:14%;
+    font-size:19px;
+    transform:rotate(-10deg);
+}
+
+.star-8{
+    left:44%;
+    bottom:5%;
+    font-size:21px;
+    transform:rotate(8deg);
+}
+
+.star-9{
+    right:33%;
+    bottom:8%;
+    font-size:27px;
+    transform:rotate(-8deg);
+}
+
+.star-10{
+    right:30%;
+    top:34%;
+    font-size:20px;
+    transform:rotate(8deg);
+}
+
+.star-11{
+    left:55%;
+    top:19%;
+    font-size:16px;
+    transform:rotate(10deg);
+}
+
+.star-12{
+    right:23%;
+    top:48%;
+    font-size:17px;
+    transform:rotate(-5deg);
+}
+
+.star-13{
+    left:36%;
+    top:11%;
+    font-size:13px;
+    transform:rotate(-8deg);
+}
+
+.star-14{
+    left:51%;
+    top:15%;
+    font-size:12px;
+    transform:rotate(12deg);
+}
+
+.star-15{
+    left:58%;
+    top:29%;
+    font-size:15px;
+    transform:rotate(-7deg);
+}
+
+.star-16{
+    left:52%;
+    top:69%;
+    font-size:13px;
+    transform:rotate(16deg);
+}
+
+.star-17{
+    left:61%;
+    bottom:7%;
+    font-size:16px;
+    transform:rotate(-12deg);
+}
+
+.star-18{
+    right:27%;
+    top:23%;
+    font-size:11px;
+    transform:rotate(8deg);
+}
+
+.star-19{
+    right:8%;
+    top:42%;
+    font-size:15px;
+    transform:rotate(-10deg);
+}
+
+.star-20{
+    right:28%;
+    bottom:23%;
+    font-size:12px;
+    transform:rotate(14deg);
+}
+
+.star-21{
+    left:47%;
+    top:39%;
+    font-size:11px;
+    transform:rotate(-12deg);
+}
+
+.star-22{
+    left:57%;
+    bottom:19%;
+    font-size:10px;
+    transform:rotate(8deg);
+}
+
+.star-23{
+    right:12%;
+    top:61%;
+    font-size:13px;
+    transform:rotate(-6deg);
+}
+
+.star-24{
+    left:33%;
+    bottom:5%;
+    font-size:12px;
+    transform:rotate(13deg);
+}
+
+
+/* =========================================================
+   HERO NOTE
+========================================================= */
 
 .micro-note{
     position:absolute;
+
     z-index:18;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
     font-style:italic;
+
     color:#a2988f;
+
     letter-spacing:.02em;
+
     pointer-events:none;
 }
 
 .micro-two{
     right:9%;
     bottom:14%;
+
     transform:rotate(4deg);
 }
 
-/* TABI */
+
+/* =========================================================
+   001 — TABI
+========================================================= */
 
 .tabi{
     position:relative;
+
     height:960px;
+
     overflow:visible;
+
     background:var(--cream);
+
     text-align:center;
+
     border-top:none;
     border-bottom:1px solid #ded8ce;
+
     z-index:1;
 }
 
 .tabi::before{
     content:"";
+
     position:absolute;
+
     top:95px;
     left:0;
+
     width:100%;
     height:1px;
+
     background:var(--rule);
+
     z-index:2;
+
     pointer-events:none;
 }
 
+
+/* TABI HEADING */
+
 .tabi-heading{
     position:absolute;
+
     z-index:20;
+
     top:125px;
     left:50%;
+
     width:70%;
+
     transform:translateX(-50%);
 }
 
 .tabi-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
 .tabi-house{
     margin-top:16px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
 }
 
 .tabi-title{
     margin-top:5px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:57px;
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.045em;
 }
 
 .tabi-year{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
 }
 
+
+/* TABI IMAGES */
+
 .tabi-boots{
     position:absolute;
+
     z-index:18;
+
     left:50%;
     top:295px;
+
     width:285px;
     height:360px;
+
     transform:translateX(-50%);
+
     object-fit:contain;
-    filter:drop-shadow(0 12px 10px rgba(55,45,35,.08));
+
+    filter:
+        drop-shadow(
+            0 12px 10px rgba(55,45,35,.08)
+        );
 }
 
 .tabi-vintage{
     position:absolute;
+
     z-index:4;
+
     left:2%;
     bottom:55px;
+
     width:17%;
+
     max-height:390px;
+
     object-fit:cover;
+
     filter:grayscale(1);
+
     opacity:.65;
 }
 
 .tabi-recognition{
     position:absolute;
+
     z-index:13;
+
     left:14%;
     top:340px;
+
     width:180px;
+
     transform:rotate(-4deg);
 }
 
 .tabi-sketch{
     position:absolute;
+
     z-index:4;
+
     right:1%;
     top:285px;
+
     width:25%;
+
     opacity:.3;
 }
 
-.tabi-circle{
-    position:absolute;
-    z-index:14;
-    right:15%;
-    top:460px;
-    width:205px;
-    height:115px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:1px solid rgba(90,80,70,.3);
-    border-radius:50%;
-    transform:rotate(-8deg);
-    font-family:'Cormorant Garamond',serif;
-    font-size:12px;
-    font-style:italic;
-    line-height:1.5;
-    letter-spacing:.07em;
-    color:#6b625a;
-}
+
+/* TABI DETAILS */
 
 .tabi-signature{
     position:absolute;
+
     z-index:15;
+
     right:8%;
     bottom:65px;
+
     font-family:'Corinthia',cursive;
+
     font-size:35px;
+
     line-height:.65;
+
     color:#8a8178;
+
     transform:rotate(-9deg);
 }
 
 .tabi-copy{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:695px;
+
     width:min(610px,70%);
+
     transform:translateX(-50%);
+
     font-family:'EB Garamond',serif;
+
     font-size:16px;
+
     line-height:1.48;
+
     color:#302b27;
 }
 
 .tabi-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .tabi-tags{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:840px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
+
 
 /* =========================================================
    002 — DIOR SADDLE
@@ -453,283 +796,355 @@ nav{
 
 .saddle{
     position:relative;
+
     height:960px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     text-align:center;
+
     border-bottom:1px solid #ded8ce;
+
     z-index:1;
 }
 
 .saddle::before{
     content:"";
+
     position:absolute;
+
     top:0;
     left:0;
+
     width:100%;
     height:1px;
+
     background:var(--rule);
+
     z-index:2;
 }
 
-/* HEADING */
+
+/* DIOR HEADING */
 
 .saddle-heading{
     position:absolute;
+
     z-index:30;
+
     top:70px;
     left:50%;
+
     width:70%;
+
     transform:translateX(-50%);
 }
 
 .saddle-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
 .saddle-house{
     margin-top:16px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
 }
 
 .saddle-title{
     margin-top:5px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:57px;
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.045em;
 }
 
 .saddle-year{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
 }
 
-/* ORIGINAL MAIN SADDLE BAG */
+
+/* MAIN ORIGINAL SADDLE BAG */
 
 .saddle-main{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:265px;
+
     width:390px;
     height:380px;
-    transform:translateX(-50%) rotate(-2deg);
+
+    transform:
+        translateX(-50%)
+        rotate(-2deg);
+
     object-fit:contain;
+
+    background:transparent;
+
     mix-blend-mode:multiply;
-    filter:drop-shadow(0 12px 12px rgba(55,45,35,.07));
+
+    box-shadow:none;
+
+    filter:
+        drop-shadow(
+            0 12px 12px rgba(55,45,35,.07)
+        );
 }
 
-/* LEFT DIOR LOGO */
+
+/* CHRISTIAN DIOR PAPER */
 
 .saddle-logo{
     position:absolute;
+
     z-index:11;
-    left:5%;
-    top:300px;
-    width:25%;
-    max-width:360px;
+
+    left:4%;
+    top:235px;
+
+    width:30%;
+    max-width:430px;
+
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(-6deg);
+
     mix-blend-mode:multiply;
-    filter:drop-shadow(0 5px 7px rgba(50,40,30,.05));
+
+    filter:
+        drop-shadow(
+            0 5px 7px rgba(50,40,30,.05)
+        );
 }
+
 
 /* SMALL SADDLE SKETCH */
 
 .saddle-sketch{
     position:absolute;
+
     z-index:12;
+
     left:10%;
     top:545px;
+
     width:18%;
     max-width:250px;
+
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(5deg);
+
     mix-blend-mode:multiply;
+
     opacity:.65;
 }
+
 
 /* D HARDWARE */
 
 .saddle-hardware{
     position:absolute;
+
     z-index:13;
+
     right:3%;
     top:315px;
+
     width:25%;
     max-width:360px;
+
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(2deg);
+
     mix-blend-mode:multiply;
+
     opacity:.82;
 }
+
 
 /* GALLIANO NOTE */
 
 .saddle-galliano-note{
     position:absolute;
+
     z-index:22;
+
     left:16%;
     top:480px;
+
     font-family:'Corinthia',cursive;
+
     font-size:34px;
+
     line-height:.72;
+
     color:#5f5750;
+
     transform:rotate(-8deg);
+
     text-align:left;
 }
 
 .saddle-galliano-note span{
     display:block;
+
     margin-top:8px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     letter-spacing:.28em;
+
     text-transform:uppercase;
+
     color:#978c82;
 }
 
-/* ASYMMETRIC NOTE */
-
-.saddle-form-note{
-    position:absolute;
-    z-index:22;
-    right:26%;
-    top:500px;
-    font-family:'Cormorant Garamond',serif;
-    font-size:12px;
-    font-style:italic;
-    line-height:1.35;
-    color:#7b7168;
-    transform:rotate(-8deg);
-    text-align:left;
-}
-
-.saddle-form-note::after{
-    content:"↙";
-    display:block;
-    margin-top:2px;
-    margin-left:-8px;
-    font-size:24px;
-    color:#83786f;
-}
-
-/* ARCHIVE OVAL */
-
-.saddle-circle{
-    position:absolute;
-    z-index:14;
-    right:10%;
-    top:590px;
-    width:205px;
-    height:112px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border:1px solid rgba(90,80,70,.28);
-    border-radius:50%;
-    transform:rotate(6deg);
-    font-family:'Cormorant Garamond',serif;
-    font-size:11px;
-    font-style:italic;
-    line-height:1.55;
-    letter-spacing:.08em;
-    color:#6b625a;
-}
 
 /* DESCRIPTION */
 
 .saddle-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:710px;
+
     width:min(610px,70%);
+
     transform:translateX(-50%);
+
     font-family:'EB Garamond',serif;
+
     font-size:16px;
+
     line-height:1.48;
+
     color:#302b27;
 }
 
 .saddle-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
+
 
 /* TAGS */
 
 .saddle-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:850px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
-/* SMALL NOTES */
 
-.saddle-small-note{
-    position:absolute;
-    z-index:20;
-    left:7%;
-    bottom:55px;
-    font-family:'Cormorant Garamond',serif;
-    font-size:10px;
-    font-style:italic;
-    line-height:1.5;
-    color:#a0958b;
-    transform:rotate(-5deg);
-    text-align:left;
-}
+/* RED NOTE */
 
 .saddle-red-note{
     position:absolute;
+
     z-index:20;
+
     right:7%;
     bottom:48px;
+
     font-family:'Corinthia',cursive;
-    font-size:29px;
-    line-height:.8;
+
+    font-size:40px;
+
+    line-height:.78;
+
     color:#a22f34;
+
     transform:rotate(-7deg);
 }
 
-/* OTHER ARCHIVE OBJECTS */
+
+/* =========================================================
+   OTHER ARCHIVE OBJECTS
+========================================================= */
 
 .archive-object{
     min-height:720px;
+
     padding:6rem 8vw;
+
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
     justify-content:center;
+
     text-align:center;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
 }
 
@@ -739,139 +1154,211 @@ nav{
 
 .object-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
 .object-house{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:12px;
+
     letter-spacing:.38em;
+
     text-transform:uppercase;
 }
 
 .object-title{
     margin-top:7px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(43px,4.5vw,65px);
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.04em;
 }
 
 .object-year{
     margin-top:14px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
 }
 
 .object-image{
     width:min(470px,50vw);
+
     height:350px;
+
     margin:35px auto 28px;
+
     object-fit:contain;
 }
 
 .object-copy{
     max-width:590px;
+
     font-size:16px;
+
     line-height:1.55;
+
     color:#3c3631;
 }
 
 .object-copy::after{
     content:"";
+
     display:block;
+
     width:60px;
     height:1px;
+
     margin:23px auto;
+
     background:#92887f;
 }
 
 .object-tags{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.38em;
+
     text-transform:uppercase;
+
     color:#9d9389;
 }
 
-/* ENDING */
+
+/* =========================================================
+   ENDING
+========================================================= */
 
 .archive-ending{
     padding:8rem 8vw;
+
     text-align:center;
+
     background:var(--cream);
 }
 
 .archive-ending small{
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     letter-spacing:.35em;
+
     text-transform:uppercase;
+
     color:#9b8b7b;
 }
 
 .archive-ending h2{
     margin-top:22px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(55px,7vw,95px);
+
     font-weight:300;
     font-style:italic;
+
     line-height:.9;
+
     letter-spacing:-.05em;
 }
 
 .archive-ending p{
     max-width:560px;
+
     margin:30px auto 0;
+
     font-size:16px;
+
     line-height:1.6;
+
     color:#6c645c;
 }
 
-/* FOOTER */
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
     padding:55px 9vw;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:40px;
+
     background:var(--teal);
+
     color:#faf8f4;
 }
 
 .footer-name{
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.22em;
+
     text-transform:uppercase;
 }
 
 .footer-copy{
     max-width:420px;
+
     margin-top:10px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:15px;
+
     font-style:italic;
+
     color:rgba(250,248,244,.55);
 }
 
 .footer-right{
     text-align:right;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     line-height:2;
+
     letter-spacing:.2em;
+
     text-transform:uppercase;
+
     color:rgba(250,248,244,.55);
 }
 
-/* MOBILE */
+
+/* =========================================================
+   MOBILE
+========================================================= */
 
 @media(max-width:800px){
 
@@ -887,15 +1374,20 @@ footer{
         font-size:8.5px;
     }
 
+
+    /* HERO */
+
     .hero{
         height:640px;
         min-height:0;
+
         margin-top:56px;
     }
 
     .hero-title-wrap{
         left:61%;
         top:57%;
+
         width:76%;
     }
 
@@ -905,12 +1397,17 @@ footer{
 
     .hero-subtitle{
         margin-top:25px;
+
         font-size:12px;
     }
+
+
+    /* CONTACT SHEET */
 
     .contact-sheet-wrap{
         left:-7%;
         top:7%;
+
         width:31%;
         height:80%;
     }
@@ -918,25 +1415,32 @@ footer{
     .hero-contact-sheet{
         width:100%;
         height:100%;
+
         object-fit:contain;
+
         transform:rotate(-4deg);
     }
 
     .hero-book{
         right:-18%;
         bottom:-60px;
+
         width:53%;
     }
 
     .hero-seal{
         right:17%;
         bottom:-12px;
+
         width:23%;
     }
 
     .micro-note{
         display:none;
     }
+
+
+    /* STARS */
 
     .star-2,
     .star-3,
@@ -962,38 +1466,47 @@ footer{
     .star-1{
         left:48%;
         top:9%;
+
         font-size:34px;
     }
 
     .star-4{
         right:21%;
         top:19%;
+
         font-size:24px;
     }
 
     .star-6{
         left:4%;
         top:61%;
+
         font-size:21px;
     }
 
     .star-9{
         right:28%;
         bottom:14%;
+
         font-size:23px;
     }
 
     .star-16{
         left:49%;
         top:71%;
+
         font-size:12px;
     }
 
     .star-20{
         right:12%;
         bottom:27%;
+
         font-size:11px;
     }
+
+
+    /* TABI */
 
     .tabi{
         height:860px;
@@ -1009,6 +1522,7 @@ footer{
 
     .tabi-boots{
         top:270px;
+
         width:220px;
         height:300px;
     }
@@ -1020,37 +1534,41 @@ footer{
     .tabi-recognition{
         left:2%;
         top:350px;
+
         width:110px;
     }
 
     .tabi-sketch{
         width:40%;
+
         right:-12%;
         top:275px;
     }
 
-    .tabi-circle{
-        display:none;
-    }
-
     .tabi-signature{
         right:2%;
+
         font-size:27px;
     }
 
     .tabi-copy{
         top:610px;
+
         width:78%;
+
         font-size:14px;
     }
 
     .tabi-tags{
         top:775px;
+
         font-size:6px;
+
         letter-spacing:.25em;
     }
 
-    /* DIOR MOBILE */
+
+    /* DIOR */
 
     .saddle{
         height:880px;
@@ -1058,11 +1576,13 @@ footer{
 
     .saddle-heading{
         top:60px;
+
         width:90%;
     }
 
     .saddle-house{
         font-size:9px;
+
         letter-spacing:.27em;
     }
 
@@ -1072,31 +1592,37 @@ footer{
 
     .saddle-main{
         top:245px;
+
         width:285px;
         height:300px;
     }
 
     .saddle-logo{
-        left:-5%;
-        top:275px;
-        width:38%;
+        left:-3%;
+        top:230px;
+
+        width:45%;
+        max-width:none;
     }
 
     .saddle-sketch{
         left:4%;
         top:485px;
+
         width:30%;
     }
 
     .saddle-hardware{
         right:-2%;
         top:330px;
+
         width:37%;
     }
 
     .saddle-galliano-note{
         left:6%;
         top:435px;
+
         font-size:26px;
     }
 
@@ -1104,49 +1630,46 @@ footer{
         font-size:7px;
     }
 
-    .saddle-form-note{
-        right:14%;
-        top:505px;
-        font-size:9px;
-    }
-
-    .saddle-circle{
-        display:none;
-    }
-
     .saddle-copy{
         top:625px;
+
         width:78%;
+
         font-size:14px;
     }
 
     .saddle-tags{
         top:775px;
-        font-size:6px;
-        letter-spacing:.24em;
-    }
 
-    .saddle-small-note{
-        left:5%;
-        bottom:25px;
-        font-size:8px;
+        font-size:6px;
+
+        letter-spacing:.24em;
     }
 
     .saddle-red-note{
         right:5%;
         bottom:22px;
-        font-size:22px;
+
+        font-size:28px;
     }
+
+
+    /* OTHER OBJECTS */
 
     .archive-object{
         min-height:650px;
+
         padding:5rem 7vw;
     }
 
     .object-image{
         width:76vw;
+
         height:300px;
     }
+
+
+    /* FOOTER */
 
     footer{
         grid-template-columns:1fr;
@@ -1160,7 +1683,13 @@ footer{
 </style>
 </head>
 
+
 <body>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
 <nav>
 
@@ -1195,7 +1724,9 @@ footer{
 </nav>
 
 
-<!-- HERO -->
+<!-- =========================================================
+     ARCHIVE HERO
+========================================================= -->
 
 <section class="hero">
 
@@ -1209,17 +1740,20 @@ footer{
 
     </div>
 
+
     <img
         src="cabinet-book.png"
         class="hero-book"
         alt=""
     >
 
+
     <img
         src="cabinet-seal.png"
         class="hero-seal"
         alt=""
     >
+
 
     <div class="star star-1 black">✳</div>
     <div class="star star-2 pink">✦</div>
@@ -1233,6 +1767,7 @@ footer{
     <div class="star star-10 pink">✦</div>
     <div class="star star-11 pink">✧</div>
     <div class="star star-12 black">✦</div>
+
     <div class="star star-13 black">✦</div>
     <div class="star star-14 pink">✧</div>
     <div class="star star-15 black">✦</div>
@@ -1241,10 +1776,12 @@ footer{
     <div class="star star-18 pink">✦</div>
     <div class="star star-19 black">✧</div>
     <div class="star star-20 pink">✦</div>
+
     <div class="star star-21 black">✦</div>
     <div class="star star-22 pink">✧</div>
     <div class="star star-23 black">✦</div>
     <div class="star star-24 pink">✦</div>
+
 
     <div class="hero-title-wrap">
 
@@ -1258,6 +1795,7 @@ footer{
 
     </div>
 
+
     <div class="micro-note micro-two">
         things worth keeping
     </div>
@@ -1265,9 +1803,12 @@ footer{
 </section>
 
 
-<!-- 001 TABI -->
+<!-- =========================================================
+     001 — MAISON MARGIELA TABI
+========================================================= -->
 
 <section class="tabi">
+
 
     <div class="tabi-heading">
 
@@ -1289,11 +1830,13 @@ footer{
 
     </div>
 
+
     <img
         src="tabi-vintage-photo.png"
         class="tabi-vintage"
         alt=""
     >
+
 
     <img
         src="tabi-recognition-note.png"
@@ -1301,11 +1844,13 @@ footer{
         alt=""
     >
 
+
     <img
         src="tabi-boots.png"
         class="tabi-boots"
         alt="Maison Margiela Tabi boots"
     >
+
 
     <img
         src="tabi-sketch.png"
@@ -1313,37 +1858,44 @@ footer{
         alt=""
     >
 
-    <div class="tabi-circle">
-        AN OBJECT<br>
-        THAT BECAME A<br>
-        LANGUAGE.
-    </div>
 
     <div class="tabi-signature">
+
         Maison<br>
         Martin<br>
         Margiela
+
     </div>
 
+
     <p class="tabi-copy">
+
         What began as a radical split-toe silhouette became one of
         fashion's most recognizable objects. I love the Tabi because
         its identity does not depend on a visible logo. The shape
         itself became the house code.
+
     </p>
 
+
     <div class="tabi-tags">
+
         FORM &nbsp;&nbsp;·&nbsp;&nbsp;
         IDENTITY &nbsp;&nbsp;·&nbsp;&nbsp;
         ANTI-LUXURY
+
     </div>
+
 
 </section>
 
 
-<!-- 002 DIOR SADDLE -->
+<!-- =========================================================
+     002 — DIOR SADDLE
+========================================================= -->
 
 <section class="saddle">
+
 
     <div class="saddle-heading">
 
@@ -1365,13 +1917,15 @@ footer{
 
     </div>
 
-    <!-- LEFT DIOR LABEL -->
+
+    <!-- CHRISTIAN DIOR LABEL -->
 
     <img
         src="cd-logo.jpg"
         class="saddle-logo"
         alt="Christian Dior Paris archival label"
     >
+
 
     <!-- ORIGINAL MAIN SADDLE BAG -->
 
@@ -1381,6 +1935,7 @@ footer{
         alt="Dior Saddle Bag"
     >
 
+
     <!-- SMALL BAG SKETCH -->
 
     <img
@@ -1389,13 +1944,17 @@ footer{
         alt="Dior Saddle Bag sketch"
     >
 
-    <!-- RIGHT D HARDWARE -->
+
+    <!-- D HARDWARE -->
 
     <img
         src="d-hardwear.jpg"
         class="saddle-hardware"
         alt="Dior D hardware sketch"
     >
+
+
+    <!-- GALLIANO -->
 
     <div class="saddle-galliano-note">
 
@@ -1407,43 +1966,45 @@ footer{
 
     </div>
 
-    <div class="saddle-form-note">
-        asymmetric<br>
-        form
-    </div>
 
-    <div class="saddle-circle">
-        AN OBJECT<br>
-        THAT BECAME<br>
-        A CODE.
-    </div>
+    <!-- DESCRIPTION -->
 
     <p class="saddle-copy">
+
         Few accessories demonstrate the power of silhouette as clearly
         as the Saddle. Its asymmetric form turned a handbag into a visual
         code — recognizable before the Dior name is even read.
+
     </p>
 
+
+    <!-- TAGS -->
+
     <div class="saddle-tags">
+
         SILHOUETTE &nbsp;&nbsp;·&nbsp;&nbsp;
         RECOGNITION &nbsp;&nbsp;·&nbsp;&nbsp;
         COLLECTIBILITY
+
     </div>
 
-    <div class="saddle-small-note">
-        iconic since 2000<br>
-        shape before signature
-    </div>
+
+    <!-- RED NOTE -->
 
     <div class="saddle-red-note">
+
         form before<br>
         logo.
+
     </div>
+
 
 </section>
 
 
-<!-- 003 MUGLER -->
+<!-- =========================================================
+     003 — MUGLER
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1470,10 +2031,12 @@ footer{
     >
 
     <p class="object-copy">
+
         What fascinates me about the Chimère gown is that its fantasy
         cannot be separated from the extraordinary work required to
         construct it. It represents fashion at the point where clothing
         begins to behave like sculpture.
+
     </p>
 
     <div class="object-tags">
@@ -1483,7 +2046,9 @@ footer{
 </section>
 
 
-<!-- 004 MCQUEEN -->
+<!-- =========================================================
+     004 — McQUEEN
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1510,9 +2075,11 @@ footer{
     >
 
     <p class="object-copy">
+
         The Armadillo boot pushes the accessory almost beyond
         wearability. Its exaggerated structure changes the body,
         the walk and the silhouette itself.
+
     </p>
 
     <div class="object-tags">
@@ -1522,7 +2089,9 @@ footer{
 </section>
 
 
-<!-- 005 COMME DES GARÇONS -->
+<!-- =========================================================
+     005 — COMME DES GARÇONS
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1550,10 +2119,12 @@ footer{
     >
 
     <p class="object-copy">
+
         Padding appeared in places fashion traditionally tries to
         flatten, narrow or conceal. The collection challenged the
         conventional silhouette and asked where the body ended and
         the garment began.
+
     </p>
 
     <div class="object-tags">
@@ -1563,7 +2134,9 @@ footer{
 </section>
 
 
-<!-- 006 SCHIAPARELLI -->
+<!-- =========================================================
+     006 — SCHIAPARELLI
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1590,10 +2163,12 @@ footer{
     >
 
     <p class="object-copy">
+
         Schiaparelli understood that fashion could participate in the
         same visual conversation as art. The lobster turns an elegant
         evening dress into something strange, humorous and deliberately
         provocative.
+
     </p>
 
     <div class="object-tags">
@@ -1603,7 +2178,9 @@ footer{
 </section>
 
 
-<!-- 007 BIRKIN -->
+<!-- =========================================================
+     007 — BIRKIN
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1630,10 +2207,12 @@ footer{
     >
 
     <p class="object-copy">
+
         The Himalaya Birkin interests me because it demonstrates how
         a luxury object acquires mythology. Material rarity,
         craftsmanship, restricted availability and auction culture
         accumulate around the bag until the object becomes a collectible.
+
     </p>
 
     <div class="object-tags">
@@ -1643,7 +2222,9 @@ footer{
 </section>
 
 
-<!-- 008 GUY BOURDIN -->
+<!-- =========================================================
+     008 — GUY BOURDIN
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1670,10 +2251,12 @@ footer{
     >
 
     <p class="object-copy">
+
         Before I understood fashion photography as an industry,
         I understood the feeling of it: impossible colour, strange
         framing and images in which the product could become almost
         secondary to the world around it.
+
     </p>
 
     <div class="object-tags">
@@ -1683,7 +2266,9 @@ footer{
 </section>
 
 
-<!-- 009 CARTIER -->
+<!-- =========================================================
+     009 — CARTIER
+========================================================= -->
 
 <section class="archive-object">
 
@@ -1710,10 +2295,12 @@ footer{
     >
 
     <p class="object-copy">
+
         I keep coming back to Tutti Frutti because it rejects the
         idea that sophistication must always mean restraint. Carved
         coloured stones and dense ornament become harmonious through
         craftsmanship.
+
     </p>
 
     <div class="object-tags">
@@ -1722,6 +2309,10 @@ footer{
 
 </section>
 
+
+<!-- =========================================================
+     ENDING
+========================================================= -->
 
 <section class="archive-ending">
 
@@ -1735,13 +2326,19 @@ footer{
     </h2>
 
     <p>
+
         These objects do not form a complete history of fashion.
         They form a personal one — pieces, images and ideas I return
         to because each changed the language around it.
+
     </p>
 
 </section>
 
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer>
 
@@ -1757,13 +2354,17 @@ footer{
 
     </div>
 
+
     <div class="footer-right">
+
         ANAISDOROSHINA1@GMAIL.COM<br>
         LINKEDIN<br>
         EST. 2024
+
     </div>
 
 </footer>
+
 
 </body>
 </html>
