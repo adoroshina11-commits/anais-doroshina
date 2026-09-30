@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>The Archive | Anaïs Doroshina</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
 <style>
@@ -46,7 +49,6 @@ img{
 a{
     color:inherit;
 }
-
 
 /* NAV */
 
@@ -95,7 +97,6 @@ nav{
 .nav-links a.active{
     color:var(--ink);
 }
-
 
 /* HERO */
 
@@ -208,7 +209,6 @@ nav{
     pointer-events:none;
 }
 
-
 /* STARS */
 
 .star{
@@ -218,8 +218,13 @@ nav{
     pointer-events:none;
 }
 
-.star.black{color:#171411;}
-.star.pink{color:#ca3340;}
+.star.black{
+    color:#171411;
+}
+
+.star.pink{
+    color:#ca3340;
+}
 
 .star-1{left:46%;top:7%;font-size:43px;transform:rotate(7deg);}
 .star-2{left:42%;top:25%;font-size:22px;transform:rotate(-11deg);}
@@ -246,7 +251,6 @@ nav{
 .star-23{right:12%;top:61%;font-size:13px;transform:rotate(-6deg);}
 .star-24{left:33%;bottom:5%;font-size:12px;transform:rotate(13deg);}
 
-
 /* HERO NOTE */
 
 .micro-note{
@@ -265,7 +269,6 @@ nav{
     bottom:14%;
     transform:rotate(4deg);
 }
-
 
 /* TABI */
 
@@ -444,8 +447,9 @@ nav{
     color:#a0978d;
 }
 
-
-/* DIOR SADDLE */
+/* =========================================================
+   002 — DIOR SADDLE
+========================================================= */
 
 .saddle{
     position:relative;
@@ -467,6 +471,8 @@ nav{
     background:var(--rule);
     z-index:2;
 }
+
+/* HEADING */
 
 .saddle-heading{
     position:absolute;
@@ -509,52 +515,76 @@ nav{
     letter-spacing:.3em;
 }
 
-.saddle-bag{
+/* ORIGINAL MAIN SADDLE BAG */
+
+.saddle-main{
     position:absolute;
-    z-index:18;
+    z-index:20;
     left:50%;
-    top:275px;
-    width:335px;
-    height:auto;
+    top:265px;
+    width:390px;
+    height:380px;
     transform:translateX(-50%) rotate(-2deg);
     object-fit:contain;
     mix-blend-mode:multiply;
-    opacity:.92;
+    filter:drop-shadow(0 12px 12px rgba(55,45,35,.07));
 }
+
+/* LEFT DIOR LOGO */
 
 .saddle-logo{
     position:absolute;
-    z-index:12;
-    left:4%;
-    top:275px;
+    z-index:11;
+    left:5%;
+    top:300px;
     width:25%;
-    max-width:370px;
+    max-width:360px;
     height:auto;
     object-fit:contain;
     transform:rotate(-6deg);
     mix-blend-mode:multiply;
-    filter:drop-shadow(0 5px 7px rgba(50,40,30,.06));
+    filter:drop-shadow(0 5px 7px rgba(50,40,30,.05));
 }
+
+/* SMALL SADDLE SKETCH */
+
+.saddle-sketch{
+    position:absolute;
+    z-index:12;
+    left:10%;
+    top:545px;
+    width:18%;
+    max-width:250px;
+    height:auto;
+    object-fit:contain;
+    transform:rotate(5deg);
+    mix-blend-mode:multiply;
+    opacity:.65;
+}
+
+/* D HARDWARE */
 
 .saddle-hardware{
     position:absolute;
     z-index:13;
-    right:1%;
-    top:300px;
-    width:29%;
-    max-width:430px;
+    right:3%;
+    top:315px;
+    width:25%;
+    max-width:360px;
     height:auto;
     object-fit:contain;
-    transform:rotate(3deg);
+    transform:rotate(2deg);
     mix-blend-mode:multiply;
     opacity:.82;
 }
 
+/* GALLIANO NOTE */
+
 .saddle-galliano-note{
     position:absolute;
     z-index:22;
-    left:15%;
-    top:545px;
+    left:16%;
+    top:480px;
     font-family:'Corinthia',cursive;
     font-size:34px;
     line-height:.72;
@@ -573,11 +603,13 @@ nav{
     color:#978c82;
 }
 
+/* ASYMMETRIC NOTE */
+
 .saddle-form-note{
     position:absolute;
     z-index:22;
-    right:27%;
-    top:515px;
+    right:26%;
+    top:500px;
     font-family:'Cormorant Garamond',serif;
     font-size:12px;
     font-style:italic;
@@ -596,13 +628,15 @@ nav{
     color:#83786f;
 }
 
+/* ARCHIVE OVAL */
+
 .saddle-circle{
     position:absolute;
     z-index:14;
-    right:11%;
-    top:585px;
-    width:210px;
-    height:115px;
+    right:10%;
+    top:590px;
+    width:205px;
+    height:112px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -617,11 +651,13 @@ nav{
     color:#6b625a;
 }
 
+/* DESCRIPTION */
+
 .saddle-copy{
     position:absolute;
     z-index:25;
     left:50%;
-    top:705px;
+    top:710px;
     width:min(610px,70%);
     transform:translateX(-50%);
     font-family:'EB Garamond',serif;
@@ -639,6 +675,8 @@ nav{
     background:#958b81;
 }
 
+/* TAGS */
+
 .saddle-tags{
     position:absolute;
     z-index:25;
@@ -653,11 +691,13 @@ nav{
     color:#a0978d;
 }
 
+/* SMALL NOTES */
+
 .saddle-small-note{
     position:absolute;
     z-index:20;
     left:7%;
-    bottom:70px;
+    bottom:55px;
     font-family:'Cormorant Garamond',serif;
     font-size:10px;
     font-style:italic;
@@ -671,7 +711,7 @@ nav{
     position:absolute;
     z-index:20;
     right:7%;
-    bottom:58px;
+    bottom:48px;
     font-family:'Corinthia',cursive;
     font-size:29px;
     line-height:.8;
@@ -679,8 +719,7 @@ nav{
     transform:rotate(-7deg);
 }
 
-
-/* OTHER OBJECTS */
+/* OTHER ARCHIVE OBJECTS */
 
 .archive-object{
     min-height:720px;
@@ -761,8 +800,7 @@ nav{
     color:#9d9389;
 }
 
-
-/* END */
+/* ENDING */
 
 .archive-ending{
     padding:8rem 8vw;
@@ -795,7 +833,6 @@ nav{
     line-height:1.6;
     color:#6c645c;
 }
-
 
 /* FOOTER */
 
@@ -833,7 +870,6 @@ footer{
     text-transform:uppercase;
     color:rgba(250,248,244,.55);
 }
-
 
 /* MOBILE */
 
@@ -1014,8 +1050,10 @@ footer{
         letter-spacing:.25em;
     }
 
+    /* DIOR MOBILE */
+
     .saddle{
-        height:860px;
+        height:880px;
     }
 
     .saddle-heading{
@@ -1032,35 +1070,34 @@ footer{
         font-size:47px;
     }
 
-    .saddle-year{
-        margin-top:12px;
-    }
-
-    .saddle-bag{
-        top:250px;
-        width:230px;
-        height:auto;
-        transform:translateX(-50%) rotate(-2deg);
+    .saddle-main{
+        top:245px;
+        width:285px;
+        height:300px;
     }
 
     .saddle-logo{
-        left:-4%;
+        left:-5%;
         top:275px;
-        width:39%;
-        max-width:none;
+        width:38%;
+    }
+
+    .saddle-sketch{
+        left:4%;
+        top:485px;
+        width:30%;
     }
 
     .saddle-hardware{
-        right:-7%;
+        right:-2%;
         top:330px;
-        width:42%;
-        max-width:none;
+        width:37%;
     }
 
     .saddle-galliano-note{
-        left:5%;
-        top:500px;
-        font-size:27px;
+        left:6%;
+        top:435px;
+        font-size:26px;
     }
 
     .saddle-galliano-note span{
@@ -1068,8 +1105,8 @@ footer{
     }
 
     .saddle-form-note{
-        right:13%;
-        top:510px;
+        right:14%;
+        top:505px;
         font-size:9px;
     }
 
@@ -1078,14 +1115,13 @@ footer{
     }
 
     .saddle-copy{
-        top:615px;
+        top:625px;
         width:78%;
         font-size:14px;
     }
 
     .saddle-tags{
-        top:760px;
-        bottom:auto;
+        top:775px;
         font-size:6px;
         letter-spacing:.24em;
     }
@@ -1159,14 +1195,18 @@ footer{
 </nav>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
     <div class="contact-sheet-wrap">
+
         <img
             src="archive-contact-sheet.png"
             class="hero-contact-sheet"
             alt="Black and white archival fashion contact sheet"
         >
+
     </div>
 
     <img
@@ -1224,6 +1264,8 @@ footer{
 
 </section>
 
+
+<!-- 001 TABI -->
 
 <section class="tabi">
 
@@ -1299,6 +1341,8 @@ footer{
 </section>
 
 
+<!-- 002 DIOR SADDLE -->
+
 <section class="saddle">
 
     <div class="saddle-heading">
@@ -1321,30 +1365,46 @@ footer{
 
     </div>
 
+    <!-- LEFT DIOR LABEL -->
+
     <img
         src="cd-logo.jpg"
         class="saddle-logo"
         alt="Christian Dior Paris archival label"
     >
 
+    <!-- ORIGINAL MAIN SADDLE BAG -->
+
+    <img
+        src="archive-saddle.jpg"
+        class="saddle-main"
+        alt="Dior Saddle Bag"
+    >
+
+    <!-- SMALL BAG SKETCH -->
+
     <img
         src="cd-bag.jpg"
-        class="saddle-bag"
+        class="saddle-sketch"
         alt="Dior Saddle Bag sketch"
     >
 
+    <!-- RIGHT D HARDWARE -->
+
     <img
-        src="cd-hardwear.jpg"
+        src="d-hardwear.jpg"
         class="saddle-hardware"
-        alt="Dior Saddle Bag D hardware sketch"
+        alt="Dior D hardware sketch"
     >
 
     <div class="saddle-galliano-note">
+
         Galliano
 
         <span>
             SS00
         </span>
+
     </div>
 
     <div class="saddle-form-note">
@@ -1382,6 +1442,8 @@ footer{
 
 </section>
 
+
+<!-- 003 MUGLER -->
 
 <section class="archive-object">
 
@@ -1421,6 +1483,8 @@ footer{
 </section>
 
 
+<!-- 004 MCQUEEN -->
+
 <section class="archive-object">
 
     <div class="object-number">
@@ -1457,6 +1521,8 @@ footer{
 
 </section>
 
+
+<!-- 005 COMME DES GARÇONS -->
 
 <section class="archive-object">
 
@@ -1497,6 +1563,8 @@ footer{
 </section>
 
 
+<!-- 006 SCHIAPARELLI -->
+
 <section class="archive-object">
 
     <div class="object-number">
@@ -1534,6 +1602,8 @@ footer{
 
 </section>
 
+
+<!-- 007 BIRKIN -->
 
 <section class="archive-object">
 
@@ -1573,6 +1643,8 @@ footer{
 </section>
 
 
+<!-- 008 GUY BOURDIN -->
+
 <section class="archive-object">
 
     <div class="object-number">
@@ -1610,6 +1682,8 @@ footer{
 
 </section>
 
+
+<!-- 009 CARTIER -->
 
 <section class="archive-object">
 
