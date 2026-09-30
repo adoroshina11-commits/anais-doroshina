@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,6 +11,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
 <style>
+
+/* =========================================================
+   BASE
+========================================================= */
 
 *{
     margin:0;
@@ -84,7 +89,7 @@ nav{
 
     font-size:12px;
 
-    letter-spacing:0.22em;
+    letter-spacing:.22em;
 
     text-transform:uppercase;
 
@@ -95,7 +100,6 @@ nav{
 
 .nav-links{
     display:flex;
-
     gap:28px;
 }
 
@@ -104,7 +108,7 @@ nav{
 
     font-size:11px;
 
-    letter-spacing:0.18em;
+    letter-spacing:.18em;
 
     text-transform:uppercase;
 
@@ -112,7 +116,7 @@ nav{
 
     text-decoration:none;
 
-    transition:color 0.2s ease;
+    transition:color .2s ease;
 }
 
 .nav-links a:hover,
@@ -146,7 +150,6 @@ nav{
     content:"";
 
     position:absolute;
-
     inset:0;
 
     z-index:0;
@@ -197,10 +200,9 @@ nav{
 
     transform:rotate(-4deg);
 
-    filter:
-        drop-shadow(
-            0 5px 7px rgba(40,30,20,.08)
-        );
+    filter:drop-shadow(
+        0 5px 7px rgba(40,30,20,.08)
+    );
 
     pointer-events:none;
 }
@@ -280,10 +282,9 @@ nav{
 
     transform:rotate(-3deg);
 
-    filter:
-        drop-shadow(
-            0 8px 8px rgba(40,30,20,.08)
-        );
+    filter:drop-shadow(
+        0 8px 8px rgba(40,30,20,.08)
+    );
 
     pointer-events:none;
 }
@@ -310,10 +311,9 @@ nav{
 
     transform:rotate(-5deg);
 
-    filter:
-        drop-shadow(
-            0 6px 7px rgba(70,20,15,.16)
-        );
+    filter:drop-shadow(
+        0 6px 7px rgba(70,20,15,.16)
+    );
 
     pointer-events:none;
 }
@@ -325,7 +325,6 @@ nav{
 
 .star{
     position:absolute;
-
     z-index:60;
 
     line-height:1;
@@ -511,7 +510,7 @@ nav{
 
 
 /* =========================================================
-   HERO NOTE
+   SMALL HERO NOTE
 ========================================================= */
 
 .micro-note{
@@ -554,7 +553,6 @@ nav{
 
     text-align:center;
 
-    border-top:none;
     border-bottom:1px solid #ded8ce;
 
     z-index:1;
@@ -577,9 +575,6 @@ nav{
 
     pointer-events:none;
 }
-
-
-/* TABI HEADING */
 
 .tabi-heading{
     position:absolute;
@@ -641,9 +636,6 @@ nav{
     letter-spacing:.3em;
 }
 
-
-/* TABI IMAGES */
-
 .tabi-boots{
     position:absolute;
 
@@ -659,10 +651,9 @@ nav{
 
     object-fit:contain;
 
-    filter:
-        drop-shadow(
-            0 12px 10px rgba(55,45,35,.08)
-        );
+    filter:drop-shadow(
+        0 12px 10px rgba(55,45,35,.08)
+    );
 }
 
 .tabi-vintage{
@@ -674,7 +665,6 @@ nav{
     bottom:55px;
 
     width:17%;
-
     max-height:390px;
 
     object-fit:cover;
@@ -710,9 +700,6 @@ nav{
     opacity:.3;
 }
 
-
-/* TABI DETAILS */
-
 .tabi-signature{
     position:absolute;
 
@@ -743,8 +730,6 @@ nav{
     width:min(610px,70%);
 
     transform:translateX(-50%);
-
-    font-family:'EB Garamond',serif;
 
     font-size:16px;
 
@@ -826,9 +811,6 @@ nav{
     z-index:2;
 }
 
-
-/* DIOR HEADING */
-
 .saddle-heading{
     position:absolute;
 
@@ -889,9 +871,6 @@ nav{
     letter-spacing:.3em;
 }
 
-
-/* MAIN ORIGINAL SADDLE BAG */
-
 .saddle-main{
     position:absolute;
 
@@ -913,16 +892,10 @@ nav{
 
     mix-blend-mode:multiply;
 
-    box-shadow:none;
-
-    filter:
-        drop-shadow(
-            0 12px 12px rgba(55,45,35,.07)
-        );
+    filter:drop-shadow(
+        0 12px 12px rgba(55,45,35,.07)
+    );
 }
-
-
-/* CHRISTIAN DIOR PAPER */
 
 .saddle-logo{
     position:absolute;
@@ -943,14 +916,10 @@ nav{
 
     mix-blend-mode:multiply;
 
-    filter:
-        drop-shadow(
-            0 5px 7px rgba(50,40,30,.05)
-        );
+    filter:drop-shadow(
+        0 5px 7px rgba(50,40,30,.05)
+    );
 }
-
-
-/* SMALL SADDLE SKETCH */
 
 .saddle-sketch{
     position:absolute;
@@ -974,9 +943,6 @@ nav{
     opacity:.65;
 }
 
-
-/* D HARDWARE */
-
 .saddle-hardware{
     position:absolute;
 
@@ -998,9 +964,6 @@ nav{
 
     opacity:.82;
 }
-
-
-/* GALLIANO NOTE */
 
 .saddle-galliano-note{
     position:absolute;
@@ -1039,9 +1002,6 @@ nav{
     color:#978c82;
 }
 
-
-/* DESCRIPTION */
-
 .saddle-copy{
     position:absolute;
 
@@ -1053,8 +1013,6 @@ nav{
     width:min(610px,70%);
 
     transform:translateX(-50%);
-
-    font-family:'EB Garamond',serif;
 
     font-size:16px;
 
@@ -1075,9 +1033,6 @@ nav{
 
     background:#958b81;
 }
-
-
-/* TAGS */
 
 .saddle-tags{
     position:absolute;
@@ -1101,9 +1056,6 @@ nav{
 
     color:#a0978d;
 }
-
-
-/* RED NOTE */
 
 .saddle-red-note{
     position:absolute;
@@ -1142,9 +1094,6 @@ nav{
 
     border-bottom:1px solid var(--rule);
 }
-
-
-/* MUGLER HEADING */
 
 .mugler-heading{
     position:absolute;
@@ -1208,9 +1157,6 @@ nav{
     color:#6f675f;
 }
 
-
-/* MAIN MUGLER IMAGE */
-
 .mugler-main{
     position:absolute;
 
@@ -1226,14 +1172,10 @@ nav{
 
     object-fit:cover;
 
-    filter:
-        drop-shadow(
-            0 15px 18px rgba(40,30,20,.10)
-        );
+    filter:drop-shadow(
+        0 15px 18px rgba(40,30,20,.10)
+    );
 }
-
-
-/* GHOSTED ARCHIVAL CROP */
 
 .mugler-ghost{
     position:absolute;
@@ -1259,15 +1201,10 @@ nav{
 
     object-fit:cover;
 
-    object-position:center;
-
     filter:
         grayscale(1)
         contrast(.9);
 }
-
-
-/* ARCHIVE LABEL */
 
 .mugler-label{
     position:absolute;
@@ -1294,9 +1231,6 @@ nav{
     transform:rotate(-6deg);
 }
 
-
-/* VERTICAL COUTURE TEXT */
-
 .mugler-vertical{
     position:absolute;
 
@@ -1317,9 +1251,6 @@ nav{
 
     color:#9e9287;
 }
-
-
-/* HANDWRITTEN NOTE */
 
 .mugler-script{
     position:absolute;
@@ -1342,9 +1273,6 @@ nav{
     transform:rotate(-8deg);
 }
 
-
-/* DESCRIPTION */
-
 .mugler-copy{
     position:absolute;
 
@@ -1356,8 +1284,6 @@ nav{
     width:min(620px,70%);
 
     transform:translateX(-50%);
-
-    font-family:'EB Garamond',serif;
 
     font-size:16px;
 
@@ -1378,9 +1304,6 @@ nav{
 
     background:#958b81;
 }
-
-
-/* TAGS */
 
 .mugler-tags{
     position:absolute;
@@ -1407,33 +1330,15 @@ nav{
 
 
 /* =========================================================
-   OTHER ARCHIVE OBJECTS
+   SHARED HEADINGS 004–009
 ========================================================= */
 
-.archive-object{
-    min-height:720px;
-
-    padding:6rem 8vw;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    background:var(--cream);
-
-    border-bottom:1px solid var(--rule);
-}
-
-.archive-object:nth-of-type(even){
-    background:var(--cream);
-}
-
-.object-number{
+.mcqueen-number,
+.cdg-number,
+.schiap-number,
+.birkin-number,
+.bourdin-number,
+.cartier-number{
     font-family:'Cormorant Garamond',serif;
 
     font-size:8px;
@@ -1443,86 +1348,1316 @@ nav{
     color:#998b7c;
 }
 
-.object-house{
-    margin-top:15px;
+.mcqueen-house,
+.cdg-house,
+.schiap-house,
+.birkin-house,
+.bourdin-house,
+.cartier-house{
+    margin-top:16px;
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:12px;
+    font-size:13px;
 
-    letter-spacing:.38em;
+    letter-spacing:.4em;
 
     text-transform:uppercase;
 }
 
-.object-title{
-    margin-top:7px;
+.mcqueen-title,
+.cdg-title,
+.schiap-title,
+.birkin-title,
+.bourdin-title,
+.cartier-title{
+    margin-top:5px;
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:clamp(43px,4.5vw,65px);
+    font-size:59px;
 
     font-weight:300;
     font-style:italic;
 
     line-height:.95;
 
-    letter-spacing:-.04em;
+    letter-spacing:-.045em;
 }
 
-.object-year{
-    margin-top:14px;
+.mcqueen-year,
+.cdg-year,
+.schiap-year,
+.birkin-year,
+.bourdin-year,
+.cartier-year{
+    margin-top:15px;
 
     font-family:'Cormorant Garamond',serif;
 
     font-size:8px;
 
     letter-spacing:.3em;
+
+    color:#70675f;
 }
 
-.object-image{
-    width:min(470px,50vw);
 
-    height:350px;
+/* =========================================================
+   004 — McQUEEN / ARMADILLO
+========================================================= */
 
-    margin:35px auto 28px;
+.mcqueen{
+    position:relative;
+
+    height:960px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--rule);
+
+    text-align:center;
+}
+
+.mcqueen-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:72px;
+    left:50%;
+
+    width:72%;
+
+    transform:translateX(-50%);
+}
+
+.mcqueen-main{
+    position:absolute;
+
+    z-index:20;
+
+    left:52%;
+    top:270px;
+
+    width:310px;
+    height:405px;
+
+    transform:
+        translateX(-50%)
+        rotate(3deg);
 
     object-fit:contain;
+
+    mix-blend-mode:multiply;
+
+    filter:drop-shadow(
+        0 15px 18px rgba(40,30,20,.09)
+    );
 }
 
-.object-copy{
-    max-width:590px;
+.mcqueen-ghost{
+    position:absolute;
 
-    font-size:16px;
+    z-index:3;
 
-    line-height:1.55;
+    right:-4%;
+    top:245px;
 
-    color:#3c3631;
+    width:30%;
+    height:470px;
+
+    overflow:hidden;
+
+    opacity:.10;
+
+    transform:rotate(8deg);
 }
 
-.object-copy::after{
-    content:"";
+.mcqueen-ghost img{
+    width:120%;
+    height:100%;
 
-    display:block;
+    object-fit:cover;
 
-    width:60px;
-    height:1px;
-
-    margin:23px auto;
-
-    background:#92887f;
+    filter:grayscale(1);
 }
 
-.object-tags{
+.mcqueen-vertical{
+    position:absolute;
+
+    z-index:15;
+
+    left:7%;
+    top:310px;
+
+    writing-mode:vertical-rl;
+
+    transform:rotate(180deg);
+
     font-family:'Cormorant Garamond',serif;
 
     font-size:8px;
 
-    letter-spacing:.38em;
+    letter-spacing:.4em;
+
+    color:#988d84;
+}
+
+.mcqueen-label{
+    position:absolute;
+
+    z-index:15;
+
+    left:14%;
+    top:405px;
+
+    padding:13px 16px;
+
+    border:1px solid rgba(80,70,60,.24);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    line-height:1.7;
+
+    letter-spacing:.25em;
+
+    color:#756c65;
+
+    transform:rotate(-6deg);
+}
+
+.mcqueen-script{
+    position:absolute;
+
+    z-index:24;
+
+    right:9%;
+    top:505px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:39px;
+
+    line-height:.72;
+
+    text-align:left;
+
+    color:#9d3038;
+
+    transform:rotate(-7deg);
+}
+
+.mcqueen-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:730px;
+
+    width:min(610px,70%);
+
+    transform:translateX(-50%);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.mcqueen-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+.mcqueen-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:870px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
 
     text-transform:uppercase;
 
-    color:#9d9389;
+    color:#a0978d;
+}
+
+
+/* =========================================================
+   005 — COMME DES GARÇONS
+========================================================= */
+
+.cdg{
+    position:relative;
+
+    height:980px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--rule);
+
+    text-align:center;
+}
+
+.cdg-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:70px;
+    left:50%;
+
+    width:80%;
+
+    transform:translateX(-50%);
+}
+
+.cdg-title{
+    font-size:54px;
+}
+
+.cdg-big-number{
+    position:absolute;
+
+    z-index:1;
+
+    left:2%;
+    top:220px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:250px;
+    font-weight:300;
+
+    line-height:.8;
+
+    color:rgba(40,30,20,.035);
+}
+
+.cdg-main{
+    position:absolute;
+
+    z-index:20;
+
+    left:43%;
+    top:285px;
+
+    width:310px;
+    height:405px;
+
+    transform:
+        translateX(-50%)
+        rotate(-2deg);
+
+    object-fit:cover;
+}
+
+.cdg-ghost{
+    position:absolute;
+
+    z-index:4;
+
+    right:5%;
+    top:310px;
+
+    width:25%;
+    height:380px;
+
+    overflow:hidden;
+
+    opacity:.18;
+
+    transform:rotate(4deg);
+}
+
+.cdg-ghost img{
+    width:120%;
+    height:100%;
+
+    object-fit:cover;
+
+    filter:grayscale(1);
+}
+
+.cdg-line{
+    position:absolute;
+
+    z-index:10;
+
+    left:11%;
+    top:400px;
+
+    width:180px;
+    height:1px;
+
+    background:#a99f95;
+
+    transform:rotate(-7deg);
+}
+
+.cdg-line::before,
+.cdg-line::after{
+    content:"";
+
+    position:absolute;
+
+    top:-4px;
+
+    width:1px;
+    height:9px;
+
+    background:#a99f95;
+}
+
+.cdg-line::before{
+    left:0;
+}
+
+.cdg-line::after{
+    right:0;
+}
+
+.cdg-measure{
+    position:absolute;
+
+    z-index:12;
+
+    left:12%;
+    top:420px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:9px;
+    font-style:italic;
+
+    letter-spacing:.1em;
+
+    color:#81776f;
+
+    transform:rotate(-7deg);
+}
+
+.cdg-script{
+    position:absolute;
+
+    z-index:24;
+
+    right:9%;
+    top:555px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:39px;
+
+    line-height:.75;
+
+    color:#6c3437;
+
+    transform:rotate(6deg);
+
+    text-align:left;
+}
+
+.cdg-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:750px;
+
+    width:min(620px,70%);
+
+    transform:translateX(-50%);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.cdg-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+.cdg-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:890px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+
+    color:#a0978d;
+}
+
+
+/* =========================================================
+   006 — SCHIAPARELLI
+========================================================= */
+
+.schiap{
+    position:relative;
+
+    height:960px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--rule);
+
+    text-align:center;
+}
+
+.schiap-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:72px;
+    left:50%;
+
+    width:80%;
+
+    transform:translateX(-50%);
+}
+
+.schiap-main{
+    position:absolute;
+
+    z-index:20;
+
+    left:50%;
+    top:270px;
+
+    width:305px;
+    height:410px;
+
+    transform:translateX(-50%);
+
+    object-fit:contain;
+
+    mix-blend-mode:multiply;
+}
+
+.schiap-ghost{
+    position:absolute;
+
+    z-index:3;
+
+    right:-3%;
+    top:285px;
+
+    width:27%;
+    height:430px;
+
+    overflow:hidden;
+
+    opacity:.13;
+
+    transform:rotate(6deg);
+}
+
+.schiap-ghost img{
+    width:135%;
+    height:100%;
+
+    object-fit:cover;
+
+    filter:grayscale(1);
+}
+
+.schiap-card{
+    position:absolute;
+
+    z-index:15;
+
+    left:10%;
+    top:330px;
+
+    padding:17px 21px;
+
+    background:#f2ebe1;
+
+    border:1px solid #d9cfc2;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:9px;
+
+    line-height:1.7;
+
+    letter-spacing:.32em;
+
+    transform:rotate(-7deg);
+
+    color:#75685e;
+}
+
+.schiap-lobster{
+    position:absolute;
+
+    z-index:12;
+
+    left:10%;
+    top:500px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:12px;
+    font-style:italic;
+
+    letter-spacing:.2em;
+
+    color:#ac3338;
+
+    transform:rotate(-8deg);
+}
+
+.schiap-script{
+    position:absolute;
+
+    z-index:24;
+
+    right:8%;
+    top:500px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:37px;
+
+    line-height:.76;
+
+    color:#a92f38;
+
+    text-align:left;
+
+    transform:rotate(-5deg);
+}
+
+.schiap-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:730px;
+
+    width:min(610px,70%);
+
+    transform:translateX(-50%);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.schiap-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+.schiap-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:870px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+
+    color:#a0978d;
+}
+
+
+/* =========================================================
+   007 — HIMALAYA BIRKIN
+========================================================= */
+
+.birkin{
+    position:relative;
+
+    height:940px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--rule);
+
+    text-align:center;
+}
+
+.birkin-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:75px;
+    left:50%;
+
+    width:75%;
+
+    transform:translateX(-50%);
+}
+
+.birkin-lot-number{
+    position:absolute;
+
+    z-index:1;
+
+    right:5%;
+    top:210px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:230px;
+
+    line-height:1;
+
+    color:rgba(45,35,25,.035);
+}
+
+.birkin-main{
+    position:absolute;
+
+    z-index:20;
+
+    left:50%;
+    top:280px;
+
+    width:390px;
+    height:360px;
+
+    transform:translateX(-50%);
+
+    object-fit:contain;
+
+    mix-blend-mode:multiply;
+
+    filter:drop-shadow(
+        0 12px 15px rgba(55,45,35,.06)
+    );
+}
+
+.birkin-detail{
+    position:absolute;
+
+    z-index:5;
+
+    left:5%;
+    top:330px;
+
+    width:22%;
+    height:280px;
+
+    overflow:hidden;
+
+    opacity:.26;
+
+    transform:rotate(-5deg);
+}
+
+.birkin-detail img{
+    width:165%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+}
+
+.birkin-card{
+    position:absolute;
+
+    z-index:15;
+
+    right:8%;
+    top:345px;
+
+    width:165px;
+
+    padding:18px;
+
+    border:1px solid #cfc5ba;
+
+    text-align:left;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    line-height:1.8;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    color:#7c7168;
+}
+
+.birkin-card strong{
+    display:block;
+
+    margin-bottom:7px;
+
+    font-size:11px;
+
+    font-weight:400;
+
+    color:#302a26;
+}
+
+.birkin-script{
+    position:absolute;
+
+    z-index:22;
+
+    right:8%;
+    top:570px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:37px;
+
+    line-height:.75;
+
+    color:#78665b;
+
+    transform:rotate(-6deg);
+
+    text-align:left;
+}
+
+.birkin-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:700px;
+
+    width:min(620px,70%);
+
+    transform:translateX(-50%);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.birkin-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+.birkin-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:840px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+
+    color:#a0978d;
+}
+
+
+/* =========================================================
+   008 — GUY BOURDIN
+========================================================= */
+
+.bourdin{
+    position:relative;
+
+    height:1000px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--rule);
+
+    text-align:center;
+}
+
+.bourdin-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:70px;
+    left:50%;
+
+    width:82%;
+
+    transform:translateX(-50%);
+}
+
+.bourdin-title{
+    font-size:55px;
+}
+
+.bourdin-main{
+    position:absolute;
+
+    z-index:15;
+
+    left:50%;
+    top:265px;
+
+    width:48%;
+    height:445px;
+
+    transform:translateX(-50%);
+
+    object-fit:cover;
+
+    filter:drop-shadow(
+        0 13px 16px rgba(30,20,15,.08)
+    );
+}
+
+.bourdin-ghost{
+    position:absolute;
+
+    z-index:3;
+
+    left:-5%;
+    top:290px;
+
+    width:30%;
+    height:410px;
+
+    overflow:hidden;
+
+    opacity:.16;
+
+    transform:rotate(-6deg);
+}
+
+.bourdin-ghost img{
+    width:150%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.bourdin-frame-number{
+    position:absolute;
+
+    z-index:22;
+
+    right:12%;
+    top:330px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:10px;
+
+    letter-spacing:.35em;
+
+    color:#81756c;
+
+    transform:rotate(5deg);
+}
+
+.bourdin-script{
+    position:absolute;
+
+    z-index:22;
+
+    right:8%;
+    top:510px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:41px;
+
+    line-height:.73;
+
+    text-align:left;
+
+    color:#9f333b;
+
+    transform:rotate(-6deg);
+}
+
+.bourdin-caption{
+    position:absolute;
+
+    z-index:22;
+
+    left:15%;
+    top:670px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:9px;
+    font-style:italic;
+
+    line-height:1.5;
+
+    color:#81786f;
+
+    transform:rotate(-3deg);
+
+    text-align:left;
+}
+
+.bourdin-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:765px;
+
+    width:min(620px,70%);
+
+    transform:translateX(-50%);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.bourdin-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+.bourdin-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:905px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+
+    color:#a0978d;
+}
+
+
+/* =========================================================
+   009 — CARTIER / TUTTI FRUTTI
+========================================================= */
+
+.cartier{
+    position:relative;
+
+    height:980px;
+
+    overflow:hidden;
+
+    background:var(--cream);
+
+    border-bottom:1px solid var(--rule);
+
+    text-align:center;
+}
+
+.cartier-heading{
+    position:absolute;
+
+    z-index:30;
+
+    top:72px;
+    left:50%;
+
+    width:80%;
+
+    transform:translateX(-50%);
+}
+
+.cartier-main{
+    position:absolute;
+
+    z-index:20;
+
+    left:50%;
+    top:275px;
+
+    width:390px;
+    height:390px;
+
+    transform:translateX(-50%);
+
+    object-fit:contain;
+
+    mix-blend-mode:multiply;
+}
+
+.cartier-detail{
+    position:absolute;
+
+    z-index:4;
+
+    left:-2%;
+    top:330px;
+
+    width:26%;
+    height:340px;
+
+    overflow:hidden;
+
+    opacity:.22;
+
+    transform:rotate(-5deg);
+}
+
+.cartier-detail img{
+    width:155%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.cartier-route{
+    position:absolute;
+
+    z-index:20;
+
+    right:8%;
+    top:330px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:10px;
+
+    letter-spacing:.3em;
+
+    color:#756d66;
+
+    transform:rotate(5deg);
+}
+
+.cartier-gem{
+    position:absolute;
+
+    z-index:12;
+
+    width:9px;
+    height:9px;
+
+    border-radius:50%;
+
+    opacity:.68;
+}
+
+.cartier-gem.one{
+    right:17%;
+    top:420px;
+    background:#92343e;
+}
+
+.cartier-gem.two{
+    right:13%;
+    top:450px;
+    background:#376753;
+}
+
+.cartier-gem.three{
+    right:19%;
+    top:475px;
+    background:#304d6c;
+}
+
+.cartier-gem.four{
+    right:11%;
+    top:500px;
+    background:#a06439;
+}
+
+.cartier-script{
+    position:absolute;
+
+    z-index:23;
+
+    right:7%;
+    top:545px;
+
+    font-family:'Corinthia',cursive;
+
+    font-size:40px;
+
+    line-height:.74;
+
+    color:#9d3038;
+
+    text-align:left;
+
+    transform:rotate(-7deg);
+}
+
+.cartier-copy{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:745px;
+
+    width:min(620px,70%);
+
+    transform:translateX(-50%);
+
+    font-size:16px;
+
+    line-height:1.5;
+
+    color:#302b27;
+}
+
+.cartier-copy::after{
+    content:"";
+
+    display:block;
+
+    width:65px;
+    height:1px;
+
+    margin:22px auto;
+
+    background:#958b81;
+}
+
+.cartier-tags{
+    position:absolute;
+
+    z-index:25;
+
+    left:50%;
+    top:885px;
+
+    transform:translateX(-50%);
+
+    white-space:nowrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:8px;
+
+    letter-spacing:.4em;
+
+    text-transform:uppercase;
+
+    color:#a0978d;
 }
 
 
@@ -1661,14 +2796,12 @@ footer{
     .hero{
         height:640px;
         min-height:0;
-
         margin-top:56px;
     }
 
     .hero-title-wrap{
         left:61%;
         top:57%;
-
         width:76%;
     }
 
@@ -1678,17 +2811,12 @@ footer{
 
     .hero-subtitle{
         margin-top:25px;
-
         font-size:12px;
     }
-
-
-    /* CONTACT SHEET */
 
     .contact-sheet-wrap{
         left:-7%;
         top:7%;
-
         width:31%;
         height:80%;
     }
@@ -1696,23 +2824,19 @@ footer{
     .hero-contact-sheet{
         width:100%;
         height:100%;
-
         object-fit:contain;
-
         transform:rotate(-4deg);
     }
 
     .hero-book{
         right:-18%;
         bottom:-60px;
-
         width:53%;
     }
 
     .hero-seal{
         right:17%;
         bottom:-12px;
-
         width:23%;
     }
 
@@ -1747,42 +2871,36 @@ footer{
     .star-1{
         left:48%;
         top:9%;
-
         font-size:34px;
     }
 
     .star-4{
         right:21%;
         top:19%;
-
         font-size:24px;
     }
 
     .star-6{
         left:4%;
         top:61%;
-
         font-size:21px;
     }
 
     .star-9{
         right:28%;
         bottom:14%;
-
         font-size:23px;
     }
 
     .star-16{
         left:49%;
         top:71%;
-
         font-size:12px;
     }
 
     .star-20{
         right:12%;
         bottom:27%;
-
         font-size:11px;
     }
 
@@ -1803,7 +2921,6 @@ footer{
 
     .tabi-boots{
         top:270px;
-
         width:220px;
         height:300px;
     }
@@ -1815,36 +2932,29 @@ footer{
     .tabi-recognition{
         left:2%;
         top:350px;
-
         width:110px;
     }
 
     .tabi-sketch{
         width:40%;
-
         right:-12%;
         top:275px;
     }
 
     .tabi-signature{
         right:2%;
-
         font-size:27px;
     }
 
     .tabi-copy{
         top:610px;
-
         width:78%;
-
         font-size:14px;
     }
 
     .tabi-tags{
         top:775px;
-
         font-size:6px;
-
         letter-spacing:.25em;
     }
 
@@ -1857,13 +2967,11 @@ footer{
 
     .saddle-heading{
         top:60px;
-
         width:90%;
     }
 
     .saddle-house{
         font-size:9px;
-
         letter-spacing:.27em;
     }
 
@@ -1873,7 +2981,6 @@ footer{
 
     .saddle-main{
         top:245px;
-
         width:285px;
         height:300px;
     }
@@ -1881,7 +2988,6 @@ footer{
     .saddle-logo{
         left:-3%;
         top:230px;
-
         width:45%;
         max-width:none;
     }
@@ -1889,21 +2995,18 @@ footer{
     .saddle-sketch{
         left:4%;
         top:485px;
-
         width:30%;
     }
 
     .saddle-hardware{
         right:-2%;
         top:330px;
-
         width:37%;
     }
 
     .saddle-galliano-note{
         left:6%;
         top:435px;
-
         font-size:26px;
     }
 
@@ -1913,24 +3016,19 @@ footer{
 
     .saddle-copy{
         top:625px;
-
         width:78%;
-
         font-size:14px;
     }
 
     .saddle-tags{
         top:775px;
-
         font-size:6px;
-
         letter-spacing:.24em;
     }
 
     .saddle-red-note{
         right:5%;
         bottom:22px;
-
         font-size:28px;
     }
 
@@ -1943,7 +3041,6 @@ footer{
 
     .mugler-heading{
         top:60px;
-
         width:90%;
     }
 
@@ -1953,13 +3050,11 @@ footer{
 
     .mugler-house{
         font-size:10px;
-
         letter-spacing:.3em;
     }
 
     .mugler-main{
         top:245px;
-
         width:245px;
         height:340px;
     }
@@ -1967,7 +3062,6 @@ footer{
     .mugler-ghost{
         left:-14%;
         top:315px;
-
         width:43%;
         height:330px;
     }
@@ -1975,53 +3069,440 @@ footer{
     .mugler-label{
         left:4%;
         top:350px;
-
         font-size:6px;
     }
 
     .mugler-vertical{
         right:4%;
         top:320px;
-
         font-size:6px;
     }
 
     .mugler-script{
         right:4%;
         top:510px;
-
         font-size:27px;
     }
 
     .mugler-copy{
         top:635px;
-
         width:80%;
-
         font-size:14px;
     }
 
     .mugler-tags{
         top:790px;
-
         font-size:6px;
-
         letter-spacing:.23em;
     }
 
 
-    /* OTHER OBJECTS */
+    /* McQUEEN */
 
-    .archive-object{
-        min-height:650px;
-
-        padding:5rem 7vw;
+    .mcqueen{
+        height:870px;
     }
 
-    .object-image{
-        width:76vw;
+    .mcqueen-heading{
+        top:60px;
+        width:90%;
+    }
 
+    .mcqueen-title{
+        font-size:48px;
+    }
+
+    .mcqueen-house{
+        font-size:9px;
+        letter-spacing:.28em;
+    }
+
+    .mcqueen-main{
+        left:52%;
+        top:245px;
+        width:235px;
+        height:340px;
+    }
+
+    .mcqueen-ghost{
+        right:-18%;
+        top:300px;
+        width:48%;
+        height:330px;
+    }
+
+    .mcqueen-vertical{
+        left:3%;
+        top:300px;
+        font-size:6px;
+    }
+
+    .mcqueen-label{
+        left:5%;
+        top:410px;
+        font-size:6px;
+    }
+
+    .mcqueen-script{
+        right:3%;
+        top:510px;
+        font-size:28px;
+    }
+
+    .mcqueen-copy{
+        top:635px;
+        width:80%;
+        font-size:14px;
+    }
+
+    .mcqueen-tags{
+        top:790px;
+        font-size:6px;
+        letter-spacing:.23em;
+    }
+
+
+    /* CDG */
+
+    .cdg{
+        height:890px;
+    }
+
+    .cdg-heading{
+        top:55px;
+        width:93%;
+    }
+
+    .cdg-title{
+        font-size:40px;
+    }
+
+    .cdg-house{
+        font-size:9px;
+    }
+
+    .cdg-big-number{
+        left:-4%;
+        top:240px;
+        font-size:160px;
+    }
+
+    .cdg-main{
+        left:48%;
+        top:270px;
+        width:230px;
+        height:330px;
+    }
+
+    .cdg-ghost{
+        right:-12%;
+        top:320px;
+        width:46%;
         height:300px;
+    }
+
+    .cdg-line{
+        left:4%;
+        top:400px;
+        width:90px;
+    }
+
+    .cdg-measure{
+        left:5%;
+        top:417px;
+        font-size:7px;
+    }
+
+    .cdg-script{
+        right:3%;
+        top:535px;
+        font-size:28px;
+    }
+
+    .cdg-copy{
+        top:650px;
+        width:80%;
+        font-size:14px;
+    }
+
+    .cdg-tags{
+        top:810px;
+        font-size:6px;
+        letter-spacing:.22em;
+    }
+
+
+    /* SCHIAPARELLI */
+
+    .schiap{
+        height:870px;
+    }
+
+    .schiap-heading{
+        top:58px;
+        width:92%;
+    }
+
+    .schiap-title{
+        font-size:48px;
+    }
+
+    .schiap-house{
+        font-size:9px;
+        letter-spacing:.27em;
+    }
+
+    .schiap-main{
+        top:245px;
+        width:240px;
+        height:345px;
+    }
+
+    .schiap-ghost{
+        right:-15%;
+        top:300px;
+        width:48%;
+        height:310px;
+    }
+
+    .schiap-card{
+        left:4%;
+        top:340px;
+        padding:10px 12px;
+        font-size:6px;
+    }
+
+    .schiap-lobster{
+        left:5%;
+        top:470px;
+        font-size:8px;
+    }
+
+    .schiap-script{
+        right:3%;
+        top:505px;
+        font-size:27px;
+    }
+
+    .schiap-copy{
+        top:630px;
+        width:80%;
+        font-size:14px;
+    }
+
+    .schiap-tags{
+        top:790px;
+        font-size:6px;
+        letter-spacing:.22em;
+    }
+
+
+    /* BIRKIN */
+
+    .birkin{
+        height:850px;
+    }
+
+    .birkin-heading{
+        top:58px;
+        width:90%;
+    }
+
+    .birkin-title{
+        font-size:48px;
+    }
+
+    .birkin-house{
+        font-size:9px;
+    }
+
+    .birkin-lot-number{
+        right:-5%;
+        top:215px;
+        font-size:150px;
+    }
+
+    .birkin-main{
+        top:250px;
+        width:290px;
+        height:300px;
+    }
+
+    .birkin-detail{
+        left:-5%;
+        top:335px;
+        width:38%;
+        height:200px;
+    }
+
+    .birkin-card{
+        right:3%;
+        top:355px;
+        width:110px;
+        padding:10px;
+        font-size:6px;
+    }
+
+    .birkin-card strong{
+        font-size:8px;
+    }
+
+    .birkin-script{
+        right:4%;
+        top:520px;
+        font-size:27px;
+    }
+
+    .birkin-copy{
+        top:610px;
+        width:80%;
+        font-size:14px;
+    }
+
+    .birkin-tags{
+        top:760px;
+        font-size:6px;
+        letter-spacing:.23em;
+    }
+
+
+    /* BOURDIN */
+
+    .bourdin{
+        height:930px;
+    }
+
+    .bourdin-heading{
+        top:55px;
+        width:93%;
+    }
+
+    .bourdin-title{
+        font-size:41px;
+    }
+
+    .bourdin-house{
+        font-size:9px;
+    }
+
+    .bourdin-main{
+        top:245px;
+        width:72%;
+        height:360px;
+    }
+
+    .bourdin-ghost{
+        left:-15%;
+        top:310px;
+        width:43%;
+        height:270px;
+    }
+
+    .bourdin-frame-number{
+        right:4%;
+        top:305px;
+        font-size:7px;
+    }
+
+    .bourdin-script{
+        right:4%;
+        top:515px;
+        font-size:28px;
+    }
+
+    .bourdin-caption{
+        left:6%;
+        top:590px;
+        font-size:7px;
+    }
+
+    .bourdin-copy{
+        top:680px;
+        width:80%;
+        font-size:14px;
+    }
+
+    .bourdin-tags{
+        top:840px;
+        font-size:6px;
+        letter-spacing:.22em;
+    }
+
+
+    /* CARTIER */
+
+    .cartier{
+        height:880px;
+    }
+
+    .cartier-heading{
+        top:58px;
+        width:90%;
+    }
+
+    .cartier-title{
+        font-size:48px;
+    }
+
+    .cartier-house{
+        font-size:9px;
+    }
+
+    .cartier-main{
+        top:245px;
+        width:290px;
+        height:320px;
+    }
+
+    .cartier-detail{
+        left:-11%;
+        top:335px;
+        width:44%;
+        height:245px;
+    }
+
+    .cartier-route{
+        right:4%;
+        top:325px;
+        font-size:7px;
+    }
+
+    .cartier-gem.one{
+        right:12%;
+        top:405px;
+    }
+
+    .cartier-gem.two{
+        right:7%;
+        top:432px;
+    }
+
+    .cartier-gem.three{
+        right:13%;
+        top:455px;
+    }
+
+    .cartier-gem.four{
+        right:6%;
+        top:480px;
+    }
+
+    .cartier-script{
+        right:3%;
+        top:520px;
+        font-size:29px;
+    }
+
+    .cartier-copy{
+        top:640px;
+        width:80%;
+        font-size:14px;
+    }
+
+    .cartier-tags{
+        top:800px;
+        font-size:6px;
+        letter-spacing:.22em;
     }
 
 
@@ -2037,6 +3518,7 @@ footer{
 }
 
 </style>
+
 </head>
 
 
@@ -2165,7 +3647,6 @@ footer{
 
 <section class="tabi">
 
-
     <div class="tabi-heading">
 
         <div class="tabi-number">
@@ -2242,7 +3723,6 @@ footer{
 
     </div>
 
-
 </section>
 
 
@@ -2251,7 +3731,6 @@ footer{
 ========================================================= -->
 
 <section class="saddle">
-
 
     <div class="saddle-heading">
 
@@ -2338,16 +3817,14 @@ footer{
 
     </div>
 
-
 </section>
 
 
 <!-- =========================================================
-     003 — MUGLER / LA CHIMÈRE
+     003 — MUGLER
 ========================================================= -->
 
 <section class="mugler">
-
 
     <div class="mugler-heading">
 
@@ -2397,7 +3874,7 @@ footer{
 
     <div class="mugler-vertical">
 
-        HAUTE COUTURE &nbsp;·&nbsp; FW97–98
+        HAUTE COUTURE · FW97–98
 
     </div>
 
@@ -2428,7 +3905,6 @@ footer{
 
     </div>
 
-
 </section>
 
 
@@ -2436,31 +3912,69 @@ footer{
      004 — McQUEEN
 ========================================================= -->
 
-<section class="archive-object">
+<section class="mcqueen">
 
-    <div class="object-number">
-        004
+    <div class="mcqueen-heading">
+
+        <div class="mcqueen-number">
+            004
+        </div>
+
+        <div class="mcqueen-house">
+            Alexander McQueen
+        </div>
+
+        <h2 class="mcqueen-title">
+            Armadillo Boot
+        </h2>
+
+        <div class="mcqueen-year">
+            Plato's Atlantis · SS10
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Alexander McQueen
+
+    <div class="mcqueen-ghost">
+
+        <img
+            src="archive-mcqueen.jpg"
+            alt=""
+        >
+
     </div>
 
-    <h2 class="object-title">
-        Armadillo Boot
-    </h2>
-
-    <div class="object-year">
-        Plato's Atlantis · SS10
-    </div>
 
     <img
         src="archive-mcqueen.jpg"
-        class="object-image"
+        class="mcqueen-main"
         alt="Alexander McQueen Armadillo Boot"
     >
 
-    <p class="object-copy">
+
+    <div class="mcqueen-vertical">
+        PLATO'S ATLANTIS · SS10
+    </div>
+
+
+    <div class="mcqueen-label">
+
+        LONDON<br>
+        2009
+
+    </div>
+
+
+    <div class="mcqueen-script">
+
+        wearability<br>
+        was never<br>
+        the point.
+
+    </div>
+
+
+    <p class="mcqueen-copy">
 
         The Armadillo boot pushes the accessory almost beyond
         wearability. Its exaggerated structure changes the body,
@@ -2468,8 +3982,13 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Sculpture · Body · Spectacle
+
+    <div class="mcqueen-tags">
+
+        SCULPTURE &nbsp;&nbsp;·&nbsp;&nbsp;
+        BODY &nbsp;&nbsp;·&nbsp;&nbsp;
+        SPECTACLE
+
     </div>
 
 </section>
@@ -2479,32 +3998,71 @@ footer{
      005 — COMME DES GARÇONS
 ========================================================= -->
 
-<section class="archive-object">
+<section class="cdg">
 
-    <div class="object-number">
-        005
+    <div class="cdg-heading">
+
+        <div class="cdg-number">
+            005
+        </div>
+
+        <div class="cdg-house">
+            Comme des Garçons
+        </div>
+
+        <h2 class="cdg-title">
+            Body Meets Dress,<br>
+            Dress Meets Body
+        </h2>
+
+        <div class="cdg-year">
+            Rei Kawakubo · SS97
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Comme des Garçons
+
+    <div class="cdg-big-number">
+        05
     </div>
 
-    <h2 class="object-title">
-        Body Meets Dress,<br>
-        Dress Meets Body
-    </h2>
-
-    <div class="object-year">
-        Rei Kawakubo · SS97
-    </div>
 
     <img
         src="archive-cdg.jpg"
-        class="object-image"
+        class="cdg-main"
         alt="Comme des Garçons Body Meets Dress Dress Meets Body"
     >
 
-    <p class="object-copy">
+
+    <div class="cdg-ghost">
+
+        <img
+            src="archive-cdg.jpg"
+            alt=""
+        >
+
+    </div>
+
+
+    <div class="cdg-line"></div>
+
+
+    <div class="cdg-measure">
+
+        proportion / distortion
+
+    </div>
+
+
+    <div class="cdg-script">
+
+        where does<br>
+        the body end?
+
+    </div>
+
+
+    <p class="cdg-copy">
 
         Padding appeared in places fashion traditionally tries to
         flatten, narrow or conceal. The collection challenged the
@@ -2513,8 +4071,13 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Body · Proportion · Provocation
+
+    <div class="cdg-tags">
+
+        BODY &nbsp;&nbsp;·&nbsp;&nbsp;
+        PROPORTION &nbsp;&nbsp;·&nbsp;&nbsp;
+        PROVOCATION
+
     </div>
 
 </section>
@@ -2524,31 +4087,71 @@ footer{
      006 — SCHIAPARELLI
 ========================================================= -->
 
-<section class="archive-object">
+<section class="schiap">
 
-    <div class="object-number">
-        006
+    <div class="schiap-heading">
+
+        <div class="schiap-number">
+            006
+        </div>
+
+        <div class="schiap-house">
+            Elsa Schiaparelli × Salvador Dalí
+        </div>
+
+        <h2 class="schiap-title">
+            Lobster Dress
+        </h2>
+
+        <div class="schiap-year">
+            1937
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Elsa Schiaparelli × Salvador Dalí
+
+    <div class="schiap-ghost">
+
+        <img
+            src="archive-schiaparelli.jpg"
+            alt=""
+        >
+
     </div>
 
-    <h2 class="object-title">
-        Lobster Dress
-    </h2>
-
-    <div class="object-year">
-        1937
-    </div>
 
     <img
         src="archive-schiaparelli.jpg"
-        class="object-image"
+        class="schiap-main"
         alt="Schiaparelli Lobster Dress"
     >
 
-    <p class="object-copy">
+
+    <div class="schiap-card">
+
+        PARIS<br>
+        1937
+
+    </div>
+
+
+    <div class="schiap-lobster">
+
+        lobster / surrealism
+
+    </div>
+
+
+    <div class="schiap-script">
+
+        fashion enters<br>
+        the conversation<br>
+        with art.
+
+    </div>
+
+
+    <p class="schiap-copy">
 
         Schiaparelli understood that fashion could participate in the
         same visual conversation as art. The lobster turns an elegant
@@ -2557,42 +4160,91 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Surrealism · Collaboration · Provocation
+
+    <div class="schiap-tags">
+
+        SURREALISM &nbsp;&nbsp;·&nbsp;&nbsp;
+        COLLABORATION &nbsp;&nbsp;·&nbsp;&nbsp;
+        PROVOCATION
+
     </div>
 
 </section>
 
 
 <!-- =========================================================
-     007 — BIRKIN
+     007 — HIMALAYA BIRKIN
 ========================================================= -->
 
-<section class="archive-object">
+<section class="birkin">
 
-    <div class="object-number">
-        007
+    <div class="birkin-heading">
+
+        <div class="birkin-number">
+            007
+        </div>
+
+        <div class="birkin-house">
+            Hermès
+        </div>
+
+        <h2 class="birkin-title">
+            Himalaya Birkin
+        </h2>
+
+        <div class="birkin-year">
+            Collectible Luxury
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Hermès
+
+    <div class="birkin-lot-number">
+        07
     </div>
 
-    <h2 class="object-title">
-        Himalaya Birkin
-    </h2>
 
-    <div class="object-year">
-        Collectible Luxury
+    <div class="birkin-detail">
+
+        <img
+            src="archive-birkin.jpg"
+            alt=""
+        >
+
     </div>
+
 
     <img
         src="archive-birkin.jpg"
-        class="object-image"
+        class="birkin-main"
         alt="Hermès Himalaya Birkin"
     >
 
-    <p class="object-copy">
+
+    <div class="birkin-card">
+
+        <strong>
+            LOT 007
+        </strong>
+
+        HERMÈS<br>
+        HIMALAYA<br>
+        COLLECTIBLE<br>
+        OBJECT
+
+    </div>
+
+
+    <div class="birkin-script">
+
+        scarcity<br>
+        becomes<br>
+        mythology.
+
+    </div>
+
+
+    <p class="birkin-copy">
 
         The Himalaya Birkin interests me because it demonstrates how
         a luxury object acquires mythology. Material rarity,
@@ -2601,8 +4253,13 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Scarcity · Mythology · Value
+
+    <div class="birkin-tags">
+
+        SCARCITY &nbsp;&nbsp;·&nbsp;&nbsp;
+        MYTHOLOGY &nbsp;&nbsp;·&nbsp;&nbsp;
+        VALUE
+
     </div>
 
 </section>
@@ -2612,31 +4269,72 @@ footer{
      008 — GUY BOURDIN
 ========================================================= -->
 
-<section class="archive-object">
+<section class="bourdin">
 
-    <div class="object-number">
-        008
+    <div class="bourdin-heading">
+
+        <div class="bourdin-number">
+            008
+        </div>
+
+        <div class="bourdin-house">
+            Guy Bourdin
+        </div>
+
+        <h2 class="bourdin-title">
+            The Image Before the Product
+        </h2>
+
+        <div class="bourdin-year">
+            French Fashion Photography · 1970s
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Guy Bourdin
+
+    <div class="bourdin-ghost">
+
+        <img
+            src="archive-bourdin.jpg"
+            alt=""
+        >
+
     </div>
 
-    <h2 class="object-title">
-        The Image Before the Product
-    </h2>
-
-    <div class="object-year">
-        French Fashion Photography · 1970s
-    </div>
 
     <img
         src="archive-bourdin.jpg"
-        class="object-image"
+        class="bourdin-main"
         alt="Guy Bourdin fashion photography"
     >
 
-    <p class="object-copy">
+
+    <div class="bourdin-frame-number">
+
+        IMAGE / 008
+
+    </div>
+
+
+    <div class="bourdin-script">
+
+        the image<br>
+        before<br>
+        the product.
+
+    </div>
+
+
+    <div class="bourdin-caption">
+
+        impossible colour<br>
+        strange framing<br>
+        controlled desire
+
+    </div>
+
+
+    <p class="bourdin-copy">
 
         Before I understood fashion photography as an industry,
         I understood the feeling of it: impossible colour, strange
@@ -2645,8 +4343,13 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Photography · Desire · Narrative
+
+    <div class="bourdin-tags">
+
+        PHOTOGRAPHY &nbsp;&nbsp;·&nbsp;&nbsp;
+        DESIRE &nbsp;&nbsp;·&nbsp;&nbsp;
+        NARRATIVE
+
     </div>
 
 </section>
@@ -2656,31 +4359,69 @@ footer{
      009 — CARTIER
 ========================================================= -->
 
-<section class="archive-object">
+<section class="cartier">
 
-    <div class="object-number">
-        009
+    <div class="cartier-heading">
+
+        <div class="cartier-number">
+            009
+        </div>
+
+        <div class="cartier-house">
+            Cartier
+        </div>
+
+        <h2 class="cartier-title">
+            Tutti Frutti
+        </h2>
+
+        <div class="cartier-year">
+            Art Deco · India → Paris
+        </div>
+
     </div>
 
-    <div class="object-house">
-        Cartier
+
+    <div class="cartier-detail">
+
+        <img
+            src="archive-cartier.jpg"
+            alt=""
+        >
+
     </div>
 
-    <h2 class="object-title">
-        Tutti Frutti
-    </h2>
-
-    <div class="object-year">
-        Art Deco · India → Paris
-    </div>
 
     <img
         src="archive-cartier.jpg"
-        class="object-image"
+        class="cartier-main"
         alt="Cartier Tutti Frutti jewelry"
     >
 
-    <p class="object-copy">
+
+    <div class="cartier-route">
+
+        INDIA → PARIS
+
+    </div>
+
+
+    <div class="cartier-gem one"></div>
+    <div class="cartier-gem two"></div>
+    <div class="cartier-gem three"></div>
+    <div class="cartier-gem four"></div>
+
+
+    <div class="cartier-script">
+
+        colour<br>
+        without<br>
+        restraint.
+
+    </div>
+
+
+    <p class="cartier-copy">
 
         I keep coming back to Tutti Frutti because it rejects the
         idea that sophistication must always mean restraint. Carved
@@ -2689,8 +4430,13 @@ footer{
 
     </p>
 
-    <div class="object-tags">
-        Jewelry · Colour · Craftsmanship
+
+    <div class="cartier-tags">
+
+        JEWELRY &nbsp;&nbsp;·&nbsp;&nbsp;
+        COLOUR &nbsp;&nbsp;·&nbsp;&nbsp;
+        CRAFTSMANSHIP
+
     </div>
 
 </section>
@@ -2707,8 +4453,10 @@ footer{
     </small>
 
     <h2>
+
         The archive is<br>
         never finished.
+
     </h2>
 
     <p>
@@ -2735,7 +4483,9 @@ footer{
         </div>
 
         <p class="footer-copy">
+
             A curated perspective on fashion, luxury and the structures behind them.
+
         </p>
 
     </div>
@@ -2753,5 +4503,4 @@ footer{
 
 
 </body>
-
 </html>
