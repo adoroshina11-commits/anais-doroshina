@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-    Gucci x Alpine: When a Fashion House Buys Into Formula One — J'adore le Concept
+    Gucci x Alpine: When a Fashion House Buys Into Formula One — Anaïs Doroshina
   </title>
 
   <!-- GOOGLE FONTS -->
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400&display=swap"
     rel="stylesheet"
   >
 
@@ -509,68 +509,124 @@
     }
 
 
-    /* ─────────────────────────────
+    /* =========================================================
+       AD STAMP
+    ========================================================= */
+
+    .logo-stamp{
+      height:150px;
+
+      display:flex;
+
+      align-items:center;
+      justify-content:center;
+    }
+
+    .stamp{
+      position:relative;
+
+      width:95px;
+      height:95px;
+
+      display:flex;
+
+      align-items:center;
+      justify-content:center;
+    }
+
+    .stamp-spin{
+      position:absolute;
+
+      inset:0;
+
+      animation:spinStamp 15s linear infinite;
+
+      opacity:.72;
+    }
+
+    .stamp-spin svg{
+      width:100%;
+      height:100%;
+
+      overflow:visible;
+    }
+
+    .stamp-center{
+      position:absolute;
+
+      z-index:2;
+
+      font-family:'Corinthia',cursive;
+
+      font-size:33px;
+
+      color:var(--accent);
+
+      transform:rotate(-9deg);
+    }
+
+    @keyframes spinStamp{
+
+      from{
+        transform:rotate(0deg);
+      }
+
+      to{
+        transform:rotate(360deg);
+      }
+
+    }
+
+
+    /* =========================================================
        FOOTER
-    ───────────────────────────── */
+    ========================================================= */
 
     footer{
-      background:#05242b;
-
-      color:var(--cream);
-
       padding:3.5vw 10vw;
 
       display:grid;
 
-      grid-template-columns:1.2fr 1fr 1fr;
+      grid-template-columns:1.3fr 1fr;
 
-      gap:3rem;
+      gap:4rem;
 
-      align-items:center;
+      align-items:end;
 
-      border-top:0.5px solid rgba(255,255,255,0.08);
+      background:var(--teal);
+
+      color:var(--cream);
     }
 
     .ft-logo{
+      margin-bottom:.7rem;
+
       font-family:'Cormorant Garamond',serif;
 
       font-size:13px;
-      letter-spacing:0.22em;
 
+      letter-spacing:.22em;
       text-transform:uppercase;
-
-      color:var(--cream);
-
-      margin-bottom:0.6rem;
     }
 
     .ft-sub{
-      font-size:13.5px;
+      max-width:410px;
 
-      color:rgba(250,248,244,0.45);
+      font-family:'Cormorant Garamond',serif;
+
+      font-size:15px;
+
+      font-weight:300;
+      font-style:italic;
 
       line-height:1.6;
 
-      max-width:260px;
-    }
-
-    .ft-cities{
-      font-family:'Cormorant Garamond',serif;
-
-      font-size:10.5px;
-      letter-spacing:0.22em;
-
-      text-transform:uppercase;
-
-      color:rgba(250,248,244,0.4);
-
-      text-align:center;
-
-      white-space:nowrap;
+      color:rgba(250,248,244,.5);
     }
 
     .ft-right{
       display:flex;
+
       flex-direction:column;
 
       align-items:flex-end;
@@ -582,15 +638,13 @@
       font-family:'Cormorant Garamond',serif;
 
       font-size:11px;
-      letter-spacing:0.2em;
 
+      letter-spacing:.18em;
       text-transform:uppercase;
 
-      color:rgba(250,248,244,0.5);
+      color:rgba(250,248,244,.55);
 
       text-decoration:none;
-
-      transition:color 0.2s ease;
     }
 
     .ft-link:hover{
@@ -598,16 +652,16 @@
     }
 
     .ft-copy{
+      margin-top:6px;
+
       font-family:'Cormorant Garamond',serif;
 
-      font-size:10px;
-      letter-spacing:0.2em;
+      font-size:9px;
 
+      letter-spacing:.24em;
       text-transform:uppercase;
 
-      color:rgba(250,248,244,0.2);
-
-      margin-top:4px;
+      color:rgba(250,248,244,.25);
     }
 
 
@@ -716,12 +770,17 @@
         padding:8vw;
       }
 
-      .ft-cities{
-        text-align:left;
-      }
-
       .ft-right{
         align-items:flex-start;
+      }
+
+    }
+
+
+    @media(prefers-reduced-motion:reduce){
+
+      .stamp-spin{
+        animation:none;
       }
 
     }
@@ -739,7 +798,7 @@
   <nav>
 
     <a href="./index.html" class="nav-logo">
-      J'adore le Concept
+      Anaïs Doroshina
     </a>
 
     <div class="nav-links">
@@ -760,7 +819,7 @@
         About
       </a>
 
-      <a href="./contact.html">
+      <a href="./about.html#contact">
         Contact
       </a>
 
@@ -1109,49 +1168,98 @@
 
 
 
-  <!-- FOOTER -->
+  <!-- =====================================================
+       AD STAMP
+  ===================================================== -->
+
+  <div class="logo-stamp">
+
+    <div class="stamp">
+
+      <div class="stamp-spin">
+
+        <svg viewBox="0 0 130 130" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+
+            <path
+              id="circlePath"
+              d="
+                M65,65
+                m-46,0
+                a46,46 0 1,1 92,0
+                a46,46 0 1,1 -92,0
+              "
+            />
+
+          </defs>
+
+          <text
+            font-family="'Cormorant Garamond',serif"
+            font-size="8.5"
+            letter-spacing="3.2"
+            fill="#6a6460"
+          >
+
+            <textPath href="#circlePath">
+              ANAÏS DOROSHINA · FASHION &amp; LUXURY ·
+            </textPath>
+
+          </text>
+
+        </svg>
+
+      </div>
+
+      <div class="stamp-center">
+        AD
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
 
   <footer>
-
 
     <div>
 
       <div class="ft-logo">
-        J'adore le Concept
+        Anaïs Doroshina
       </div>
 
-
-      <div class="ft-sub">
-        A curated perspective on fashion, luxury,
-        and the structures behind them.
-      </div>
+      <p class="ft-sub">
+        A curated perspective on fashion, luxury and the structures behind them.
+      </p>
 
     </div>
-
-
-
-    <div class="ft-cities">
-      Paris · Barcelona · Athens
-    </div>
-
 
 
     <div class="ft-right">
 
-      <a href="./about.html" class="ft-link">
-        About
+      <a
+        href="mailto:anaisdoroshina1@gmail.com"
+        class="ft-link"
+      >
+        anaisdoroshina1@gmail.com
       </a>
 
-      <a href="./contact.html" class="ft-link">
-        Contact
+      <a
+        href="#"
+        class="ft-link"
+      >
+        LinkedIn
       </a>
 
-      <div class="ft-copy">
-        © 2026 J'adore le Concept
-      </div>
+      <p class="ft-copy">
+        Est. 2024
+      </p>
 
     </div>
-
 
   </footer>
 
