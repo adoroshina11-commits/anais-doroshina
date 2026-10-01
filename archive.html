@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>The Archive | Anaïs Doroshina</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Cormorant+Garamamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
 
 <style>
 
@@ -62,24 +65,36 @@ nav{
     top:0;
     left:0;
     right:0;
+
     z-index:1000;
+
     height:56px;
+
     display:flex;
     align-items:center;
     justify-content:space-between;
+
     padding:0 5vw;
+
     background:rgba(250,248,244,0.96);
+
     backdrop-filter:blur(5px);
     -webkit-backdrop-filter:blur(5px);
+
     border-bottom:0.5px solid var(--rule);
 }
 
 .nav-logo{
     font-family:'Cormorant Garamond',serif;
+
     font-size:12px;
+
     letter-spacing:.22em;
+
     text-transform:uppercase;
+
     color:var(--ink);
+
     text-decoration:none;
 }
 
@@ -90,11 +105,17 @@ nav{
 
 .nav-links a{
     font-family:'Cormorant Garamond',serif;
+
     font-size:11px;
+
     letter-spacing:.18em;
+
     text-transform:uppercase;
+
     color:var(--muted);
+
     text-decoration:none;
+
     transition:color .2s ease;
 }
 
@@ -110,21 +131,31 @@ nav{
 
 .hero{
     position:relative;
+
     width:100%;
+
     height:680px;
     min-height:680px;
+
     margin-top:56px;
+
     overflow:visible;
+
     background:var(--cream);
+
     z-index:10;
 }
 
 .hero::before{
     content:"";
+
     position:absolute;
     inset:0;
+
     z-index:0;
+
     pointer-events:none;
+
     opacity:.10;
 
     background-image:
@@ -144,27 +175,34 @@ nav{
 
 .contact-sheet-wrap{
     position:absolute;
+
     z-index:25;
+
     left:-1%;
     top:3%;
+
     width:24%;
     height:94%;
+
     overflow:visible;
+
     pointer-events:none;
 }
 
 .hero-contact-sheet{
     display:block;
+
     width:100%;
     height:100%;
+
     object-fit:contain;
     object-position:center;
+
     transform:rotate(-4deg);
 
-    filter:
-        drop-shadow(
-            0 5px 7px rgba(40,30,20,.08)
-        );
+    filter:drop-shadow(
+        0 5px 7px rgba(40,30,20,.08)
+    );
 
     pointer-events:none;
 }
@@ -176,32 +214,49 @@ nav{
 
 .hero-title-wrap{
     position:absolute;
+
     z-index:50;
+
     left:45%;
     top:52%;
+
     width:42%;
+
     transform:translate(-50%,-50%);
+
     text-align:center;
 }
 
 .hero-title{
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(92px,9vw,142px);
+
     font-weight:300;
     font-style:italic;
+
     line-height:.84;
+
     letter-spacing:-.07em;
+
     color:#100e0c;
+
     white-space:nowrap;
 }
 
 .hero-subtitle{
     margin-top:34px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(13px,1.05vw,17px);
+
     line-height:1.4;
+
     font-style:italic;
+
     letter-spacing:.015em;
+
     color:#71675e;
 }
 
@@ -212,19 +267,24 @@ nav{
 
 .hero-book{
     position:absolute;
+
     z-index:36;
+
     right:-3%;
     bottom:-80px;
+
     width:40%;
     height:auto;
+
     max-width:none;
+
     object-fit:contain;
+
     transform:rotate(-3deg);
 
-    filter:
-        drop-shadow(
-            0 8px 8px rgba(40,30,20,.08)
-        );
+    filter:drop-shadow(
+        0 8px 8px rgba(40,30,20,.08)
+    );
 
     pointer-events:none;
 }
@@ -236,19 +296,24 @@ nav{
 
 .hero-seal{
     position:absolute;
+
     z-index:46;
+
     right:20%;
     bottom:-90px;
+
     width:12%;
     height:auto;
+
     max-width:none;
+
     object-fit:contain;
+
     transform:rotate(-5deg);
 
-    filter:
-        drop-shadow(
-            0 6px 7px rgba(70,20,15,.16)
-        );
+    filter:drop-shadow(
+        0 6px 7px rgba(70,20,15,.16)
+    );
 
     pointer-events:none;
 }
@@ -261,37 +326,173 @@ nav{
 .star{
     position:absolute;
     z-index:60;
+
     line-height:1;
+
     pointer-events:none;
 }
 
-.star.black{color:#171411;}
-.star.pink{color:#ca3340;}
+.star.black{
+    color:#171411;
+}
 
-.star-1{left:46%;top:7%;font-size:43px;transform:rotate(7deg);}
-.star-2{left:42%;top:25%;font-size:22px;transform:rotate(-11deg);}
-.star-3{left:5%;top:48%;font-size:22px;transform:rotate(12deg);}
-.star-4{right:18%;top:12%;font-size:29px;transform:rotate(15deg);}
-.star-5{right:5%;top:15%;font-size:20px;transform:rotate(-8deg);}
-.star-6{left:4%;top:66%;font-size:27px;transform:rotate(9deg);}
-.star-7{left:39%;bottom:14%;font-size:19px;transform:rotate(-10deg);}
-.star-8{left:44%;bottom:5%;font-size:21px;transform:rotate(8deg);}
-.star-9{right:33%;bottom:8%;font-size:27px;transform:rotate(-8deg);}
-.star-10{right:30%;top:34%;font-size:20px;transform:rotate(8deg);}
-.star-11{left:55%;top:19%;font-size:16px;transform:rotate(10deg);}
-.star-12{right:23%;top:48%;font-size:17px;transform:rotate(-5deg);}
-.star-13{left:36%;top:11%;font-size:13px;transform:rotate(-8deg);}
-.star-14{left:51%;top:15%;font-size:12px;transform:rotate(12deg);}
-.star-15{left:58%;top:29%;font-size:15px;transform:rotate(-7deg);}
-.star-16{left:52%;top:69%;font-size:13px;transform:rotate(16deg);}
-.star-17{left:61%;bottom:7%;font-size:16px;transform:rotate(-12deg);}
-.star-18{right:27%;top:23%;font-size:11px;transform:rotate(8deg);}
-.star-19{right:8%;top:42%;font-size:15px;transform:rotate(-10deg);}
-.star-20{right:28%;bottom:23%;font-size:12px;transform:rotate(14deg);}
-.star-21{left:47%;top:39%;font-size:11px;transform:rotate(-12deg);}
-.star-22{left:57%;bottom:19%;font-size:10px;transform:rotate(8deg);}
-.star-23{right:12%;top:61%;font-size:13px;transform:rotate(-6deg);}
-.star-24{left:33%;bottom:5%;font-size:12px;transform:rotate(13deg);}
+.star.pink{
+    color:#ca3340;
+}
+
+.star-2{
+    left:42%;
+    top:25%;
+    font-size:22px;
+    transform:rotate(-11deg);
+}
+
+.star-3{
+    left:5%;
+    top:48%;
+    font-size:22px;
+    transform:rotate(12deg);
+}
+
+.star-5{
+    right:5%;
+    top:15%;
+    font-size:20px;
+    transform:rotate(-8deg);
+}
+
+.star-6{
+    left:4%;
+    top:66%;
+    font-size:27px;
+    transform:rotate(9deg);
+}
+
+.star-7{
+    left:39%;
+    bottom:14%;
+    font-size:19px;
+    transform:rotate(-10deg);
+}
+
+.star-8{
+    left:44%;
+    bottom:5%;
+    font-size:21px;
+    transform:rotate(8deg);
+}
+
+.star-9{
+    right:33%;
+    bottom:8%;
+    font-size:27px;
+    transform:rotate(-8deg);
+}
+
+.star-10{
+    right:30%;
+    top:34%;
+    font-size:20px;
+    transform:rotate(8deg);
+}
+
+.star-11{
+    left:55%;
+    top:19%;
+    font-size:16px;
+    transform:rotate(10deg);
+}
+
+.star-12{
+    right:23%;
+    top:48%;
+    font-size:17px;
+    transform:rotate(-5deg);
+}
+
+.star-13{
+    left:36%;
+    top:11%;
+    font-size:13px;
+    transform:rotate(-8deg);
+}
+
+.star-14{
+    left:51%;
+    top:15%;
+    font-size:12px;
+    transform:rotate(12deg);
+}
+
+.star-15{
+    left:58%;
+    top:29%;
+    font-size:15px;
+    transform:rotate(-7deg);
+}
+
+.star-16{
+    left:52%;
+    top:69%;
+    font-size:13px;
+    transform:rotate(16deg);
+}
+
+.star-17{
+    left:61%;
+    bottom:7%;
+    font-size:16px;
+    transform:rotate(-12deg);
+}
+
+.star-18{
+    right:27%;
+    top:23%;
+    font-size:11px;
+    transform:rotate(8deg);
+}
+
+.star-19{
+    right:8%;
+    top:42%;
+    font-size:15px;
+    transform:rotate(-10deg);
+}
+
+.star-20{
+    right:28%;
+    bottom:23%;
+    font-size:12px;
+    transform:rotate(14deg);
+}
+
+.star-21{
+    left:47%;
+    top:39%;
+    font-size:11px;
+    transform:rotate(-12deg);
+}
+
+.star-22{
+    left:57%;
+    bottom:19%;
+    font-size:10px;
+    transform:rotate(8deg);
+}
+
+.star-23{
+    right:12%;
+    top:61%;
+    font-size:13px;
+    transform:rotate(-6deg);
+}
+
+.star-24{
+    left:33%;
+    bottom:5%;
+    font-size:12px;
+    transform:rotate(13deg);
+}
 
 
 /* =========================================================
@@ -300,18 +501,25 @@ nav{
 
 .micro-note{
     position:absolute;
+
     z-index:18;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
     font-style:italic;
+
     color:#a2988f;
+
     letter-spacing:.02em;
+
     pointer-events:none;
 }
 
 .micro-two{
     right:9%;
     bottom:14%;
+
     transform:rotate(4deg);
 }
 
@@ -322,157 +530,233 @@ nav{
 
 .tabi{
     position:relative;
+
     height:960px;
+
     overflow:visible;
+
     background:var(--cream);
+
     text-align:center;
+
     border-bottom:1px solid #ded8ce;
+
     z-index:1;
 }
 
 .tabi::before{
     content:"";
+
     position:absolute;
+
     top:95px;
     left:0;
+
     width:100%;
     height:1px;
+
     background:var(--rule);
+
     z-index:2;
+
     pointer-events:none;
 }
 
 .tabi-heading{
     position:absolute;
+
     z-index:20;
+
     top:125px;
     left:50%;
+
     width:70%;
+
     transform:translateX(-50%);
 }
 
 .tabi-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
 .tabi-house{
     margin-top:16px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
 }
 
 .tabi-title{
     margin-top:5px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:57px;
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.045em;
 }
 
 .tabi-year{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
 }
 
 .tabi-boots{
     position:absolute;
+
     z-index:18;
+
     left:50%;
     top:295px;
+
     width:285px;
     height:360px;
+
     transform:translateX(-50%);
+
     object-fit:contain;
 
-    filter:
-        drop-shadow(
-            0 12px 10px rgba(55,45,35,.08)
-        );
+    filter:drop-shadow(
+        0 12px 10px rgba(55,45,35,.08)
+    );
 }
 
 .tabi-vintage{
     position:absolute;
+
     z-index:4;
+
     left:2%;
     bottom:55px;
+
     width:17%;
     max-height:390px;
+
     object-fit:cover;
+
     filter:grayscale(1);
+
     opacity:.65;
 }
 
 .tabi-recognition{
     position:absolute;
+
     z-index:13;
+
     left:14%;
     top:340px;
+
     width:180px;
+
     transform:rotate(-4deg);
 }
 
 .tabi-sketch{
     position:absolute;
+
     z-index:4;
+
     right:1%;
     top:285px;
+
     width:25%;
+
     opacity:.3;
 }
 
 .tabi-signature{
     position:absolute;
+
     z-index:15;
+
     right:8%;
     bottom:65px;
+
     font-family:'Corinthia',cursive;
+
     font-size:35px;
+
     line-height:.65;
+
     color:#8a8178;
+
     transform:rotate(-9deg);
 }
 
 .tabi-copy{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:695px;
+
     width:min(610px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.48;
+
     color:#302b27;
 }
 
 .tabi-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .tabi-tags{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:840px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -483,71 +767,104 @@ nav{
 
 .saddle{
     position:relative;
+
     height:960px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     text-align:center;
+
     border-bottom:1px solid #ded8ce;
+
     z-index:1;
 }
 
 .saddle::before{
     content:"";
+
     position:absolute;
+
     top:0;
     left:0;
+
     width:100%;
     height:1px;
+
     background:var(--rule);
+
     z-index:2;
 }
 
 .saddle-heading{
     position:absolute;
+
     z-index:30;
+
     top:70px;
     left:50%;
+
     width:70%;
+
     transform:translateX(-50%);
 }
 
 .saddle-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
 .saddle-house{
     margin-top:16px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
 }
 
 .saddle-title{
     margin-top:5px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:57px;
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.045em;
 }
 
 .saddle-year{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
 }
 
 .saddle-main{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:265px;
+
     width:390px;
     height:380px;
 
@@ -556,128 +873,192 @@ nav{
         rotate(-2deg);
 
     object-fit:contain;
+
     background:transparent;
+
     mix-blend-mode:multiply;
 
-    filter:
-        drop-shadow(
-            0 12px 12px rgba(55,45,35,.07)
-        );
+    filter:drop-shadow(
+        0 12px 12px rgba(55,45,35,.07)
+    );
 }
 
 .saddle-logo{
     position:absolute;
+
     z-index:11;
+
     left:4%;
     top:235px;
+
     width:30%;
     max-width:430px;
+
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(-6deg);
+
     mix-blend-mode:multiply;
 
-    filter:
-        drop-shadow(
-            0 5px 7px rgba(50,40,30,.05)
-        );
+    filter:drop-shadow(
+        0 5px 7px rgba(50,40,30,.05)
+    );
 }
 
 .saddle-sketch{
     position:absolute;
+
     z-index:12;
+
     left:10%;
     top:545px;
+
     width:18%;
     max-width:250px;
+
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(5deg);
+
     mix-blend-mode:multiply;
+
     opacity:.65;
 }
 
 .saddle-hardware{
     position:absolute;
+
     z-index:13;
+
     right:3%;
     top:315px;
+
     width:25%;
     max-width:360px;
+
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(2deg);
+
     mix-blend-mode:multiply;
+
     opacity:.82;
 }
 
 .saddle-galliano-note{
     position:absolute;
+
     z-index:22;
+
     left:16%;
     top:480px;
+
     font-family:'Corinthia',cursive;
+
     font-size:34px;
+
     line-height:.72;
+
     color:#5f5750;
+
     transform:rotate(-8deg);
+
     text-align:left;
 }
 
 .saddle-galliano-note span{
     display:block;
+
     margin-top:8px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     letter-spacing:.28em;
+
     text-transform:uppercase;
+
     color:#978c82;
 }
 
 .saddle-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:710px;
+
     width:min(610px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.48;
+
     color:#302b27;
 }
 
 .saddle-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .saddle-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:850px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
 .saddle-red-note{
     position:absolute;
+
     z-index:20;
+
     right:7%;
     bottom:48px;
+
     font-family:'Corinthia',cursive;
+
     font-size:40px;
+
     line-height:.78;
+
     color:#a22f34;
+
     transform:rotate(-7deg);
 }
 
@@ -688,190 +1069,250 @@ nav{
 
 .mugler{
     position:relative;
+
     height:960px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     text-align:center;
+
     border-bottom:1px solid var(--rule);
 }
 
 .mugler-heading{
     position:absolute;
+
     z-index:30;
+
     top:72px;
     left:50%;
+
     width:72%;
+
     transform:translateX(-50%);
 }
 
 .mugler-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
 .mugler-house{
     margin-top:16px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
 }
 
 .mugler-title{
     margin-top:5px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:61px;
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.045em;
 }
 
 .mugler-year{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
+
     color:#6f675f;
 }
 
-
-/* MAIN RUNWAY IMAGE */
-
 .mugler-main{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:270px;
+
     width:315px;
     height:410px;
+
     transform:translateX(-50%);
+
     object-fit:cover;
-    filter:drop-shadow(0 15px 18px rgba(40,30,20,.10));
+
+    filter:drop-shadow(
+        0 15px 18px rgba(40,30,20,.10)
+    );
 }
-
-
-/* FAINT RUNWAY FRAGMENT */
 
 .mugler-ghost{
     position:absolute;
+
     z-index:2;
+
     left:-6%;
     top:305px;
+
     width:23%;
     height:420px;
+
     overflow:hidden;
+
     opacity:.08;
+
     transform:rotate(-3deg);
 }
 
 .mugler-ghost img{
     width:145%;
     height:100%;
+
     object-fit:cover;
-    filter:grayscale(1) contrast(.9);
+
+    filter:
+        grayscale(1)
+        contrast(.9);
 }
 
-
-/* VINTAGE COUTURE LABEL */
+/* Vintage La Chimère couture card */
 
 .mugler-vintage-label{
     position:absolute;
+
     z-index:12;
+
     left:4%;
-    top:255px;
+    top:195px;
+
     width:27%;
     max-width:390px;
     height:auto;
+
     object-fit:contain;
+
     transform:rotate(-6deg);
-    filter:drop-shadow(0 8px 12px rgba(55,45,35,.08));
+
+    filter:drop-shadow(
+        0 8px 12px rgba(55,45,35,.08)
+    );
 }
 
-
-/* BUTTERFLY CORSET ART */
+/* Butterfly / corset study */
 
 .mugler-corset-art{
     position:absolute;
+
     z-index:10;
+
     right:1%;
     top:285px;
+
     width:27%;
     max-width:370px;
     height:auto;
+
     object-fit:contain;
+
     opacity:.48;
+
     transform:rotate(4deg);
+
     filter:grayscale(.15);
 }
 
-
-/* ARCHIVE NOTATION */
-
-.mugler-archive-label-img{
-    position:absolute;
-    z-index:18;
-    left:7%;
-    top:530px;
-    width:18%;
-    max-width:255px;
-    height:auto;
-    object-fit:contain;
-    opacity:.78;
-    transform:rotate(-4deg);
-}
-
-
-/* LA CHIMÈRE CALLIGRAPHY */
+/* La Chimère handwritten artwork */
 
 .mugler-logo-art{
     position:absolute;
+
     z-index:24;
-    right:3%;
+
+    right:-1%;
     top:500px;
+
     width:30%;
     max-width:430px;
     height:auto;
-    object-fit:contain;
-    transform:rotate(-6deg);
-    filter:drop-shadow(0 5px 7px rgba(80,25,25,.05));
-}
 
+    object-fit:contain;
+
+    transform:rotate(-6deg);
+
+    filter:drop-shadow(
+        0 5px 7px rgba(80,25,25,.05)
+    );
+}
 
 .mugler-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:730px;
+
     width:min(620px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .mugler-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .mugler-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:870px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -887,8 +1328,11 @@ nav{
 .bourdin-number,
 .cartier-number{
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.35em;
+
     color:#998b7c;
 }
 
@@ -899,9 +1343,13 @@ nav{
 .bourdin-house,
 .cartier-house{
     margin-top:16px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
 }
 
@@ -912,11 +1360,16 @@ nav{
 .bourdin-title,
 .cartier-title{
     margin-top:5px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:59px;
+
     font-weight:300;
     font-style:italic;
+
     line-height:.95;
+
     letter-spacing:-.045em;
 }
 
@@ -927,9 +1380,13 @@ nav{
 .bourdin-year,
 .cartier-year{
     margin-top:15px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.3em;
+
     color:#70675f;
 }
 
@@ -940,27 +1397,39 @@ nav{
 
 .mcqueen{
     position:relative;
+
     height:960px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
+
     text-align:center;
 }
 
 .mcqueen-heading{
     position:absolute;
+
     z-index:30;
+
     top:72px;
     left:50%;
+
     width:72%;
+
     transform:translateX(-50%);
 }
 
 .mcqueen-main{
     position:absolute;
+
     z-index:20;
+
     left:52%;
     top:270px;
+
     width:310px;
     height:405px;
 
@@ -969,106 +1438,160 @@ nav{
         rotate(3deg);
 
     object-fit:contain;
+
     mix-blend-mode:multiply;
 
-    filter:
-        drop-shadow(
-            0 15px 18px rgba(40,30,20,.09)
-        );
+    filter:drop-shadow(
+        0 15px 18px rgba(40,30,20,.09)
+    );
 }
 
 .mcqueen-ghost{
     position:absolute;
+
     z-index:3;
+
     right:-4%;
     top:245px;
+
     width:30%;
     height:470px;
+
     overflow:hidden;
+
     opacity:.10;
+
     transform:rotate(8deg);
 }
 
 .mcqueen-ghost img{
     width:120%;
     height:100%;
+
     object-fit:cover;
+
     filter:grayscale(1);
 }
 
 .mcqueen-vertical{
     position:absolute;
+
     z-index:15;
+
     left:7%;
     top:310px;
+
     writing-mode:vertical-rl;
+
     transform:rotate(180deg);
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     color:#988d84;
 }
 
 .mcqueen-label{
     position:absolute;
+
     z-index:15;
+
     left:14%;
     top:405px;
+
     padding:13px 16px;
+
     border:1px solid rgba(80,70,60,.24);
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     line-height:1.7;
+
     letter-spacing:.25em;
+
     color:#756c65;
+
     transform:rotate(-6deg);
 }
 
 .mcqueen-script{
     position:absolute;
+
     z-index:24;
+
     right:9%;
     top:505px;
+
     font-family:'Corinthia',cursive;
+
     font-size:39px;
+
     line-height:.72;
+
     text-align:left;
+
     color:#9d3038;
+
     transform:rotate(-7deg);
 }
 
 .mcqueen-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:730px;
+
     width:min(610px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .mcqueen-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .mcqueen-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:870px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -1079,19 +1602,28 @@ nav{
 
 .cdg{
     position:relative;
+
     height:980px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
+
     text-align:center;
 }
 
 .cdg-heading{
     position:absolute;
+
     z-index:30;
+
     top:70px;
     left:50%;
+
     width:80%;
+
     transform:translateX(-50%);
 }
 
@@ -1101,21 +1633,30 @@ nav{
 
 .cdg-big-number{
     position:absolute;
+
     z-index:1;
+
     left:2%;
     top:220px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:250px;
     font-weight:300;
+
     line-height:.8;
+
     color:rgba(40,30,20,.035);
 }
 
 .cdg-main{
     position:absolute;
+
     z-index:20;
+
     left:43%;
     top:285px;
+
     width:310px;
     height:405px;
 
@@ -1128,105 +1669,162 @@ nav{
 
 .cdg-ghost{
     position:absolute;
+
     z-index:4;
+
     right:5%;
     top:310px;
+
     width:25%;
     height:380px;
+
     overflow:hidden;
+
     opacity:.18;
+
     transform:rotate(4deg);
 }
 
 .cdg-ghost img{
     width:120%;
     height:100%;
+
     object-fit:cover;
+
     filter:grayscale(1);
 }
 
 .cdg-line{
     position:absolute;
+
     z-index:10;
+
     left:11%;
     top:400px;
+
     width:180px;
     height:1px;
+
     background:#a99f95;
+
     transform:rotate(-7deg);
 }
 
 .cdg-line::before,
 .cdg-line::after{
     content:"";
+
     position:absolute;
+
     top:-4px;
+
     width:1px;
     height:9px;
+
     background:#a99f95;
 }
 
-.cdg-line::before{left:0;}
-.cdg-line::after{right:0;}
+.cdg-line::before{
+    left:0;
+}
+
+.cdg-line::after{
+    right:0;
+}
 
 .cdg-measure{
     position:absolute;
+
     z-index:12;
+
     left:12%;
     top:420px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
     font-style:italic;
+
     letter-spacing:.1em;
+
     color:#81776f;
+
     transform:rotate(-7deg);
 }
 
 .cdg-script{
     position:absolute;
+
     z-index:24;
+
     right:9%;
     top:555px;
+
     font-family:'Corinthia',cursive;
+
     font-size:39px;
+
     line-height:.75;
+
     color:#6c3437;
+
     transform:rotate(6deg);
+
     text-align:left;
 }
 
 .cdg-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:750px;
+
     width:min(620px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .cdg-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .cdg-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:890px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -1237,127 +1835,196 @@ nav{
 
 .schiap{
     position:relative;
+
     height:960px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
+
     text-align:center;
 }
 
 .schiap-heading{
     position:absolute;
+
     z-index:30;
+
     top:72px;
     left:50%;
+
     width:80%;
+
     transform:translateX(-50%);
 }
 
 .schiap-main{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:270px;
+
     width:305px;
     height:410px;
+
     transform:translateX(-50%);
+
     object-fit:contain;
+
     mix-blend-mode:multiply;
 }
 
 .schiap-ghost{
     position:absolute;
+
     z-index:3;
+
     right:-3%;
     top:285px;
+
     width:27%;
     height:430px;
+
     overflow:hidden;
+
     opacity:.13;
+
     transform:rotate(6deg);
 }
 
 .schiap-ghost img{
     width:135%;
     height:100%;
+
     object-fit:cover;
+
     filter:grayscale(1);
 }
 
 .schiap-card{
     position:absolute;
+
     z-index:15;
+
     left:10%;
     top:330px;
+
     padding:17px 21px;
+
     background:#f2ebe1;
+
     border:1px solid #d9cfc2;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     line-height:1.7;
+
     letter-spacing:.32em;
+
     transform:rotate(-7deg);
+
     color:#75685e;
 }
 
 .schiap-lobster{
     position:absolute;
+
     z-index:12;
+
     left:10%;
     top:500px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:12px;
     font-style:italic;
+
     letter-spacing:.2em;
+
     color:#ac3338;
+
     transform:rotate(-8deg);
 }
 
 .schiap-script{
     position:absolute;
+
     z-index:24;
+
     right:8%;
     top:500px;
+
     font-family:'Corinthia',cursive;
+
     font-size:37px;
+
     line-height:.76;
+
     color:#a92f38;
+
     text-align:left;
+
     transform:rotate(-5deg);
 }
 
 .schiap-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:730px;
+
     width:min(610px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .schiap-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .schiap-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:870px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -1368,139 +2035,211 @@ nav{
 
 .birkin{
     position:relative;
+
     height:940px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
+
     text-align:center;
 }
 
 .birkin-heading{
     position:absolute;
+
     z-index:30;
+
     top:75px;
     left:50%;
+
     width:75%;
+
     transform:translateX(-50%);
 }
 
 .birkin-lot-number{
     position:absolute;
+
     z-index:1;
+
     right:5%;
     top:210px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:230px;
+
     line-height:1;
+
     color:rgba(45,35,25,.035);
 }
 
 .birkin-main{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:280px;
+
     width:390px;
     height:360px;
+
     transform:translateX(-50%);
+
     object-fit:contain;
+
     mix-blend-mode:multiply;
 
-    filter:
-        drop-shadow(
-            0 12px 15px rgba(55,45,35,.06)
-        );
+    filter:drop-shadow(
+        0 12px 15px rgba(55,45,35,.06)
+    );
 }
 
 .birkin-detail{
     position:absolute;
+
     z-index:5;
+
     left:5%;
     top:330px;
+
     width:22%;
     height:280px;
+
     overflow:hidden;
+
     opacity:.26;
+
     transform:rotate(-5deg);
 }
 
 .birkin-detail img{
     width:165%;
     height:100%;
+
     object-fit:cover;
+
     object-position:center;
 }
 
 .birkin-card{
     position:absolute;
+
     z-index:15;
+
     right:8%;
     top:345px;
+
     width:165px;
+
     padding:18px;
+
     border:1px solid #cfc5ba;
+
     text-align:left;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     line-height:1.8;
+
     letter-spacing:.18em;
+
     text-transform:uppercase;
+
     color:#7c7168;
 }
 
 .birkin-card strong{
     display:block;
+
     margin-bottom:7px;
+
     font-size:11px;
+
     font-weight:400;
+
     color:#302a26;
 }
 
 .birkin-script{
     position:absolute;
+
     z-index:22;
+
     right:8%;
     top:570px;
+
     font-family:'Corinthia',cursive;
+
     font-size:37px;
+
     line-height:.75;
+
     color:#78665b;
+
     transform:rotate(-6deg);
+
     text-align:left;
 }
 
 .birkin-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:700px;
+
     width:min(620px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .birkin-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .birkin-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:840px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -1511,19 +2250,28 @@ nav{
 
 .bourdin{
     position:relative;
+
     height:1000px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
+
     text-align:center;
 }
 
 .bourdin-heading{
     position:absolute;
+
     z-index:30;
+
     top:70px;
     left:50%;
+
     width:82%;
+
     transform:translateX(-50%);
 }
 
@@ -1533,109 +2281,163 @@ nav{
 
 .bourdin-main{
     position:absolute;
+
     z-index:15;
+
     left:50%;
     top:265px;
+
     width:48%;
     height:445px;
+
     transform:translateX(-50%);
+
     object-fit:cover;
 
-    filter:
-        drop-shadow(
-            0 13px 16px rgba(30,20,15,.08)
-        );
+    filter:drop-shadow(
+        0 13px 16px rgba(30,20,15,.08)
+    );
 }
 
 .bourdin-ghost{
     position:absolute;
+
     z-index:3;
+
     left:-5%;
     top:290px;
+
     width:30%;
     height:410px;
+
     overflow:hidden;
+
     opacity:.16;
+
     transform:rotate(-6deg);
 }
 
 .bourdin-ghost img{
     width:150%;
     height:100%;
+
     object-fit:cover;
 }
 
 .bourdin-frame-number{
     position:absolute;
+
     z-index:22;
+
     right:12%;
     top:330px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:10px;
+
     letter-spacing:.35em;
+
     color:#81756c;
+
     transform:rotate(5deg);
 }
 
 .bourdin-script{
     position:absolute;
+
     z-index:22;
+
     right:8%;
     top:510px;
+
     font-family:'Corinthia',cursive;
+
     font-size:41px;
+
     line-height:.73;
+
     text-align:left;
+
     color:#9f333b;
+
     transform:rotate(-6deg);
 }
 
 .bourdin-caption{
     position:absolute;
+
     z-index:22;
+
     left:15%;
     top:670px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
     font-style:italic;
+
     line-height:1.5;
+
     color:#81786f;
+
     transform:rotate(-3deg);
+
     text-align:left;
 }
 
 .bourdin-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:765px;
+
     width:min(620px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .bourdin-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .bourdin-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:905px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -1646,70 +2448,103 @@ nav{
 
 .cartier{
     position:relative;
+
     height:980px;
+
     overflow:hidden;
+
     background:var(--cream);
+
     border-bottom:1px solid var(--rule);
+
     text-align:center;
 }
 
 .cartier-heading{
     position:absolute;
+
     z-index:30;
+
     top:72px;
     left:50%;
+
     width:80%;
+
     transform:translateX(-50%);
 }
 
 .cartier-main{
     position:absolute;
+
     z-index:20;
+
     left:50%;
     top:275px;
+
     width:390px;
     height:390px;
+
     transform:translateX(-50%);
+
     object-fit:contain;
+
     mix-blend-mode:multiply;
 }
 
 .cartier-detail{
     position:absolute;
+
     z-index:4;
+
     left:-2%;
     top:330px;
+
     width:26%;
     height:340px;
+
     overflow:hidden;
+
     opacity:.22;
+
     transform:rotate(-5deg);
 }
 
 .cartier-detail img{
     width:155%;
     height:100%;
+
     object-fit:cover;
 }
 
 .cartier-route{
     position:absolute;
+
     z-index:20;
+
     right:8%;
     top:330px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:10px;
+
     letter-spacing:.3em;
+
     color:#756d66;
+
     transform:rotate(5deg);
 }
 
 .cartier-gem{
     position:absolute;
+
     z-index:12;
+
     width:9px;
     height:9px;
+
     border-radius:50%;
+
     opacity:.68;
 }
 
@@ -1739,49 +2574,77 @@ nav{
 
 .cartier-script{
     position:absolute;
+
     z-index:23;
+
     right:7%;
     top:545px;
+
     font-family:'Corinthia',cursive;
+
     font-size:40px;
+
     line-height:.74;
+
     color:#9d3038;
+
     text-align:left;
+
     transform:rotate(-7deg);
 }
 
 .cartier-copy{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:745px;
+
     width:min(620px,70%);
+
     transform:translateX(-50%);
+
     font-size:16px;
+
     line-height:1.5;
+
     color:#302b27;
 }
 
 .cartier-copy::after{
     content:"";
+
     display:block;
+
     width:65px;
     height:1px;
+
     margin:22px auto;
+
     background:#958b81;
 }
 
 .cartier-tags{
     position:absolute;
+
     z-index:25;
+
     left:50%;
     top:885px;
+
     transform:translateX(-50%);
+
     white-space:nowrap;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:8px;
+
     letter-spacing:.4em;
+
     text-transform:uppercase;
+
     color:#a0978d;
 }
 
@@ -1792,33 +2655,48 @@ nav{
 
 .archive-ending{
     padding:8rem 8vw;
+
     text-align:center;
+
     background:var(--cream);
 }
 
 .archive-ending small{
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     letter-spacing:.35em;
+
     text-transform:uppercase;
+
     color:#9b8b7b;
 }
 
 .archive-ending h2{
     margin-top:22px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:clamp(55px,7vw,95px);
+
     font-weight:300;
     font-style:italic;
+
     line-height:.9;
+
     letter-spacing:-.05em;
 }
 
 .archive-ending p{
     max-width:560px;
+
     margin:30px auto 0;
+
     font-size:16px;
+
     line-height:1.6;
+
     color:#6c645c;
 }
 
@@ -1829,36 +2707,55 @@ nav{
 
 footer{
     padding:55px 9vw;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:40px;
+
     background:var(--teal);
+
     color:#faf8f4;
 }
 
 .footer-name{
     font-family:'Cormorant Garamond',serif;
+
     font-size:13px;
+
     letter-spacing:.22em;
+
     text-transform:uppercase;
 }
 
 .footer-copy{
     max-width:420px;
+
     margin-top:10px;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:15px;
+
     font-style:italic;
+
     color:rgba(250,248,244,.55);
 }
 
 .footer-right{
     text-align:right;
+
     font-family:'Cormorant Garamond',serif;
+
     font-size:9px;
+
     line-height:2;
+
     letter-spacing:.2em;
+
     text-transform:uppercase;
+
     color:rgba(250,248,244,.55);
 }
 
@@ -1957,18 +2854,6 @@ footer{
     .star-23,
     .star-24{
         display:none;
-    }
-
-    .star-1{
-        left:48%;
-        top:9%;
-        font-size:34px;
-    }
-
-    .star-4{
-        right:21%;
-        top:19%;
-        font-size:24px;
     }
 
     .star-6{
@@ -2127,7 +3012,7 @@ footer{
     /* MUGLER */
 
     .mugler{
-        height:900px;
+        height:870px;
     }
 
     .mugler-heading{
@@ -2145,22 +3030,22 @@ footer{
     }
 
     .mugler-main{
-        top:250px;
-        width:235px;
-        height:335px;
+        top:245px;
+        width:245px;
+        height:340px;
     }
 
     .mugler-ghost{
         left:-22%;
-        top:325px;
+        top:315px;
         width:44%;
-        height:300px;
+        height:315px;
         opacity:.06;
     }
 
     .mugler-vintage-label{
         left:-8%;
-        top:270px;
+        top:205px;
         width:43%;
         max-width:none;
     }
@@ -2173,29 +3058,21 @@ footer{
         opacity:.34;
     }
 
-    .mugler-archive-label-img{
-        left:0;
-        top:525px;
-        width:27%;
-        max-width:none;
-        opacity:.68;
-    }
-
     .mugler-logo-art{
-        right:-2%;
-        top:505px;
+        right:-7%;
+        top:500px;
         width:44%;
         max-width:none;
     }
 
     .mugler-copy{
-        top:655px;
+        top:635px;
         width:80%;
         font-size:14px;
     }
 
     .mugler-tags{
-        top:815px;
+        top:790px;
         font-size:6px;
         letter-spacing:.23em;
     }
@@ -2622,7 +3499,9 @@ footer{
 }
 
 </style>
+
 </head>
+
 
 <body>
 
@@ -2695,10 +3574,8 @@ footer{
     >
 
 
-    <div class="star star-1 black">✳</div>
     <div class="star star-2 pink">✦</div>
     <div class="star star-3 black">✦</div>
-    <div class="star star-4 black">✳</div>
     <div class="star star-5 pink">✦</div>
     <div class="star star-6 black">✧</div>
     <div class="star star-7 pink">✦</div>
@@ -2799,24 +3676,30 @@ footer{
 
 
     <div class="tabi-signature">
+
         Maison<br>
         Martin<br>
         Margiela
+
     </div>
 
 
     <p class="tabi-copy">
+
         What began as a radical split-toe silhouette became one of
         fashion's most recognizable objects. I love the Tabi because
         its identity does not depend on a visible logo. The shape
         itself became the house code.
+
     </p>
 
 
     <div class="tabi-tags">
+
         FORM &nbsp;&nbsp;·&nbsp;&nbsp;
         IDENTITY &nbsp;&nbsp;·&nbsp;&nbsp;
         ANTI-LUXURY
+
     </div>
 
 </section>
@@ -2878,31 +3761,39 @@ footer{
 
 
     <div class="saddle-galliano-note">
+
         Galliano
 
         <span>
             SS00
         </span>
+
     </div>
 
 
     <p class="saddle-copy">
+
         Few accessories demonstrate the power of silhouette as clearly
         as the Saddle. Its asymmetric form turned a handbag into a visual
         code — recognizable before the Dior name is even read.
+
     </p>
 
 
     <div class="saddle-tags">
+
         SILHOUETTE &nbsp;&nbsp;·&nbsp;&nbsp;
         RECOGNITION &nbsp;&nbsp;·&nbsp;&nbsp;
         COLLECTIBILITY
+
     </div>
 
 
     <div class="saddle-red-note">
+
         form before<br>
         logo.
+
     </div>
 
 </section>
@@ -2967,13 +3858,6 @@ footer{
 
 
     <img
-        src="mugler-archive-label.png"
-        class="mugler-archive-label-img"
-        alt="Mugler couture archival notation"
-    >
-
-
-    <img
         src="la-chimere-logo.png"
         class="mugler-logo-art"
         alt="La Chimère fantasy as sculpture calligraphy"
@@ -2981,17 +3865,21 @@ footer{
 
 
     <p class="mugler-copy">
+
         What fascinates me about the Chimère gown is that its fantasy
         cannot be separated from the extraordinary work required to
         construct it. It represents fashion at the point where clothing
         begins to behave like sculpture.
+
     </p>
 
 
     <div class="mugler-tags">
+
         CRAFTSMANSHIP &nbsp;&nbsp;·&nbsp;&nbsp;
         FANTASY &nbsp;&nbsp;·&nbsp;&nbsp;
         TRANSFORMATION
+
     </div>
 
 </section>
@@ -3047,29 +3935,37 @@ footer{
 
 
     <div class="mcqueen-label">
+
         LONDON<br>
         2009
+
     </div>
 
 
     <div class="mcqueen-script">
+
         wearability<br>
         was never<br>
         the point.
+
     </div>
 
 
     <p class="mcqueen-copy">
+
         The Armadillo boot pushes the accessory almost beyond
         wearability. Its exaggerated structure changes the body,
         the walk and the silhouette itself.
+
     </p>
 
 
     <div class="mcqueen-tags">
+
         SCULPTURE &nbsp;&nbsp;·&nbsp;&nbsp;
         BODY &nbsp;&nbsp;·&nbsp;&nbsp;
         SPECTACLE
+
     </div>
 
 </section>
@@ -3129,28 +4025,36 @@ footer{
 
 
     <div class="cdg-measure">
+
         proportion / distortion
+
     </div>
 
 
     <div class="cdg-script">
+
         where does<br>
         the body end?
+
     </div>
 
 
     <p class="cdg-copy">
+
         Padding appeared in places fashion traditionally tries to
         flatten, narrow or conceal. The collection challenged the
         conventional silhouette and asked where the body ended and
         the garment began.
+
     </p>
 
 
     <div class="cdg-tags">
+
         BODY &nbsp;&nbsp;·&nbsp;&nbsp;
         PROPORTION &nbsp;&nbsp;·&nbsp;&nbsp;
         PROVOCATION
+
     </div>
 
 </section>
@@ -3201,35 +4105,45 @@ footer{
 
 
     <div class="schiap-card">
+
         PARIS<br>
         1937
+
     </div>
 
 
     <div class="schiap-lobster">
+
         lobster / surrealism
+
     </div>
 
 
     <div class="schiap-script">
+
         fashion enters<br>
         the conversation<br>
         with art.
+
     </div>
 
 
     <p class="schiap-copy">
+
         Schiaparelli understood that fashion could participate in the
         same visual conversation as art. The lobster turns an elegant
         evening dress into something strange, humorous and deliberately
         provocative.
+
     </p>
 
 
     <div class="schiap-tags">
+
         SURREALISM &nbsp;&nbsp;·&nbsp;&nbsp;
         COLLABORATION &nbsp;&nbsp;·&nbsp;&nbsp;
         PROVOCATION
+
     </div>
 
 </section>
@@ -3299,24 +4213,30 @@ footer{
 
 
     <div class="birkin-script">
+
         scarcity<br>
         becomes<br>
         mythology.
+
     </div>
 
 
     <p class="birkin-copy">
+
         The Himalaya Birkin interests me because it demonstrates how
         a luxury object acquires mythology. Material rarity,
         craftsmanship, restricted availability and auction culture
         accumulate around the bag until the object becomes a collectible.
+
     </p>
 
 
     <div class="birkin-tags">
+
         SCARCITY &nbsp;&nbsp;·&nbsp;&nbsp;
         MYTHOLOGY &nbsp;&nbsp;·&nbsp;&nbsp;
         VALUE
+
     </div>
 
 </section>
@@ -3367,36 +4287,46 @@ footer{
 
 
     <div class="bourdin-frame-number">
+
         IMAGE / 008
+
     </div>
 
 
     <div class="bourdin-script">
+
         the image<br>
         before<br>
         the product.
+
     </div>
 
 
     <div class="bourdin-caption">
+
         impossible colour<br>
         strange framing<br>
         controlled desire
+
     </div>
 
 
     <p class="bourdin-copy">
+
         Before I understood fashion photography as an industry,
         I understood the feeling of it: impossible colour, strange
         framing and images in which the product could become almost
         secondary to the world around it.
+
     </p>
 
 
     <div class="bourdin-tags">
+
         PHOTOGRAPHY &nbsp;&nbsp;·&nbsp;&nbsp;
         DESIRE &nbsp;&nbsp;·&nbsp;&nbsp;
         NARRATIVE
+
     </div>
 
 </section>
@@ -3447,7 +4377,9 @@ footer{
 
 
     <div class="cartier-route">
+
         INDIA → PARIS
+
     </div>
 
 
@@ -3458,24 +4390,30 @@ footer{
 
 
     <div class="cartier-script">
+
         colour<br>
         without<br>
         restraint.
+
     </div>
 
 
     <p class="cartier-copy">
+
         I keep coming back to Tutti Frutti because it rejects the
         idea that sophistication must always mean restraint. Carved
         coloured stones and dense ornament become harmonious through
         craftsmanship.
+
     </p>
 
 
     <div class="cartier-tags">
+
         JEWELRY &nbsp;&nbsp;·&nbsp;&nbsp;
         COLOUR &nbsp;&nbsp;·&nbsp;&nbsp;
         CRAFTSMANSHIP
+
     </div>
 
 </section>
@@ -3492,14 +4430,18 @@ footer{
     </small>
 
     <h2>
+
         The archive is<br>
         never finished.
+
     </h2>
 
     <p>
+
         These objects do not form a complete history of fashion.
         They form a personal one — pieces, images and ideas I return
         to because each changed the language around it.
+
     </p>
 
 </section>
@@ -3518,19 +4460,24 @@ footer{
         </div>
 
         <p class="footer-copy">
+
             A curated perspective on fashion, luxury and the structures behind them.
+
         </p>
 
     </div>
 
 
     <div class="footer-right">
+
         ANAISDOROSHINA1@GMAIL.COM<br>
         LINKEDIN<br>
         EST. 2024
+
     </div>
 
 </footer>
+
 
 </body>
 </html>
