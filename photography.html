@@ -29,6 +29,7 @@
   --rule:#d8d4cc;
   --accent:#b89a7a;
   --dark:#12100e;
+  --venice-blue:#e7ecef;
 }
 
 html{
@@ -38,12 +39,9 @@ html{
 body{
   background:var(--cream);
   color:var(--ink);
-
   font-family:'EB Garamond',Georgia,serif;
-
   font-size:17px;
   line-height:1.75;
-
   -webkit-font-smoothing:antialiased;
 }
 
@@ -57,7 +55,6 @@ nav{
   top:0;
   left:0;
   right:0;
-
   z-index:100;
 
   background:rgba(250,248,244,0.96);
@@ -78,12 +75,9 @@ nav{
 
 .nav-logo{
   font-family:'Cormorant Garamond',serif;
-
   font-size:12px;
   letter-spacing:0.22em;
-
   text-transform:uppercase;
-
   color:var(--ink);
   text-decoration:none;
 }
@@ -95,15 +89,11 @@ nav{
 
 .nav-links a{
   font-family:'Cormorant Garamond',serif;
-
   font-size:11px;
   letter-spacing:0.18em;
-
   text-transform:uppercase;
-
   color:var(--muted);
   text-decoration:none;
-
   transition:color 0.2s;
 }
 
@@ -142,20 +132,15 @@ nav{
 
 .spread-photo{
   overflow:hidden;
-
   aspect-ratio:1 / 1;
-
   background:var(--cream);
 }
 
 .spread-photo img{
   width:100%;
   height:100%;
-
   object-fit:contain;
-
   display:block;
-
   transition:transform 0.6s ease;
 }
 
@@ -163,16 +148,13 @@ nav{
   transform:scale(1.04);
 }
 
-
-/* FIX FOR ATELIER IMAGE */
-
 .spread-photo img.fill-photo{
   object-fit:cover;
   object-position:center;
 }
 
 
-/* SPREAD TEXT */
+/* D&G TEXT */
 
 .spread-text{
   padding:6vw 7vw;
@@ -184,27 +166,19 @@ nav{
 
 .spread-heading{
   font-family:'Corinthia',cursive;
-
   font-size:clamp(56px,6vw,88px);
-
   font-weight:400;
   line-height:1;
-
   margin-bottom:1.2rem;
-
   color:var(--ink);
 }
 
 .spread-subheader{
   font-family:'Cormorant Garamond',serif;
-
   font-size:11px;
   letter-spacing:0.18em;
-
   text-transform:uppercase;
-
   color:var(--muted);
-
   font-style:italic;
 
   margin-top:-1rem;
@@ -215,28 +189,21 @@ nav{
 
 .spread-body{
   font-size:15.5px;
-
   line-height:2;
-
   color:var(--muted);
-
   letter-spacing:0.04em;
-
   margin-bottom:1.4rem;
 }
 
 
 /* ─────────────────────────────
-   PHOTO STRIP
+   D&G PHOTO STRIP
 ───────────────────────────── */
 
 .strip{
   display:grid;
-
   grid-template-columns:repeat(7,1fr);
-
   gap:4px;
-
   padding:4px;
 
   background:var(--cream);
@@ -246,20 +213,15 @@ nav{
 
 .strip-photo{
   overflow:hidden;
-
   aspect-ratio:2 / 3;
-
   background:var(--cream);
 }
 
 .strip-photo img{
   width:100%;
   height:100%;
-
   object-fit:contain;
-
   display:block;
-
   transition:transform 0.5s ease;
 }
 
@@ -275,7 +237,6 @@ nav{
 .chapter-divider{
   display:flex;
   align-items:center;
-
   gap:2rem;
 
   padding:3.5vw 10vw;
@@ -285,32 +246,23 @@ nav{
 
 .chapter-divider-label{
   font-family:'Cormorant Garamond',serif;
-
   font-size:11px;
   letter-spacing:0.3em;
-
   text-transform:uppercase;
-
   color:var(--muted);
-
   white-space:nowrap;
 }
 
 .chapter-divider-line{
   flex:1;
-
   height:0.5px;
-
   background:var(--rule);
 }
 
 .chapter-divider-next{
   font-family:'Corinthia',cursive;
-
   font-size:clamp(32px,3.5vw,50px);
-
   color:var(--ink);
-
   white-space:nowrap;
 }
 
@@ -321,9 +273,7 @@ nav{
 
 .venice-lace-title{
   position:relative;
-
   width:100%;
-
   overflow:hidden;
 
   border-bottom:0.5px solid var(--rule);
@@ -332,13 +282,11 @@ nav{
 .venice-lace-title img{
   width:100%;
   height:auto;
-
   display:block;
 }
 
 .venice-lace-overlay{
   position:absolute;
-
   bottom:0;
   right:0;
 
@@ -349,13 +297,9 @@ nav{
 
 .venice-main-title{
   font-family:'Corinthia',cursive;
-
   font-size:clamp(64px,8vw,120px);
-
   font-weight:400;
-
   line-height:0.9;
-
   color:#faf8f4;
 }
 
@@ -375,36 +319,34 @@ nav{
   flex-direction:column;
   align-items:center;
 
-  gap:2.6rem;
+  gap:2.8rem;
 
-  padding:5rem 7vw 4.7rem;
+  padding:5rem 7vw 4.8rem;
 
-  border-bottom:0.5px solid var(--rule);
-
-  background:#e7ecef;
+  background:var(--venice-blue);
 }
 
 
-/* TWO IMAGE EDITORIAL PAIR */
+/* TWO IMAGE PAIR */
 
 .venice-hero-pair{
   width:min(1180px,100%);
 
   display:grid;
-  grid-template-columns:0.9fr 1.1fr;
+  grid-template-columns:0.92fr 1.08fr;
 
   gap:18px;
 
-  align-items:center;
+  align-items:stretch;
 }
 
-.venice-hero{
+.venice-hero,
+.venice-me{
   width:100%;
   height:500px;
-
   overflow:hidden;
 
-  background:#dde4e8;
+  background:#dce4e8;
 }
 
 .venice-hero img{
@@ -412,19 +354,9 @@ nav{
   height:100%;
 
   object-fit:cover;
-
   object-position:35% center;
 
   display:block;
-}
-
-.venice-me{
-  width:100%;
-  height:500px;
-
-  overflow:hidden;
-
-  background:#dde4e8;
 }
 
 .venice-me img{
@@ -445,10 +377,6 @@ nav{
 
   display:flex;
   justify-content:center;
-
-  padding:0;
-
-  border-left:none;
 }
 
 .venice-side-text p{
@@ -462,7 +390,7 @@ nav{
 
   letter-spacing:0.04em;
 
-  color:#697176;
+  color:#667077;
 
   line-height:1.9;
 
@@ -476,22 +404,20 @@ nav{
 
 .venice-grid{
   display:grid;
-
   grid-template-columns:repeat(4,1fr);
 
   gap:4px;
 
   padding:4px;
 
-  background:var(--cream);
+  background:var(--venice-blue);
 
   border-bottom:0.5px solid var(--rule);
 }
 
 .venice-photo{
   overflow:hidden;
-
-  background:var(--cream);
+  background:var(--venice-blue);
 }
 
 .venice-photo img{
@@ -515,7 +441,7 @@ nav{
 
 
 /* ─────────────────────────────
-   THE MET — CAMP
+   THE MET / CAMP
 ───────────────────────────── */
 
 .camp-section{
@@ -523,7 +449,7 @@ nav{
 
   overflow:hidden;
 
-  padding:7vw 6vw 7vw;
+  padding:7vw 6vw 7.5vw;
 
   background:
     radial-gradient(
@@ -568,131 +494,41 @@ nav{
   color:rgba(26,24,20,.025);
 
   pointer-events:none;
-
   user-select:none;
 }
 
 
-/* CAMP INTRO */
+/* ─────────────────────────────
+   CAMP INTRO — TEXT ONLY
+───────────────────────────── */
 
 .camp-intro{
   position:relative;
-
   z-index:2;
 
-  display:grid;
-
-  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
-
-  gap:6vw;
-
-  align-items:center;
+  display:flex;
+  justify-content:center;
 
   margin-bottom:6vw;
 }
 
-.camp-feature{
-  position:relative;
-
-  min-height:620px;
-}
-
-.camp-feature-main{
-  position:absolute;
-
-  left:4%;
-  top:2%;
-
-  width:69%;
-  height:88%;
-
-  object-fit:cover;
-  object-position:center;
-
-  transform:rotate(-2.5deg);
-
-  box-shadow:0 18px 35px rgba(45,30,35,.08);
-}
-
-.camp-feature-small{
-  position:absolute;
-
-  right:0;
-  bottom:1%;
-
-  width:44%;
-  height:48%;
-
-  object-fit:cover;
-  object-position:center;
-
-  transform:rotate(4deg);
-
-  border:8px solid var(--cream);
-
-  box-shadow:0 14px 28px rgba(45,30,35,.10);
-}
-
-.camp-tape{
-  position:absolute;
-
-  z-index:6;
-
-  width:88px;
-  height:24px;
-
-  background:rgba(239,225,214,.83);
-
-  box-shadow:0 1px 2px rgba(70,55,45,.05);
-}
-
-.camp-tape.one{
-  left:0;
-  top:3%;
-
-  transform:rotate(-10deg);
-}
-
-.camp-tape.two{
-  right:4%;
-  bottom:44%;
-
-  transform:rotate(10deg);
-}
-
-.camp-handnote{
-  position:absolute;
-
-  z-index:7;
-
-  left:5%;
-  bottom:-1%;
-
-  font-family:'Corinthia',cursive;
-
-  font-size:clamp(37px,4vw,57px);
-
-  line-height:.8;
-
-  color:#a33d54;
-
-  transform:rotate(-7deg);
-}
-
 .camp-copy-block{
-  position:relative;
+  width:min(780px,90%);
+  margin:0 auto;
 
-  padding:2vw 1vw 2vw 2vw;
+  padding:1vw 2vw 2vw;
+
+  text-align:center;
 }
 
 .camp-kicker{
-  margin-bottom:1.3rem;
+  margin-bottom:1.4rem;
 
   font-family:'Cormorant Garamond',serif;
 
   font-size:10px;
 
-  letter-spacing:.26em;
+  letter-spacing:.28em;
 
   text-transform:uppercase;
 
@@ -700,16 +536,14 @@ nav{
 }
 
 .camp-title{
-  max-width:620px;
-
   font-family:'Cormorant Garamond',serif;
 
-  font-size:clamp(64px,7vw,108px);
+  font-size:clamp(68px,8vw,120px);
 
   font-weight:300;
   font-style:italic;
 
-  line-height:.84;
+  line-height:.82;
 
   letter-spacing:-.055em;
 
@@ -719,12 +553,11 @@ nav{
 .camp-title-script{
   display:block;
 
-  margin-top:.2rem;
-  margin-left:1.6rem;
+  margin-top:.15rem;
 
   font-family:'Corinthia',cursive;
 
-  font-size:.72em;
+  font-size:.74em;
 
   font-weight:400;
   font-style:normal;
@@ -733,15 +566,13 @@ nav{
 
   color:#a33d54;
 
-  transform:rotate(-4deg);
-
-  transform-origin:left center;
+  transform:rotate(-3deg);
 }
 
 .camp-subheader{
-  max-width:560px;
+  width:min(560px,100%);
 
-  margin-top:2rem;
+  margin:2rem auto 0;
 
   padding-top:1.2rem;
 
@@ -759,9 +590,9 @@ nav{
 }
 
 .camp-body{
-  max-width:570px;
+  width:min(630px,100%);
 
-  margin-top:1.8rem;
+  margin:1.8rem auto 0;
 
   font-size:15.5px;
 
@@ -777,7 +608,7 @@ nav{
 
   font-family:'Corinthia',cursive;
 
-  font-size:37px;
+  font-size:38px;
 
   line-height:1;
 
@@ -837,13 +668,11 @@ nav{
 
 .camp-01{
   grid-column:span 7;
-
   height:410px;
 }
 
 .camp-02{
   grid-column:span 5;
-
   height:410px;
 }
 
@@ -854,7 +683,6 @@ nav{
 .camp-04,
 .camp-05{
   grid-column:span 4;
-
   height:350px;
 }
 
@@ -863,14 +691,19 @@ nav{
 
 .camp-06{
   grid-column:span 7;
-
   height:410px;
 }
 
 .camp-07{
   grid-column:span 5;
-
   height:410px;
+}
+
+
+/* HEADPIECE PHOTO — SHOW TOP */
+
+.camp-03 img{
+  object-position:center top;
 }
 
 
@@ -1124,11 +957,14 @@ footer{
   }
 
 
-  /* VENICE */
+  /* DIVIDER */
 
   .chapter-divider{
     padding:8vw;
   }
+
+
+  /* VENICE */
 
   .venice-hero-row{
     padding:3.5rem 7vw 3.7rem;
@@ -1174,40 +1010,12 @@ footer{
   }
 
   .camp-intro{
-    grid-template-columns:1fr;
-
-    gap:4rem;
-
     margin-bottom:4rem;
   }
 
-  .camp-feature{
-    min-height:520px;
-  }
-
-  .camp-feature-main{
-    left:2%;
-
-    width:74%;
-    height:86%;
-  }
-
-  .camp-feature-small{
-    right:1%;
-
-    width:48%;
-    height:45%;
-
-    border-width:6px;
-  }
-
-  .camp-handnote{
-    left:2%;
-
-    font-size:38px;
-  }
-
   .camp-copy-block{
+    width:100%;
+
     padding:0 1vw;
   }
 
@@ -1216,8 +1024,6 @@ footer{
   }
 
   .camp-title-script{
-    margin-left:.6rem;
-
     font-size:.76em;
   }
 
@@ -1238,7 +1044,7 @@ footer{
   }
 
 
-  /* STRUCTURED CAMP MOBILE GRID */
+  /* CAMP MOBILE GRID */
 
   .camp-gallery{
     grid-template-columns:repeat(2,1fr);
@@ -1344,43 +1150,35 @@ footer{
   <div class="spread-photos">
 
     <div class="spread-photo">
-
       <img
         src="IMG_6950.png"
         alt="Silver Rose Dress"
       />
-
     </div>
 
 
     <div class="spread-photo">
-
       <img
         src="IMG_6962.png"
         alt="D&G Embroidered Piece"
       />
-
     </div>
 
 
     <div class="spread-photo">
-
       <img
         src="IMG_7020.png"
         alt="D&G Exhibition Room"
       />
-
     </div>
 
 
     <div class="spread-photo">
-
       <img
         src="IMG_9470.png"
         alt="D&G Atelier"
         class="fill-photo"
       />
-
     </div>
 
   </div>
@@ -1509,7 +1307,7 @@ footer{
 
 
 
-<!-- VENICE FEATURE -->
+<!-- VENICE PERSONAL FEATURE -->
 
 <section class="venice-hero-row">
 
@@ -1530,7 +1328,7 @@ footer{
     <div class="venice-me">
 
       <img
-        src="me.png"
+        src="./me.png"
         alt="Anaïs participating in Venice Carnival"
       />
 
@@ -1617,9 +1415,12 @@ footer{
 
 
 
-<!-- THE MET / CAMP -->
+<!-- ─────────────────────────────
+     THE MET / CAMP
+───────────────────────────── -->
 
 <section class="camp-section">
+
 
   <div
     class="camp-ghost-word"
@@ -1629,39 +1430,13 @@ footer{
   </div>
 
 
+
+  <!-- TEXT INTRO -->
+
   <div class="camp-intro">
 
-
-    <div class="camp-feature">
-
-      <div class="camp-tape one"></div>
-
-      <div class="camp-tape two"></div>
-
-
-      <img
-        src="whimsical-bow.png"
-        class="camp-feature-main"
-        alt="Bow dress from Camp Notes on Fashion at The Met"
-      />
-
-
-      <img
-        src="whismical-bird.png"
-        class="camp-feature-small"
-        alt="Black swan dress from Camp Notes on Fashion at The Met"
-      />
-
-
-      <div class="camp-handnote">
-        more is more.
-      </div>
-
-    </div>
-
-
-
     <div class="camp-copy-block">
+
 
       <div class="camp-kicker">
         Camp: Notes on Fashion · 2019
@@ -1704,8 +1479,8 @@ footer{
         too much? exactly.
       </div>
 
-    </div>
 
+    </div>
 
   </div>
 
@@ -1868,6 +1643,7 @@ footer{
 
         </defs>
 
+
         <text
           font-family="'Cormorant Garamond',serif"
           font-size="8.5"
@@ -1885,9 +1661,11 @@ footer{
 
     </div>
 
+
     <div class="stamp-center">
       AD
     </div>
+
 
   </div>
 
@@ -1898,6 +1676,7 @@ footer{
 <!-- FOOTER -->
 
 <footer>
+
 
   <div>
 
@@ -1922,6 +1701,7 @@ footer{
       anaisdoroshina1@gmail.com
     </a>
 
+
     <a
       href="#"
       class="ft-link"
@@ -1929,11 +1709,13 @@ footer{
       LinkedIn
     </a>
 
+
     <p class="ft-copy">
       Est. 2024
     </p>
 
   </div>
+
 
 </footer>
 
