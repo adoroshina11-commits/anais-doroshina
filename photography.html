@@ -12,8 +12,6 @@
 />
 
 <title>Photography — Anaïs Doroshina</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-<link rel="apple-touch-icon" href="favicon.png">
 
 <style>
 
@@ -134,7 +132,7 @@ nav{
 }
 
 
-/* D&G IMAGE GRID */
+/* IMAGE GRID */
 
 .spread-photos{
   display:grid;
@@ -177,7 +175,7 @@ nav{
 }
 
 
-/* D&G TEXT */
+/* TEXT */
 
 .spread-text{
   padding:6vw 7vw;
@@ -281,7 +279,6 @@ nav{
 
 .chapter-divider{
   display:flex;
-
   align-items:center;
 
   gap:2rem;
@@ -295,7 +292,6 @@ nav{
   font-family:'Cormorant Garamond',serif;
 
   font-size:11px;
-
   letter-spacing:0.3em;
 
   text-transform:uppercase;
@@ -435,9 +431,6 @@ nav{
   display:block;
 }
 
-
-/* VENICE DESCRIPTION */
-
 .venice-side-text{
   width:100%;
 
@@ -511,7 +504,7 @@ nav{
 
 
 /* ─────────────────────────────
-   THE MET / CAMP
+   NEW YORK
 ───────────────────────────── */
 
 .camp-section{
@@ -546,22 +539,22 @@ nav{
   position:absolute;
 
   top:-1.2vw;
-  right:-1vw;
+  right:-2vw;
 
   z-index:0;
 
   font-family:'Cormorant Garamond',serif;
 
-  font-size:clamp(150px,22vw,340px);
+  font-size:clamp(115px,18vw,280px);
 
   font-weight:300;
   font-style:italic;
 
   line-height:.75;
 
-  letter-spacing:-.08em;
+  letter-spacing:-.07em;
 
-  color:rgba(26,24,20,.025);
+  color:rgba(26,24,20,.024);
 
   pointer-events:none;
 
@@ -570,7 +563,7 @@ nav{
 
 
 /* ─────────────────────────────
-   CAMP INTRO
+   THE MET INTRO
 ───────────────────────────── */
 
 .camp-intro{
@@ -588,9 +581,6 @@ nav{
 
   margin-bottom:6vw;
 }
-
-
-/* WHIMSICAL INTRO COLLAGE */
 
 .camp-feature{
   position:relative;
@@ -679,9 +669,6 @@ nav{
 
   transform:rotate(-7deg);
 }
-
-
-/* CAMP TEXT */
 
 .camp-copy-block{
   position:relative;
@@ -792,95 +779,121 @@ nav{
 
 
 /* ─────────────────────────────
-   STRUCTURED CAMP GALLERY
+   MUSEUM DIVIDERS
 ───────────────────────────── */
 
-.camp-gallery{
+.museum-divider{
   position:relative;
 
   z-index:2;
 
-  width:100%;
+  display:flex;
+  align-items:center;
+
+  gap:1.6rem;
+
+  margin:1rem 0 1.2rem;
+
+  padding-top:1.4rem;
+
+  border-top:0.5px solid var(--rule);
+}
+
+.museum-name{
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:11px;
+
+  letter-spacing:.27em;
+
+  text-transform:uppercase;
+
+  color:var(--ink);
+
+  white-space:nowrap;
+}
+
+.museum-line{
+  flex:1;
+
+  height:0.5px;
+
+  background:var(--rule);
+}
+
+.museum-exhibition{
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:9px;
+
+  letter-spacing:.2em;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
+
+  white-space:nowrap;
+}
+
+
+/* ─────────────────────────────
+   THE MET GALLERY
+───────────────────────────── */
+
+.met-gallery{
+  position:relative;
+
+  z-index:2;
 
   display:grid;
 
-  grid-template-columns:repeat(12,1fr);
+  grid-template-columns:repeat(3,1fr);
 
   gap:12px;
 
-  align-items:stretch;
+  margin-bottom:8vw;
 }
 
-.camp-shot{
+.museum-shot{
   position:relative;
+
+  height:410px;
 
   overflow:hidden;
 
-  background:#efeae5;
+  background:#eee8e4;
 
   box-shadow:0 7px 17px rgba(40,30,20,.045);
 }
 
-.camp-shot img{
+.museum-shot img{
   width:100%;
   height:100%;
 
-  object-fit:cover;
-
   display:block;
+
+  object-fit:cover;
 
   transition:transform .6s ease;
 }
 
-.camp-shot:hover img{
-  transform:scale(1.035);
+.museum-shot:hover img{
+  transform:scale(1.025);
 }
 
-
-/* FIRST ROW */
-
-.camp-01{
-  grid-column:span 5;
-
-  height:430px;
-}
-
-.camp-02{
-  grid-column:span 7;
-
-  height:430px;
-}
-
-
-/* SECOND ROW */
-
-.camp-03,
-.camp-04,
-.camp-05{
-  grid-column:span 4;
-
-  height:350px;
-}
-
-
-/* LETTUCE HEADPIECE IMAGE */
-
-.camp-01 img{
+.met-headpiece img{
   object-position:center top;
 }
 
-
-/* PHOTO NUMBERS */
-
-.camp-shot-number{
+.museum-photo-label{
   position:absolute;
 
   left:12px;
   bottom:10px;
 
-  padding:3px 7px;
+  padding:4px 8px;
 
-  background:rgba(250,248,244,.84);
+  background:rgba(250,248,244,.88);
 
   font-family:'Cormorant Garamond',serif;
 
@@ -889,6 +902,86 @@ nav{
   letter-spacing:.18em;
 
   color:#6f675f;
+}
+
+
+/* ─────────────────────────────
+   BROOKLYN MUSEUM INTRO
+───────────────────────────── */
+
+.brooklyn-intro{
+  position:relative;
+
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:.9fr 1.1fr;
+
+  gap:7vw;
+
+  align-items:center;
+
+  padding:2vw 4vw 5vw;
+}
+
+.brooklyn-title{
+  font-family:'Cormorant Garamond',serif;
+
+  font-size:clamp(58px,6vw,94px);
+
+  font-weight:300;
+
+  line-height:.9;
+
+  letter-spacing:-.045em;
+
+  color:var(--ink);
+}
+
+.brooklyn-title em{
+  display:block;
+
+  margin-left:1.5rem;
+
+  font-family:'Corinthia',cursive;
+
+  font-size:.82em;
+
+  font-weight:400;
+
+  color:#6f845e;
+
+  transform:rotate(-3deg);
+}
+
+.brooklyn-copy .camp-subheader{
+  margin-top:0;
+}
+
+
+/* ─────────────────────────────
+   BROOKLYN GALLERY
+───────────────────────────── */
+
+.brooklyn-divider{
+  margin-top:0;
+}
+
+.brooklyn-gallery{
+  position:relative;
+
+  z-index:2;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:12px;
+}
+
+.brooklyn-gallery .museum-shot{
+  height:470px;
 }
 
 
@@ -1100,8 +1193,6 @@ footer{
   }
 
 
-  /* D&G STRIP */
-
   .strip{
     grid-template-columns:repeat(2,1fr);
   }
@@ -1146,7 +1237,7 @@ footer{
   }
 
 
-  /* CAMP */
+  /* NEW YORK */
 
   .camp-section{
     padding:12vw 7vw 13vw;
@@ -1154,9 +1245,10 @@ footer{
 
   .camp-ghost-word{
     top:1rem;
+
     right:-1.5rem;
 
-    font-size:42vw;
+    font-size:30vw;
   }
 
   .camp-intro{
@@ -1224,32 +1316,64 @@ footer{
   }
 
 
-  /* CAMP GALLERY */
+  /* MUSEUM DIVIDERS */
 
-  .camp-gallery{
-    grid-template-columns:repeat(2,1fr);
+  .museum-divider{
+    gap:.8rem;
+  }
+
+  .museum-name{
+    font-size:9px;
+  }
+
+  .museum-exhibition{
+    display:none;
+  }
+
+
+  /* THE MET */
+
+  .met-gallery{
+    grid-template-columns:1fr 1fr;
+
+    gap:7px;
+
+    margin-bottom:16vw;
+  }
+
+  .met-gallery .museum-shot{
+    height:290px;
+  }
+
+  .met-gallery .museum-shot:last-child{
+    grid-column:1 / -1;
+
+    height:340px;
+  }
+
+
+  /* BROOKLYN */
+
+  .brooklyn-intro{
+    grid-template-columns:1fr;
+
+    gap:2rem;
+
+    padding:6vw 1vw 12vw;
+  }
+
+  .brooklyn-title{
+    font-size:60px;
+  }
+
+  .brooklyn-gallery{
+    grid-template-columns:1fr;
 
     gap:7px;
   }
 
-  .camp-01,
-  .camp-02{
-    grid-column:span 2;
-
-    height:330px;
-  }
-
-  .camp-03,
-  .camp-04{
-    grid-column:span 1;
-
-    height:270px;
-  }
-
-  .camp-05{
-    grid-column:span 2;
-
-    height:300px;
+  .brooklyn-gallery .museum-shot{
+    height:340px;
   }
 
 
@@ -1333,34 +1457,16 @@ footer{
   <div class="spread-photos">
 
     <div class="spread-photo">
-
-      <img
-        src="IMG_6950.png"
-        alt="Silver Rose Dress"
-      />
-
+      <img src="IMG_6950.png" alt="Silver Rose Dress"/>
     </div>
-
 
     <div class="spread-photo">
-
-      <img
-        src="IMG_6962.png"
-        alt="D&G Embroidered Piece"
-      />
-
+      <img src="IMG_6962.png" alt="D&G Embroidered Piece"/>
     </div>
-
 
     <div class="spread-photo">
-
-      <img
-        src="IMG_7020.png"
-        alt="D&G Exhibition Room"
-      />
-
+      <img src="IMG_7020.png" alt="D&G Exhibition Room"/>
     </div>
-
 
     <div class="spread-photo">
 
@@ -1384,7 +1490,7 @@ footer{
 
 
     <p class="spread-subheader">
-      Dal Cuore alle Mani — Inside Dolce &amp; Gabbana - Milano
+      From The Heart To The Hands — Inside Dolce &amp; Gabbana - Milano
     </p>
 
 
@@ -1479,7 +1585,7 @@ footer{
 
 
 
-<!-- VENICE LACE -->
+<!-- VENICE TITLE -->
 
 <div class="venice-lace-title">
 
@@ -1597,7 +1703,9 @@ footer{
 
 
 
-<!-- NEW YORK DIVIDER -->
+<!-- ─────────────────────────────
+     NEW YORK DIVIDER
+───────────────────────────── -->
 
 <div class="chapter-divider">
 
@@ -1608,7 +1716,7 @@ footer{
   <div class="chapter-divider-line"></div>
 
   <span class="chapter-divider-next">
-    The Met.
+    Two Museums.
   </span>
 
 </div>
@@ -1616,7 +1724,7 @@ footer{
 
 
 <!-- ─────────────────────────────
-     CAMP: NOTES ON FASHION
+     NEW YORK — THE MET + BROOKLYN
 ───────────────────────────── -->
 
 <section class="camp-section">
@@ -1626,12 +1734,14 @@ footer{
     class="camp-ghost-word"
     aria-hidden="true"
   >
-    CAMP
+    NEW YORK
   </div>
 
 
 
-  <!-- CAMP INTRO -->
+  <!-- ─────────────────────────────
+       THE MET
+  ───────────────────────────── -->
 
   <div class="camp-intro">
 
@@ -1647,14 +1757,14 @@ footer{
       <img
         src="whimsical-bow.png"
         class="camp-feature-main"
-        alt="Bow dress from Camp Notes on Fashion at The Met"
+        alt="Fashion displayed at Camp Notes on Fashion at The Met"
       />
 
 
       <img
         src="whismical-bird.png"
         class="camp-feature-small"
-        alt="Black swan dress from Camp Notes on Fashion at The Met"
+        alt="Fashion displayed at Camp Notes on Fashion at The Met"
       />
 
 
@@ -1671,7 +1781,7 @@ footer{
 
 
       <div class="camp-kicker">
-        Camp: Notes on Fashion · 2019
+        The Metropolitan Museum of Art · 2019
       </div>
 
 
@@ -1687,15 +1797,15 @@ footer{
 
 
       <div class="camp-subheader">
-        The Metropolitan Museum of Art · New York
+        Camp: Notes on Fashion · The Costume Institute
       </div>
 
 
       <p class="camp-body">
         Camp is fashion at its most theatrical — exaggerated, ironic,
         playful, and completely self-aware. I photographed the exhibition
-        as a study in scale, colour, and absurdity: bows too large,
-        silhouettes turned into characters, and garments that refuse
+        as a study in scale, colour, humour, and absurdity: silhouettes
+        turned into characters and garments that deliberately refuse
         restraint.
       </p>
 
@@ -1719,91 +1829,183 @@ footer{
 
 
 
-  <!-- CAMP GALLERY -->
+  <!-- THE MET LABEL -->
+
+  <div class="museum-divider">
+
+    <span class="museum-name">
+      The Met
+    </span>
+
+    <div class="museum-line"></div>
+
+    <span class="museum-exhibition">
+      Camp: Notes on Fashion · 2019
+    </span>
+
+  </div>
 
 
-  <div class="camp-gallery">
+
+  <!-- THE MET PHOTOS -->
+
+  <div class="met-gallery">
 
 
-    <!-- 01 — HEADPIECE -->
-
-    <figure class="camp-shot camp-01">
+    <figure class="museum-shot met-headpiece">
 
       <img
         src="nyc3.png"
-        alt="Sculptural headpiece from Camp Notes on Fashion"
+        alt="Headpiece displayed at Camp Notes on Fashion"
       />
 
-      <span class="camp-shot-number">
-        01
+      <span class="museum-photo-label">
+        THE MET · 01
       </span>
 
     </figure>
 
 
 
-    <!-- 02 -->
-
-    <figure class="camp-shot camp-02">
+    <figure class="museum-shot">
 
       <img
         src="nyc4.png"
-        alt="Fashion display from Camp Notes on Fashion"
+        alt="Fashion displayed at Camp Notes on Fashion"
       />
 
-      <span class="camp-shot-number">
-        02
+      <span class="museum-photo-label">
+        THE MET · 02
       </span>
 
     </figure>
 
 
 
-    <!-- 03 -->
-
-    <figure class="camp-shot camp-03">
+    <figure class="museum-shot">
 
       <img
         src="nyc5.png"
-        alt="Purple butterfly dresses from Camp Notes on Fashion"
+        alt="Purple fashion displayed at Camp Notes on Fashion"
       />
 
-      <span class="camp-shot-number">
-        03
+      <span class="museum-photo-label">
+        THE MET · 03
       </span>
 
     </figure>
 
 
+  </div>
 
-    <!-- 04 -->
 
-    <figure class="camp-shot camp-04">
+
+  <!-- ─────────────────────────────
+       BROOKLYN MUSEUM
+  ───────────────────────────── -->
+
+  <div class="brooklyn-intro">
+
+
+    <div class="brooklyn-heading-wrap">
+
+
+      <div class="camp-kicker">
+        Brooklyn Museum · 2019
+      </div>
+
+
+      <h2 class="brooklyn-title">
+
+        Future
+
+        <em>
+          Fashion.
+        </em>
+
+      </h2>
+
+
+    </div>
+
+
+
+    <div class="brooklyn-copy">
+
+
+      <div class="camp-subheader">
+        Pierre Cardin: Future Fashion
+      </div>
+
+
+      <p class="camp-body">
+        At the Brooklyn Museum, the mood shifts from theatrical excess
+        toward futurism. Pierre Cardin imagined clothing through geometry,
+        movement, technology, and the visual language of the Space Age.
+      </p>
+
+
+      <p class="camp-body">
+        Seen together, the two exhibitions offered completely different
+        ideas of fantasy: one rooted in humour and exaggeration, the other
+        in optimism about what fashion could become.
+      </p>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- BROOKLYN LABEL -->
+
+  <div class="museum-divider brooklyn-divider">
+
+    <span class="museum-name">
+      Brooklyn Museum
+    </span>
+
+    <div class="museum-line"></div>
+
+    <span class="museum-exhibition">
+      Pierre Cardin: Future Fashion · 2019
+    </span>
+
+  </div>
+
+
+
+  <!-- BROOKLYN PHOTOS -->
+
+  <div class="brooklyn-gallery">
+
+
+    <figure class="museum-shot">
 
       <img
         src="more-whimsical.png"
-        alt="Colourful fashion display at The Met"
+        alt="Pierre Cardin Future Fashion installation at Brooklyn Museum"
       />
 
-      <span class="camp-shot-number">
-        04
+      <span class="museum-photo-label">
+        BROOKLYN · 01
       </span>
 
     </figure>
 
 
 
-    <!-- 05 -->
-
-    <figure class="camp-shot camp-05">
+    <figure class="museum-shot">
 
       <img
         src="whimsical.png"
-        alt="Neon fashion display from Camp Notes on Fashion"
+        alt="Pierre Cardin Future Fashion installation at Brooklyn Museum"
       />
 
-      <span class="camp-shot-number">
-        05
+      <span class="museum-photo-label">
+        BROOKLYN · 02
       </span>
 
     </figure>
@@ -1816,9 +2018,12 @@ footer{
 
 
 
-<!-- SPINNING AD STAMP -->
+<!-- ─────────────────────────────
+     SPINNING AD STAMP
+───────────────────────────── -->
 
 <div class="logo-stamp">
+
 
   <div class="stamp">
 
@@ -1877,6 +2082,7 @@ footer{
 
 
   </div>
+
 
 </div>
 
